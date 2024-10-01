@@ -6,9 +6,53 @@
 //****************************************************
 FUNC VOID B_ENTER_NEWWORLD_Kapitel_1 ()
 {
-		// ------ Gilden-Attitüden ändern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------         GMM      	    	------
+		
+		// On the Way to the City
+		//****************************************************
+		Wld_InsertItem(ItSc_Firestorm,"FP_ITEM_XARDAS_05"); 				// Xardas' Tower, Table on Top Floor
+		Wld_InsertItem(ItSc_FireBolt,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
+		Wld_InsertItem(ItSc_FireBolt,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
+		Wld_InsertItem(ItSc_SumWolf,"FP_ITEM_XARDAS_04");					// Next to Waterfall Near Xardas' Towe, Behind Trees
+		Wld_InsertItem(ItSc_SumWolf,"FP_ROAM_XARDAS_CAVE_05");				// Cave Leading to Lester's Valley, the Part Filled With Goblins
+		Wld_InsertItem(ItSc_SumWolf,"FP_ROAM_XARDAS_CAVE_05");				// Cave Leading to Lester's Valley, the Part Filled With Goblins
+		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_XARDAS_CAVE_04");			// Cave Leading to Lester's Valley, the Part Filled With Field Raiders
+		Wld_InsertItem(ItSc_SumWolf,"FP_ITEM_XARDAS_06");					// Lester's Fireplace in his Valley
+		Wld_InsertItem(ItSc_SumWolf,"FP_ITEM_XARDAS_06");					// Lester's Fireplace in his Valley
+		Wld_InsertItem(ItSc_InstantFireBall,"FP_ITEM_XARDAS_01");	   		// Grave Cave in Lester's Valley
+		Wld_InsertItem(ItSc_InstantFireBall,"FP_ROAM_XARDAS_SECRET_25");	// Lizard Plateau near Xardas
+		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_FARM1_03"); 					// Innos Shrine near Lobart's Farm
+		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_FARM1_03");					// Innos Shrine near Lobart's Farm
+		Wld_InsertItem(Itsc_TrfGiantBug,"FP_ITEM_FOREST_STPLATE_03");  	    // Lobart's Stone Circle
+		
+				
+				// On the way to the Dead Harpy
+		//****************************************************
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_NW_CITY_TO_FOREST_04_05_6");		  // Harad's Orc Cave
+		Wld_InsertItem(ItSc_Icelance,"FP_ROAM_NW_CITY_TO_FOREST_04_05_6");		 	  // Harad's Orc Cave
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_NW_CITY_SMFOREST_05_03");			  // Free Orc Weapon Cave
+		Wld_InsertItem(ItSc_IceBolt,"FP_ROAM_NW_CITY_SMFOREST_05_03");	 			  // Free Orc Weapon Cave
+		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_BIGFARM_LAKE_CAVE_04"); 				  // Greg's Goblin Treasure Cave
+		
+		
+						// Test of Fire Route
+		//****************************************************
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_TAVERNE_TROLLAREA_02_01"); 				  // Dragomir's Camp
+		Wld_InsertItem(Itsc_TrfScavenger,"FP_ROAM_NW_TROLLAREA_PATH_66_MONSTER_03"); 	  // On the way to Magic Golem, under Innos Shrine
+		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_NW_TROLLAREA_PATH_38_MONSTER_02");		  // Innos Shrine Next to Pyramids
+		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_NW_TROLLAREA_PATH_22_MONSTER_03");		  // In Front of the Black Troll Lake, near Scavengers
+		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
+		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
+		
+		
+		
+		// ------ Gilden-Attitüden ändern   ------
+
+		// ------ Immortal-Flags löschen    ------
 		if (RavenIsDead == TRUE)
 		&& (Npc_IsDead(KDW_140300_Addon_Myxir_CITY))//Joly:zur Sicherheit
 		{

@@ -4,35 +4,35 @@
 
 // Paladin Scrolls
 const 	string Name_PaladinScroll		=	"Paladin Zauber"; 	
-const	int	Value_Sc_PalLight			=	50;
+const	int	Value_Sc_PalLight			=	10;
 const	int	Value_Sc_PalLightHeal		=	100;
 const	int	Value_Sc_PalHolyBolt		=	100;
 const	int	Value_Sc_PalMediumHeal		=	100;
-const	int	Value_Sc_PalRepelEvil		=	250;
+const	int	Value_Sc_PalRepelEvil		=	200;
 const	int	Value_Sc_PalFullHeal		=	200;
 const	int	Value_Sc_PalDestroyEvil		=	400;
 
 // Magier Scrolls
 const int 	Value_Sc_Light				=  	10;		
-const int 	Value_Sc_Firebolt			=	25;
+const int 	Value_Sc_Firebolt			=	15;
 const int 	Value_Sc_Charm				=   100;
-const int 	Value_Sc_Icebolt			=	25;	
+const int 	Value_Sc_Icebolt			=	20;	
 const int 	Value_Sc_LightHeal			=	25;
 const int 	Value_Sc_SumGobSkel			=  	75;
-const int 	Value_Sc_InstantFireball	=	50;
+const int 	Value_Sc_InstantFireball	=	30;
 	
-const int 	Value_Sc_Zap				=	60;
+const int 	Value_Sc_Zap				=	25;
 const int 	Value_Sc_SumWolf			=	75;
 const int 	Value_Sc_Windfist			=	60;
 const int 	Value_Sc_Sleep				=	100;
 const int 	Value_Sc_MediumHeal			=	60;
-const int 	Value_Sc_LightningFlash		=	125;
+const int 	Value_Sc_LightningFlash		=	70;
 const int 	Value_Sc_ChargeFireball		=	60;
 const int 	Value_Sc_SumSkel			=	75;
 const int 	Value_Sc_Fear				=	75;
 const int 	Value_Sc_IceCube			=	100;
 
-const int 	Value_Sc_ThunderBall		=	75;
+const int 	Value_Sc_ThunderBall		=	30;
 const int 	Value_Sc_SumGol				=	150;
 const int 	Value_Sc_HarmUndead			=	75;
 const int 	Value_Sc_Pyrokinesis		=	150;

@@ -317,7 +317,7 @@ FUNC VOID DIA_MiltenOW_Equipment_Info()
 	AI_Output (self ,other,"DIA_MiltenOW_Equipment_03_01");//Where am I supposed to get that? The only thing I can give you is a valuable runestone.
 	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die Schlösser nicht öffnen.  
 	
-	B_GiveInvItems (self,other, ItMI_RuneBlank,1);
+	B_GiveInvItems (self,other, ITRU_Whirlwind,1);
 	//Schlüssel auf FP inserten
 };	
 

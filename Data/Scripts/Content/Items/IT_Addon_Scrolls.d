@@ -1,10 +1,10 @@
 const int Value_Sc_Water = 1;
 
-const int Value_Sc_IceLance = 100;
-const int Value_Sc_Whirlwind = 200;
+const int Value_Sc_IceLance = 50;
+const int Value_Sc_Whirlwind = 50;
 const int Value_Sc_Geyser = 100;
 const int Value_Sc_Thunderstorm = 200;
-const int Value_Sc_Waterfist = 100;
+const int Value_Sc_Waterfist = 75;
 
 INSTANCE ItSc_Geyser (C_Item)
 {
