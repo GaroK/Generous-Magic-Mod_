@@ -1265,7 +1265,7 @@ INSTANCE ItRu_Pyrokinesis (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_PYROKINESIS;
-	mag_circle 			=	5;
+	mag_circle 			=	4;
 
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";

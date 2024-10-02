@@ -242,7 +242,7 @@ func void DIA_Marduk_TEACH_Info ()
 			Info_AddChoice	(DIA_Marduk_TEACH, B_BuildLearnString (NAME_SPL_LightningFlash, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_LightningFlash)) ,DIA_Marduk_TEACH_LightningFlash);
 			abletolearn = (abletolearn +1);
 		};
-		if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 5)
+		if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 4)
 		&& (PLAYER_TALENT_RUNES [SPL_IceWave] == FALSE)
 		{
 			Info_AddChoice	(DIA_Marduk_TEACH, B_BuildLearnString (NAME_SPL_IceWave, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_IceWave)) ,DIA_Marduk_TEACH_IceWave);

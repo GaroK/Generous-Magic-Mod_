@@ -295,7 +295,7 @@ func void DIA_Hyglas_TEACH_Info ()
 		abletolearn = (abletolearn +1);
 	};
 	
-	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 4) 
+	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 3) 
 	&& (PLAYER_TALENT_RUNES [SPL_ChargeFireball] == FALSE) 
 	{
 		Info_AddChoice	(DIA_Hyglas_TEACH, B_BuildLearnString (NAME_SPL_ChargeFireball, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_ChargeFireball)) ,DIA_Hyglas_TEACH_ChargeFireball);
@@ -303,7 +303,7 @@ func void DIA_Hyglas_TEACH_Info ()
 	};
 	
 	
-	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 5) 
+	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 4) 
 	&& (PLAYER_TALENT_RUNES [SPL_Pyrokinesis] == FALSE) 
 	{
 		Info_AddChoice	(DIA_Hyglas_TEACH, B_BuildLearnString (NAME_SPL_Pyrokinesis, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_Pyrokinesis)) ,DIA_Hyglas_TEACH_Pyrokinesis);

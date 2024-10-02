@@ -395,6 +395,12 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_3()
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_IceCube, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_IceCube)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_3_SPL_IceCube);
 	};
 	
+//------------------ GMM -------------------
+	if (PLAYER_TALENT_RUNES [SPL_ChargeFireball] == FALSE) 
+	{
+		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_ChargeFireball, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_ChargeFireball)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_ChargeFireball);
+	};
+	
 //------------------ Addon -------------------
 
 	if (PLAYER_TALENT_RUNES [SPL_Thunderstorm] == FALSE) 
@@ -430,14 +436,24 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_4()
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_LightningFlash, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_LightningFlash)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_LightningFlash);
 	};
-	if (PLAYER_TALENT_RUNES [SPL_ChargeFireball] == FALSE) 
+	/*if (PLAYER_TALENT_RUNES [SPL_ChargeFireball] == FALSE) 
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_ChargeFireball, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_ChargeFireball)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_ChargeFireball);
-	};
+	};*/
 	
 	if (PLAYER_TALENT_RUNES [SPL_Waterfist] == FALSE) 
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_Waterfist, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_Waterfist)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_Waterfist);
+	};
+	
+//------------------ GMM -------------------
+	if (PLAYER_TALENT_RUNES [SPL_Pyrokinesis] == FALSE) 
+	{
+		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_Pyrokinesis, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_Pyrokinesis)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_Pyrokinesis);
+	};
+	if (PLAYER_TALENT_RUNES [SPL_IceWave] == FALSE)
+	{
+		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_IceWave, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_IceWave)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_IceWave);
 	};
 };
 
@@ -451,10 +467,10 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_5()
 	Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, DIALOG_BACK, DIA_Addon_Nefarius_ADW_Runen_BACK);
 	
 	
-	if (PLAYER_TALENT_RUNES [SPL_IceWave] == FALSE)
+	/*if (PLAYER_TALENT_RUNES [SPL_IceWave] == FALSE)
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_IceWave, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_IceWave)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_IceWave);
-	};
+	};*/
 	if (PLAYER_TALENT_RUNES [SPL_SummonDemon] == FALSE)
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_SummonDemon, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_SummonDemon)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_SummonDemon);
@@ -463,10 +479,10 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_5()
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_FullHeal, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_FullHeal)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_FullHeal);
 	};
-	if (PLAYER_TALENT_RUNES [SPL_Pyrokinesis] == FALSE) 
+/*	if (PLAYER_TALENT_RUNES [SPL_Pyrokinesis] == FALSE) 
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_Pyrokinesis, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_Pyrokinesis)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_Pyrokinesis);
-	};
+	};*/
 };
 
 //**********************************************************
@@ -490,10 +506,10 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_6()
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_MassDeath, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_MassDeath)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_MassDeath);
 	};
-	if (PLAYER_TALENT_RUNES [SPL_ArmyOfDarkness] == FALSE)
+/*	if (PLAYER_TALENT_RUNES [SPL_ArmyOfDarkness] == FALSE)
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_ArmyOfDarkness, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_ArmyOfDarkness)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_ArmyOfDarkness);
-	};
+	};*/
 	if (PLAYER_TALENT_RUNES [SPL_Shrink] == FALSE)
 	{
 		Info_AddChoice	(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString (NAME_SPL_Shrink, B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_Shrink)) ,DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_Shrink);
@@ -593,16 +609,22 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_3_SPL_Firestorm()
 	B_TeachPlayerTalentRunes (self, other, SPL_Firestorm);	
 };
 
+//------------------ GMM -------------------
+FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_ChargeFireball()
+{
+	B_TeachPlayerTalentRunes (self, other, SPL_ChargeFireball);	
+};
+
 //************** Kreis 4 *********
 
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_LightningFlash()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_LightningFlash);	
 };
-FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_ChargeFireball()
+/*FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_ChargeFireball()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_ChargeFireball);	
-};
+};*/
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_Waterfist()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_Waterfist);		
@@ -616,17 +638,31 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_4_SPL_DestroyUndead()
 	B_TeachPlayerTalentRunes (self, other, SPL_DestroyUndead);		
 };
 
-//*********** Kreis 5 ************
-
+//------------------ GMM -------------------
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_Pyrokinesis()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_Pyrokinesis);		
 };
-
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_IceWave()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_IceWave);	
 };
+FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_ArmyOfDarkness()
+{
+	B_TeachPlayerTalentRunes (self, other, SPL_ArmyOfDarkness);	
+};
+
+//*********** Kreis 5 ************
+
+/*FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_Pyrokinesis()
+{
+	B_TeachPlayerTalentRunes (self, other, SPL_Pyrokinesis);		
+};*/
+
+/*FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_IceWave()
+{
+	B_TeachPlayerTalentRunes (self, other, SPL_IceWave);	
+};*/
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_5_SPL_SummonDemon()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_SummonDemon);	
@@ -650,10 +686,10 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_MassDeath()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_MassDeath);	
 };
-FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_ArmyOfDarkness()
+/*FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_ArmyOfDarkness()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_ArmyOfDarkness);	
-};
+};*/
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Circle_6_SPL_Shrink()
 {
 	B_TeachPlayerTalentRunes (self, other, SPL_Shrink);	
