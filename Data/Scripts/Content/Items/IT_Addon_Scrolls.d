@@ -27,7 +27,8 @@ INSTANCE ItSc_Geyser (C_Item)
 
 	description			=	NAME_SPL_Geyser;
 	
-	TEXT	[0]			=	Name_MageScroll	;
+	//TEXT	[0]			=	Name_MageScroll	;
+	TEXT	[0]			=	GMM_Non_Lethal_Scroll;
 	
 	TEXT	[1]			=	NAME_Mana_needed;		
 	COUNT	[1]			=	SPL_Cost_Scroll;
@@ -93,7 +94,8 @@ INSTANCE ItSc_Waterfist (C_Item)
 
 	description			=	NAME_SPL_Waterfist;
 	
-	TEXT	[0]			=	Name_MageScroll	;
+	//TEXT	[0]			=	Name_MageScroll	;
+	TEXT	[0]			=	GMM_Non_Lethal_Scroll;
 	
 	TEXT	[1]			=	NAME_Mana_needed;		
 	COUNT	[1]			=	SPL_Cost_Scroll;
@@ -166,6 +168,9 @@ INSTANCE ItSc_Whirlwind (C_Item)
 	
 	TEXT	[2]			=	NAME_Sec_Duration;				
 	COUNT	[2]			=	SPL_TIME_WHIRLWIND;
+	
+	TEXT	[4]			=	GMM_Windwhirl_Description;			
+	//COUNT	[4]			=	
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;

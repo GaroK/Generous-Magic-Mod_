@@ -93,6 +93,8 @@ INSTANCE ItRu_Whirlwind (C_Item)
 	TEXT	[2]			=	NAME_Sec_Duration;				
 	COUNT	[2]			=	SPL_TIME_WHIRLWIND;
 	
+	TEXT	[4]		    =	GMM_Windwhirl_Description;			
+	//COUNT	[4]			=	
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
@@ -118,8 +120,9 @@ INSTANCE ItRu_Geyser (C_Item)
 
 	description			=	NAME_SPL_Geyser;
 	
-	TEXT	[0]			=	NAME_Mag_Circle;		
-	COUNT	[0]			=	mag_circle;
+//	TEXT	[0]			=	NAME_Mag_Circle;	
+	TEXT	[0]			=	GMM_Non_Lethal_Circle;		
+	COUNT	[0]			=	mag_circle;	
 	
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_Cost_Geyser;
@@ -151,8 +154,9 @@ INSTANCE ItRu_Waterfist	(C_Item)
 
 	description			=	NAME_SPL_Waterfist;
 	
-	TEXT	[0]			=	NAME_Mag_Circle;		
-	COUNT	[0]			=	mag_circle;
+//	TEXT	[0]			=	NAME_Mag_Circle;	
+	TEXT	[0]			=	GMM_Non_Lethal_Circle;		
+	COUNT	[0]			=	mag_circle;	
 	
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_Cost_Waterfist;
@@ -270,6 +274,9 @@ INSTANCE ItRu_SuckEnergy	(C_Item)
 	TEXT	[3]			=	NAME_Sec_Duration;				
 	COUNT	[3]			=	SPL_TIME_SuckEnergy;
 	
+	TEXT	[4]		    =	GMM_SuckEnergy_Description;			
+	//COUNT	[4			=	
+	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
 };
@@ -303,6 +310,9 @@ INSTANCE ItRu_GreenTentacle (C_Item)
 	
 	TEXT	[2]			=	NAME_Sec_Duration;				
 	COUNT	[2]			=	SPL_TIME_Greententacle;
+	
+	TEXT	[4]		    =	GMM_GreenTentacle_Description;			
+	//COUNT	[4]			=	
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
@@ -340,6 +350,9 @@ INSTANCE ItRu_Swarm	(C_Item)
 	
 	TEXT	[3]			=	NAME_Sec_Duration;				
 	COUNT	[3]			=	SPL_TIME_Swarm;
+	
+	TEXT	[4]		    =	GMM_Swarm_Description;			
+	//COUNT	[4]			=	
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
