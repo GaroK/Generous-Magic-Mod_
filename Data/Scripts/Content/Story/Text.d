@@ -771,13 +771,7 @@ const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT3			= "I will pray and offer 3 life
 const string NAME_ADDON_PRAYIDOL_GIVEMANA				= "I will pray and offer 1 mana.";
 
 //Generous Magic Mod
-const string GMM_Non_Lethal_Scroll				= "Non-lethal Scroll";
-const string GMM_Non_Lethal_Circle				= "Non-lethal, Circle:";
-const string GMM_Windwhirl_Description			= "Temporarily incapacitates target.";
-const string GMM_Fear_Description				= "Stops enemy attacks and makes them flee.";
-const string GMM_SuckEnergy_Description			= "Steals life energy from human targets.";
-const string GMM_GreenTentacle_Description		= "Temporarily incapacitates target.";
-const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
+const string NAME_GMM_Fear_Description		= "Stops enemy attacks and makes them flee.";
 
 							
 
@@ -1019,7 +1013,7 @@ const string PRINT_Smith_1H_Special_04			= " (4 ore, 5 dragon blood)";
 const string PRINT_Smith_2H_Special_04			= " (5 ore, 5 dragon blood)";
 
 
-const string NAME_MageScroll			= "Scroll"; 
+const string NAME_MageScroll			= "Scroll";
 
 
 

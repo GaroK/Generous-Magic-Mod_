@@ -512,8 +512,7 @@ INSTANCE ItSc_Zap (C_Item)
 
 	description			=	NAME_SPL_Zap;
 	
-	//TEXT	[0]			=	Name_MageScroll	;
-	TEXT	[0]			=	GMM_Non_Lethal_Scroll;
+	TEXT	[0]			=	Name_MageScroll	;
 	
 	TEXT	[1]			=	NAME_Mana_needed;			
 	COUNT	[1]			=	SPL_Cost_Scroll;
@@ -814,22 +813,22 @@ INSTANCE ItSc_Fear (C_Item)
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
 	description			=	NAME_SPL_Fear;
+	
+	TEXT	[0]			=	NAME_GMM_Fear_Description;				
 		
 
-	TEXT	[0]			=	NAME_Mag_Circle;			
-	COUNT	[0]			=	mag_circle;
+	TEXT	[1]			=	NAME_Mag_Circle;			
+	COUNT	[1]			=	mag_circle;
 	
-	TEXT	[1]			=	NAME_Manakosten;			
-	COUNT	[1]			=	SPL_COST_FEAR;
+	TEXT	[2]			=	NAME_Manakosten;			
+	COUNT	[2]			=	SPL_COST_FEAR;
 	
-	TEXT	[2]			=	NAME_Sec_Duration;				
-	COUNT	[2]			=	SPL_TIME_Fear;
-	
-	TEXT	[4]			=	GMM_Fear_Description;
+	TEXT	[3]			=	NAME_Sec_Duration;				
+	COUNT	[3]			=	SPL_TIME_Fear;
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
-};	
+};
 /*******************************************************************************************/
 INSTANCE ItSc_IceCube (C_Item)
 {
@@ -892,8 +891,7 @@ INSTANCE ItSc_ThunderBall (C_Item)
 
 	description			=	NAME_SPL_ChargeZap;
 	
-	//TEXT	[0]			=	Name_MageScroll	;
-	TEXT	[0]			=	GMM_Non_Lethal_Scroll;
+	TEXT	[0]			=	Name_MageScroll	;
 	
 	TEXT	[1]			=	NAME_MinManakosten;							
 	COUNT	[1]			=	STEP_ChargeZap;
