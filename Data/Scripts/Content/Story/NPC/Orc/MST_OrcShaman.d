@@ -23,9 +23,9 @@ PROTOTYPE Mst_Default_OrcShaman(C_Npc)
 	protection	[PROT_BLUNT]		=	130;
 	protection	[PROT_EDGE]			=	130;
 	protection	[PROT_POINT]		=	130;
-	protection	[PROT_FIRE]			=	130;
-	protection	[PROT_FLY]			=	130;
-	protection	[PROT_MAGIC]		=	65;
+	protection	[PROT_FIRE]			=	110;
+	protection	[PROT_FLY]			=	110;
+	protection	[PROT_MAGIC]		=	50;
 	
 	//----- HitChances -----
 	HitChance	[NPC_TALENT_1H]			= 60;

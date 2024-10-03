@@ -36,6 +36,48 @@
 */
 
 //-------------------------------------------------------
+//	GMM Mana Regen
+//-------------------------------------------------------
+META
+{
+    Engine = G1, G2A;
+    Parser = Game;
+};
+
+class C_Trigger
+{
+    var int delay;
+    var int enabled;
+    var int aivariables[16];
+};
+
+var C_Trigger mana_regen_controller;
+
+const int MANA_PER_SEC = 1;
+const int TICS_PER_SEC = 1;
+
+func int Regen_mana()
+{
+    var int adding; adding = ((hero.attribute[ATR_MANA_MAX] * MANA_PER_SEC)/100)/TICS_PER_SEC;
+    if adding < 1 {
+        adding = 1;
+    };
+    hero.attribute[ATR_MANA] += adding;
+    if hero.attribute[ATR_MANA] >= hero.attribute[ATR_MANA_MAX] {
+        hero.attribute[ATR_MANA] = hero.attribute[ATR_MANA_MAX];
+    };
+    return LOOP_CONTINUE;
+};
+
+func void Mana_regen_handler(var int enabled) {
+    if enabled {
+        mana_regen_controller = AI_StartTriggerScript("Regen_mana", 1000/TICS_PER_SEC);
+    } else {
+        mana_regen_controller.enabled = FALSE;
+    };
+};
+
+//-------------------------------------------------------
 //	Addon Waffen  Wolfsmesser
 //-------------------------------------------------------
 INSTANCE ItMW_Addon_Knife01 (C_Item)
@@ -67,7 +109,149 @@ INSTANCE ItMW_Addon_Knife01 (C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 // *****************************************************
-INSTANCE ItMW_Addon_Stab01 (C_Item)
+// *****************************************************
+INSTANCE ItMW_GMM_Stab_01_Mana (C_Item)
+{	
+	name 				=	"Magic Wand";  
+
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_2HD_AXE;
+	material 			=	MAT_WOOD;
+
+	value 				=	Value_Stab02;
+
+	damageTotal  		= 	Damage_Stab02;
+	damagetype 			=	DAM_BLUNT;
+	range    			=  	RANGE_Stab02;		
+	
+	on_equip			=	Equip_Zauberstab;
+	on_unequip			=	UnEquip_Zauberstab;
+	
+	cond_atr[2]   		=	ATR_MANA_MAX;
+	cond_value[2]  		=	Condition_Stab02;
+	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
+	effect				=	"SPELLFX_MAGESTAFF2";
+
+	description			= 	name;
+
+	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
+	
+	TEXT[2]				= NAME_Bonus_Mana;				COUNT[2]	= 20;//FIXME_FILLER
+	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
+	TEXT[4] 			= NAME_TwoHanded;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
+FUNC VOID Equip_Zauberstab()
+{
+	if Npc_IsPlayer (self)
+	{ 
+		Npc_ChangeAttribute (self, ATR_MANA_MAX,40);
+		Npc_ChangeAttribute (self, ATR_MANA,40);
+	};
+};
+FUNC VOID UnEquip_Zauberstab()
+{
+	if Npc_IsPlayer (self)
+	{ 
+		Npc_ChangeAttribute (self, ATR_MANA_MAX, - 40);
+		
+		if self.attribute [ATR_MANA]	>= 40
+		{
+			Npc_ChangeAttribute (self, ATR_MANA, - 40);
+		}
+		else
+		{
+			self.attribute[ATR_MANA] = 0;
+		};
+	};
+	
+	
+};
+
+// *****************************************************
+
+INSTANCE ItMW_GMM_Stab_02_Regen (C_Item)
+{	
+	name 				=	"Wand of Rejuvenation";  
+
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_2HD_AXE;
+	material 			=	MAT_WOOD;
+
+	value 				=	Value_Stab04;
+
+	damageTotal  		= 	Damage_Stab04;
+	damagetype 			=	DAM_BLUNT;
+	range    			=  	RANGE_Stab04;		
+	
+	on_equip			=	Equip_Regen_Wand;
+	on_unequip			=	UnEquip_Regen_Wand;
+	
+	cond_atr[2]   		=	ATR_STRENGTH;
+	cond_value[2]  		=	Condition_Stab04;
+	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
+	effect				=	"SPELLFX_MAGESTAFF4";
+
+	description			= 	"Wand of Rejuvenation";
+
+	TEXT[1]				= "Regenerates 1% of mana per second.";
+	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
+	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
+	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_04;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
+
+func void Equip_Regen_Wand()
+{
+    self.attribute[ATR_MANA_MAX] += 10;
+    Mana_regen_handler(true);
+};
+
+func void UnEquip_Regen_Wand()
+{
+    self.attribute[ATR_MANA_MAX] -= 10;
+    Mana_regen_handler(false);
+};
+
+/*instance PC_Hero(C_NPC) {
+    PC_Hero_old();
+    CreateInvItem(self, ItMW_Addon_Stab05);     
+};*/
+
+// *****************************************************
+
+INSTANCE ItMW_GMM_Stab_03_Eff (C_Item)
+{	
+	name 				=	"Wand of Efficiency";
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_2HD_AXE;
+	material 			=	MAT_WOOD;
+
+	value 				=	Value_Stab05;
+
+	damageTotal  		= 	Damage_Stab05;
+	damagetype 			=	DAM_BLUNT;
+	range    			=  	RANGE_Stab05;		
+	
+	on_equip			=	Equip_2H_05;
+	on_unequip			=	UnEquip_2H_05;
+	
+	cond_atr[2]   		=	ATR_STRENGTH;
+	cond_value[2]  		=	Condition_Stab05;
+	visual 				=	"ItMW_MageStaff_Blades_2H_01.3DS"; 
+	effect				=	"SPELLFX_MAGESTAFF5";
+
+	description			= 	name;
+
+	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
+	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
+	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_05;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
+
+// *****************************************************
+
+/*INSTANCE ItMW_Addon_Stab01 (C_Item)
 {	
 	name 				=	"Magician's wand";  
 
@@ -96,7 +280,8 @@ INSTANCE ItMW_Addon_Stab01 (C_Item)
 	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_03;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
-// *****************************************************
+
+
 INSTANCE ItMW_Addon_Stab02 (C_Item)
 {	
 	name 				=	"Magic wand";  
@@ -243,7 +428,7 @@ INSTANCE ItMW_Addon_Stab05 (C_Item)
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_05;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
-};
+};*/
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_1h_01 (C_Item) 
 {	

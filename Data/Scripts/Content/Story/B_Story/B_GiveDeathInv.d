@@ -277,7 +277,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 	else if (slf.aivar[AIV_MM_REAL_ID]			== 	ID_ORCSHAMAN)
 	&& (Orc_Randomizer <= 8)
 	{
-		CreateInvItems (slf, ItPo_Mana_03	, 1);
+		CreateInvItems (slf, ItPo_Mana_Addon_04	, 1);
 		CreateInvItems (slf,ItPl_Mana_Herb_02,2);
 		CreateInvItems (slf, ItMI_Gold	, 8);	
 	};

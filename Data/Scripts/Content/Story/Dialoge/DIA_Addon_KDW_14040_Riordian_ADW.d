@@ -729,7 +729,7 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
-	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
+	//&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
 		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Elixir of Spirit", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Riordian_ADW_TeachAlchemy_Perm_Mana);
 		talente = (talente + 1);

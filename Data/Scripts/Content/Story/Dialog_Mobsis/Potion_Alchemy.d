@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Mana essence (2 fire nettles)"; 
+	description		= "Mana essence (2 Fire Nettles, 1 Blue Elder)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -373,10 +373,12 @@ FUNC INT PC_ItPo_Mana_01_Condition()
 
 FUNC VOID PC_ItPo_Mana_01_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Mana_Herb_01) >= 2) 
+	if (Npc_HasItems (hero, ItPl_Mana_Herb_01) >= 2)	
+	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb)    >= 1) 
 	{
 		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_01,2);
+		Npc_RemoveInvItems (hero,ItPl_BluePlant	  ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
 		
 		CreateInvItems 	   (hero,ItPo_Mana_01,1); 
@@ -398,7 +400,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Mana extract (2 fireweeds) "; 
+	description		= "Mana extract (2 Fireweeds, 1 Blue Elder) "; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -412,10 +414,12 @@ FUNC INT PC_ItPo_Mana_02_Condition()
 
 FUNC VOID PC_ItPo_Mana_02_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Mana_Herb_02) >= 2) 
+	if (Npc_HasItems (hero, ItPl_Mana_Herb_02) >= 2)
+	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb)    >= 1) 
 	{
 		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_02,2);
+		Npc_RemoveInvItems (hero,ItPl_BluePlant	  ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
 		
 		CreateInvItems	   (hero,ItPo_Mana_02,1);  
@@ -436,7 +440,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Mana elixir (2 fire roots)"; 
+	description		= "Mana elixir (2 Fire roots, 1 Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -452,10 +456,10 @@ FUNC INT PC_ItPo_Mana_03_Condition()
 FUNC VOID PC_ItPo_Mana_03_Info ()
 {
 	if (Npc_HasItems (hero, ItPl_Mana_Herb_03) >= 2) 
-	//&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	  >= 1) 
+	&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	  >= 1) 
 	{
 		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_03,2);
-		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
+		Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
 		
 		CreateInvItems	   (hero,ItPo_Mana_03,1);  
 		Print (PRINT_AlchemySuccess);
@@ -475,7 +479,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Mana potion (3 Mana essences, 1 meadow knotweed)"; 
+	description		= "Mana potion (3 Mana Essences, 1 Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -569,7 +573,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Essence of healing (2 healing plants)"; 
+	description		= "Essence of healing (2 Healing Plants, 1 Blue Elder)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -585,10 +589,12 @@ FUNC INT PC_ItPo_Health_01_Condition()
 
 FUNC VOID PC_ItPo_Health_01_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Health_Herb_01) >= 2) 
+	if (Npc_HasItems (hero, ItPl_Health_Herb_01) >= 2)
+	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	 >= 1) 
 	{
 		Npc_RemoveInvItems (hero,ItPl_Health_Herb_01,2);
+		Npc_RemoveInvItems (hero,ItPl_BluePlant	    ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	    ,1);
 		
 		CreateInvItem	   (hero,ItPo_Health_01);  
@@ -609,7 +615,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extract of healing (2 healing herbs)"; 
+	description		= "Extract of healing (2 Healing Herbs, 1 Blue Plant)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -624,10 +630,12 @@ FUNC INT PC_ItPo_Health_02_Condition()
 
 FUNC VOID PC_ItPo_Health_02_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Health_Herb_02) >= 2) 
+	if (Npc_HasItems (hero, ItPl_Health_Herb_02) >= 2)
+	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	 >= 1) 
 	{
 		Npc_RemoveInvItems (hero,ItPl_Health_Herb_02,2);
+		Npc_RemoveInvItems (hero,ItPl_BluePlant	    ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  	,1);
 		
 		CreateInvItems	   (hero,ItPo_Health_02,1);  
@@ -648,7 +656,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixir of healing (2 healing roots, 1 meadow knotweed)"; 
+	description		= "Elixir of healing (2 Healing Roots, 1 Meadow Knotweed)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -663,10 +671,10 @@ FUNC INT PC_ItPo_Health_03_Condition()
 FUNC VOID PC_ItPo_Health_03_Info ()
 {
 	if (Npc_HasItems (hero, ItPl_Health_Herb_03) >= 2) 
-	//&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	  	>= 1) 
+	&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	  	>= 1) 
 	{
 		Npc_RemoveInvItems (hero,ItPl_Health_Herb_03,2);
-		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  	,1);
+		Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  	,1);
 		
 		CreateInvItems	   (hero,ItPo_Health_03,1);  
 		Print (PRINT_AlchemySuccess);
@@ -686,7 +694,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Healing potions (3 essences of healing, 1 meadow knotweed)"; 
+	description		= "Healing potions (3 Essences of Healing, 1 Meadow Knotweed)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -829,7 +837,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixir of life (1 healing root, 1 king's sorrel, meadow knotweed)"; 
+	description		= "Elixir of Life (1 Healing Root, 1 King's Sorrel, Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -870,7 +878,7 @@ INSTANCE PC_ItPo_Perm_Mana (C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Elixier of spirit (1 fire root, 1 king's sorrel, meadow knotweed)"; 
+	description		= "Elixier of Spirit (1 Fire Root, 1 King's Sorrel, Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Mana_Condition()
@@ -911,7 +919,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Potion of dexterity (1 goblin berry, 1 king's sorrel, meadow knotweed)"; 
+	description		= "Potion of Dexterity (1 Goblin Berry, 1 King's Sorrel, Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -952,7 +960,7 @@ INSTANCE PC_ItPo_Strg (C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Potion of strength (1 dragonroot, 1 king's sorrel, meadow knotweed)"; 
+	description		= "Potion of strength (1 Dragonroot, 1 King's Sorrel, Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Strg_Condition()
@@ -992,7 +1000,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Potion of speed (1 snapperweed, 1 meadow knotweed)"; 
+	description		= "Potion of Speed (1 Snapperweed, 1 Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1088,7 +1096,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Process swampweed (1 stalk)"; 
+	description		= "Process swampweed (1 Stalk)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1126,7 +1134,7 @@ INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 	condition		= PC_ItMi_Addon_Joint_01_Condition;
 	information		= PC_ItMi_Addon_Joint_01_Info;
 	permanent		= TRUE;
-	description		= "Make green novice (1 reefer)"; 
+	description		= "Make Green Novice (1 Reefer)"; 
 };
 
 FUNC INT PC_ItMi_Addon_Joint_01_Condition()
@@ -1235,7 +1243,7 @@ INSTANCE PC_ItPo_MegaDrink (C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Dragon egg potion (10 dragon eggs, 1 black pearl, 1 sulfur)"; 
+	description		= "Dragon Egg Potion (10 Dragon Eggs, 1 Black Pearl, 1 Sulfur)"; 
 };
 
 FUNC INT PC_ItPo_MegaDrink_Condition()

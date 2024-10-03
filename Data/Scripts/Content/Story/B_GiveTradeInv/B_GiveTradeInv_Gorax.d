@@ -32,9 +32,13 @@ FUNC VOID B_GiveTradeInv_Gorax (var C_NPC slf)
 		CreateInvItems 	 (slf, ItBE_Addon_KDF_01, 1);
 		
 		
-		CreateInvItems 	 (slf, ItMW_Addon_Stab01, 1);
-		CreateInvItems 	 (slf, ItMW_Addon_Stab02, 1);
-		CreateInvItems 	 (slf, ItMW_Addon_Stab04, 1);
+		//CreateInvItems 	 (slf, ItMW_Addon_Stab01, 1);
+		//CreateInvItems 	 (slf, ItMW_Addon_Stab02, 1);
+		//CreateInvItems 	 (slf, ItMW_Addon_Stab04, 1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_01_Mana, 	1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_02_Regen, 	1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_03_Eff, 	1);
+		
 		
 		CreateInvItems 	 (slf, ItRi_Mana_01, 1);
 				

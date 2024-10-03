@@ -469,7 +469,7 @@ func void B_CreateAmbientInv_DMT (var int InventorySet)
 		CreateInvItems (self, ItMi_Rockcrystal, 1);
 		CreateInvItems (self, ItPo_Health_01, 1);
 		CreateInvItems (self, ItMi_gold, 40);
-		CreateInvItems (self, ItPo_Mana_02, 1);
+		CreateInvItems (self, ItPo_Mana_Addon_04, 1);
 	};
 };
 func void B_CreateAmbientInv_STRF (var int InventorySet)
