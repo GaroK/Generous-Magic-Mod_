@@ -174,7 +174,7 @@ func int ZS_MM_Attack_Loop ()
 			self.aivar[AIV_StateTime] = Npc_GetStateTime (self);
 		};
 		
-		if (self.aivar[AIV_SummonTime] >= MONSTER_SUMMON_TIME)
+		if (self.aivar[AIV_SummonTime] >= GMM_SUMMON_TIME)
 		{
 			Npc_ChangeAttribute (self, ATR_HITPOINTS, -self.attribute[ATR_HITPOINTS_MAX]);
 		};

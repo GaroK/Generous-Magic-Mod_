@@ -414,6 +414,8 @@ const int FIGHT_DIST_DRAGON_MAGIC		= 700;
 const int MONSTER_THREATEN_TIME			= 4; 	// Sekunden, die Monster drohen, bevor sie angreifen (wenn Gegner nicht zu weit und nicht zu nah)
 const int MONSTER_SUMMON_TIME			= 60;
 
+
+
 /********************************************************************
 **					Konstanten für Distanzen					   **
 **					    der Menschen-AI							   **

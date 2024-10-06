@@ -5,10 +5,15 @@
 // B_ENTER_NEWWORLD_Kapitel_1
 //****************************************************
 FUNC VOID B_ENTER_NEWWORLD_Kapitel_1 ()
-{
+//{
 
 		// ------         GMM      	    	------
-		
+//	func void b_enter_newworld_kapitel_1
+	{
+	var int itemsspawned;
+	if (!itemsspawned)
+		{
+			itemsspawned = true;
 		// On the Way to the City
 		//****************************************************
 		Wld_InsertItem(ItSc_Firestorm,"FP_ITEM_XARDAS_05"); 				// Xardas' Tower, Table on Top Floor
@@ -47,8 +52,8 @@ FUNC VOID B_ENTER_NEWWORLD_Kapitel_1 ()
 		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_NW_TROLLAREA_PATH_22_MONSTER_03");		  // In Front of the Black Troll Lake, near Scavengers
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
-		
-		
+			};
+	
 		
 		// ------ Gilden-Attitüden ändern   ------
 

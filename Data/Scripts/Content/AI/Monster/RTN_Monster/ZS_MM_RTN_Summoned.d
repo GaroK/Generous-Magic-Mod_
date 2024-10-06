@@ -56,7 +56,7 @@ func int ZS_MM_Rtn_Summoned_Loop()
 			// ------ Summon Time -------
 			self.aivar[AIV_SummonTime] = (self.aivar[AIV_SummonTime] + Npc_GetStateTime(self)); //weil AI_Goto länger dauern kann
 
-			if (self.aivar[AIV_SummonTime] >= MONSTER_SUMMON_TIME)
+			if (self.aivar[AIV_SummonTime] >= GMM_SUMMON_TIME)
 			{
 				 Npc_ChangeAttribute (self, ATR_HITPOINTS, -self.attribute[ATR_HITPOINTS_MAX]);
 			};

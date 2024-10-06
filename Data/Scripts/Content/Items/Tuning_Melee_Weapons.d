@@ -7,16 +7,22 @@
 // Alle können (theoretisch) in Kapitel 1 erlangt werden
 // *****************************************************
 
-const int Waffenbonus_01 =  1;
-const int Waffenbonus_02 =  2;
-const int Waffenbonus_03 =  3;
-const int Waffenbonus_04 =  4;
-const int Waffenbonus_05 =  5;
-const int Waffenbonus_06 =  6;
-const int Waffenbonus_07 =  7;
-const int Waffenbonus_08 =  8;
-const int Waffenbonus_09 =  9;
-const int Waffenbonus_10 = 10;
+const int Waffenbonus_01	    =  1;
+const int Waffenbonus_02	    =  2;
+const int Waffenbonus_03	    =  3;
+const int Waffenbonus_04	    =  4;
+const int Waffenbonus_05	    =  5;
+const int Waffenbonus_06	    =  6;
+const int Waffenbonus_07    	=  7;
+const int Waffenbonus_08    	=  8;
+const int Waffenbonus_09	    =  9;
+const int Waffenbonus_10	    = 10;
+// *****************************************************
+//************************ GMM *************************
+const int Waffenbonus_11_GMM    		= 15;
+const int Condition_Stab04_GMM			= 50;
+const int Condition_Stab05_GMM			= 30;
+const int Value_Stab_GMM				= 3000;
 // *****************************************************
 //Dolch - ItMw_1h_Vlk_Dagger
 const int Damage_VLKDolch				= 5; 

@@ -1563,33 +1563,33 @@ INSTANCE ItRu_MasterOfDisaster	(C_Item)
 	COUNT	[5]			=	value;
 };
 /*******************************************************************************************/
-INSTANCE ItRu_ArmyOfDarkness (C_Item)
+instance ITRU_ARMYOFDARKNESS(C_ITEM)
 {
-	name 				=	NAME_Rune;
-
-	mainflag 			=	ITEM_KAT_RUNE;
-	flags 				=	0;
-
-	value 				=	Value_Ru_ArmyofDarkness;
-
-	visual				=	"ItRu_ArmyOfDarkness.3DS";
-	material			=	MAT_STONE;
-
-	spell				= 	SPL_ARMYOFDARKNESS;
-	mag_circle			=	4;
-
-	wear				= 	WEAR_EFFECT;
-	effect				=	"SPELLFX_WEAKGLIMMER_RED";
-
-	description			=	NAME_SPL_ArmyOfDarkness;
-	TEXT	[0]			=	NAME_Mag_Circle;		
-	COUNT	[0]			=	mag_circle;
+	name 				= NAME_RUNE;
 	
-	TEXT	[1]			=	NAME_Manakosten;			
-	COUNT	[1]			=	SPL_COST_ARMYOFDARKNESS;
+	mainflag 			= ITEM_KAT_RUNE;
+	flags 			   	= 0;
 	
-	TEXT	[5]			=	NAME_Value;					
-	COUNT	[5]			=	value;
+	value 				= VALUE_RU_ARMYOFDARKNESS;
+
+	visual				= "ItRu_ArmyOfDarkness.3DS";
+	material			= MAT_STONE;
+	
+	spell				= SPL_ARMYOFDARKNESS;
+	mag_circle			= 4;
+
+	wear				= WEAR_EFFECT;
+	effect				= "SPELLFX_WEAKGLIMMER_RED";
+	
+	description			= NAME_SPL_ARMYOFDARKNESS;
+	text[0] 			= NAME_MAG_CIRCLE;
+	count[0]			= mag_circle;
+	
+	text[1]				= NAME_MANAKOSTEN;
+	count[1] 		   	= SPL_COST_ARMYOFDARKNESS;
+	
+	text[5] 			= NAME_VALUE;
+	count[5]			= value;
 };
 /*******************************************************************************************/
 INSTANCE ItRu_Shrink (C_Item)

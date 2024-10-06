@@ -38,11 +38,11 @@
 //-------------------------------------------------------
 //	GMM Mana Regen
 //-------------------------------------------------------
-META
+/*META
 {
     Engine = G1, G2A;
     Parser = Game;
-};
+};*/
 
 class C_Trigger
 {
@@ -118,7 +118,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana (C_Item)
 	flags 				=	ITEM_2HD_AXE;
 	material 			=	MAT_WOOD;
 
-	value 				=	Value_Stab02;
+	value 				=	Value_Stab_GMM;
 
 	damageTotal  		= 	Damage_Stab02;
 	damagetype 			=	DAM_BLUNT;
@@ -128,7 +128,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana (C_Item)
 	on_unequip			=	UnEquip_Zauberstab;
 	
 	cond_atr[2]   		=	ATR_MANA_MAX;
-	cond_value[2]  		=	Condition_Stab02;
+	cond_value[2]  		=	Condition_Stab04_GMM;
 	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF2";
 
@@ -136,9 +136,10 @@ INSTANCE ItMW_GMM_Stab_01_Mana (C_Item)
 
 	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
 	
-	TEXT[2]				= NAME_Bonus_Mana;				COUNT[2]	= 20;//FIXME_FILLER
-	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4] 			= NAME_TwoHanded;
+	TEXT[1]				= NAME_Bonus_Mana;				COUNT[1]	= 40;//FIXME_FILLER
+	TEXT[2] 			= NAME_Mana_needed;				COUNT[2]	= cond_value[2];
+	TEXT[3] 			= NAME_TwoHanded;
+	TEXT[4] 			= "Ulthar enchanted this wand.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 FUNC VOID Equip_Zauberstab()
@@ -146,7 +147,7 @@ FUNC VOID Equip_Zauberstab()
 	if Npc_IsPlayer (self)
 	{ 
 		Npc_ChangeAttribute (self, ATR_MANA_MAX,40);
-		Npc_ChangeAttribute (self, ATR_MANA,40);
+//	Npc_ChangeAttribute (self, ATR_MANA,40); //GMM - Very exploitable
 	};
 };
 FUNC VOID UnEquip_Zauberstab()
@@ -178,7 +179,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen (C_Item)
 	flags 				=	ITEM_2HD_AXE;
 	material 			=	MAT_WOOD;
 
-	value 				=	Value_Stab04;
+	value 				=	Value_Stab_GMM;
 
 	damageTotal  		= 	Damage_Stab04;
 	damagetype 			=	DAM_BLUNT;
@@ -187,17 +188,18 @@ INSTANCE ItMW_GMM_Stab_02_Regen (C_Item)
 	on_equip			=	Equip_Regen_Wand;
 	on_unequip			=	UnEquip_Regen_Wand;
 	
-	cond_atr[2]   		=	ATR_STRENGTH;
-	cond_value[2]  		=	Condition_Stab04;
+	cond_atr[2]   		=	ATR_MANA_MAX;
+	cond_value[2]  		=	Condition_Stab04_GMM;
 	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF4";
 
 	description			= 	"Wand of Rejuvenation";
 
-	TEXT[1]				= "Regenerates 1% of mana per second.";
-	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
-	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_04;
+	
+	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
+	TEXT[1] 			= NAME_Str_needed;				COUNT[1]	= cond_value[2];
+//	TEXT[2]				= NAME_ADDON_BONUS_2H;			COUNT[2]	= Waffenbonus_04;
+	TEXT[4]				= "Regenerates 1% of mana per second.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 
@@ -227,29 +229,93 @@ INSTANCE ItMW_GMM_Stab_03_Eff (C_Item)
 	flags 				=	ITEM_2HD_AXE;
 	material 			=	MAT_WOOD;
 
-	value 				=	Value_Stab05;
+	value 				=	Value_Stab_GMM;
 
 	damageTotal  		= 	Damage_Stab05;
 	damagetype 			=	DAM_BLUNT;
 	range    			=  	RANGE_Stab05;		
 	
-	on_equip			=	Equip_2H_05;
-	on_unequip			=	UnEquip_2H_05;
+//	on_equip			=	Equip_2H_05;
+//	on_unequip			=	UnEquip_2H_05;
 	
-	cond_atr[2]   		=	ATR_STRENGTH;
-	cond_value[2]  		=	Condition_Stab05;
+	cond_atr[2]   		=	ATR_MANA_MAX;
+	cond_value[2]  		=	Condition_Stab04_GMM;
 	visual 				=	"ItMW_MageStaff_Blades_2H_01.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF5";
 
 	description			= 	name;
 
-	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
-	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_05;
+	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
+	TEXT[1] 			= NAME_Str_needed;				COUNT[1]	= cond_value[2];
+//	TEXT[2]				= NAME_ADDON_BONUS_2H;			COUNT[2]	= Waffenbonus_05;
+	TEXT[4]				= "Spells cost 20% mana less to cast.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+	
 };
 
 // *****************************************************
+
+
+INSTANCE ItMW_GMM_Stab_04_Summon (C_Item)
+{	
+	name 				=	"Summoner's Wand";  
+
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_2HD_AXE;
+	material 			=	MAT_WOOD;
+
+	value 				=	Value_Stab_GMM;
+
+	damageTotal  		= 	Damage_Stab04;
+	damagetype 			=	DAM_BLUNT;
+	range    			=  	RANGE_Stab04;		
+	
+	on_equip			=	GMM_Equip_2H_04;
+	on_unequip			=	GMM_UnEquip_2H_04;
+	
+	cond_atr[2]   		=	ATR_MANA_MAX;
+	cond_value[2]  		=	Condition_Stab04_GMM;
+	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
+	effect				=	"SPELLFX_MAGESTAFF4";
+
+	description			= 	"";
+
+	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
+	TEXT[1] 			= NAME_Str_needed;				COUNT[1]	= cond_value[2];
+//	TEXT[2]				= NAME_ADDON_BONUS_2H;			COUNT[2]	= Waffenbonus_04;
+	TEXT[4]				= "Extends time duration of summons to 3 min.";
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
+
+INSTANCE ItMW_GMM_Stab_05_Combat (C_Item)
+{	
+	name 				=	"Staff of Combat";
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_2HD_AXE;
+	material 			=	MAT_WOOD;
+
+	value 				=	Value_Stab_GMM;
+
+	damageTotal  		= 	Damage_Stab05;
+	damagetype 			=	DAM_BLUNT;
+	range    			=  	RANGE_Stab05;		
+	
+	on_equip			=	Equip_2H_05_GMM;
+	on_unequip			=	UnEquip_2H_05_GMM;
+	
+	cond_atr[2]   		=	ATR_STRENGTH;
+	cond_value[2]  		=	Condition_Stab05_GMM;
+	visual 				=	"ItMW_MageStaff_Blades_2H_01.3DS"; 
+	effect				=	"SPELLFX_MAGESTAFF5";
+
+	description			= 	name;
+
+	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
+	TEXT[1] 			= NAME_Str_needed;				COUNT[1]	= cond_value[2];
+	TEXT[4]				= NAME_ADDON_BONUS_2H;			COUNT[4]	= Waffenbonus_11_GMM;
+//	TEXT[4]				=;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
 
 /*INSTANCE ItMW_Addon_Stab01 (C_Item)
 {	
