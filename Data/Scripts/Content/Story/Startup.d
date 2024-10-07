@@ -10,6 +10,7 @@
 // GLOBAL
 // *********
 
+
 func void STARTUP_GLOBAL()
 {
 	// wird fuer jede Welt aufgerufen (vor STARTUP_<LevelName>)

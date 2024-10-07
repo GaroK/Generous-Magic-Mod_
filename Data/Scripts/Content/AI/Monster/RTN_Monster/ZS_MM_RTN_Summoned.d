@@ -61,6 +61,7 @@ func int ZS_MM_Rtn_Summoned_Loop()
 				 Npc_ChangeAttribute (self, ATR_HITPOINTS, -self.attribute[ATR_HITPOINTS_MAX]);
 			};
 			
+			
 			Npc_SetStateTime (self, 0);
 		};
 	};
