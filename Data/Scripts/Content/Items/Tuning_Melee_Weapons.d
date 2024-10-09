@@ -22,7 +22,7 @@ const int Waffenbonus_10	    = 10;
 const int Waffenbonus_11_GMM    		= 15;
 const int Condition_Stab04_GMM			= 50;
 const int Condition_Stab05_GMM			= 30;
-const int Value_Stab_GMM				= 3000;
+const int Value_Stab_GMM				= 1800;
 // *****************************************************
 //Dolch - ItMw_1h_Vlk_Dagger
 const int Damage_VLKDolch				= 5; 

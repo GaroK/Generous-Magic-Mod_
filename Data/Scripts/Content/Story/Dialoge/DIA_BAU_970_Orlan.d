@@ -98,8 +98,8 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
 	
 	
-	CreateInvItems  (hero,ITSC_Light,2);
-	CreateInvItems  (hero,ItSc_LightHeal,1);
+	CreateInvItems  (hero,ITSC_IceLance,2);
+	CreateInvItems  (hero,ItSc_FireStorm,1);
 	CreateInvItems  (hero,ItSc_SumGobSkel,1);
 	
 	Info_ClearChoices (DIA_Orlan_Wein);

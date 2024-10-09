@@ -15,6 +15,12 @@ func void STARTUP_GLOBAL()
 {
 	// wird fuer jede Welt aufgerufen (vor STARTUP_<LevelName>)
 	Game_InitGerman();
+	
+	if(GMM_SUMMON_TIME == 0)
+{
+  GMM_SUMMON_TIME = 60;
+};
+
 };
 
 func void INIT_GLOBAL()
