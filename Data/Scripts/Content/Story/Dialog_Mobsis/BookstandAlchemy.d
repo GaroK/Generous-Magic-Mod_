@@ -38,14 +38,16 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Mana Essence"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fire Nettles, 1 Blue Elder"						);
-					Doc_PrintLine	( nDocID,  0, ""						);
+					Doc_PrintLine	( nDocID,  0, "1 Fire Nettle"						);
+					Doc_PrintLine	( nDocID,  0, "1 Forest Berry"							);
+					Doc_PrintLine	( nDocID,  0, ""							);
 					Doc_PrintLine	( nDocID,  0, "Mana Extract"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fireweeds, 1 Blue Elder"						);
-					Doc_PrintLine	( nDocID,  0, ""						);
+					Doc_PrintLine	( nDocID,  0, "1 Fireweed"						);
+					Doc_PrintLine	( nDocID,  0, "1 Blue Elder"						);
+					Doc_PrintLine	( nDocID,  0, ""							);
 					Doc_PrintLine	( nDocID,  0, "Mana Elixir"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fire Roots, 1 Meadow Knotweed"						);
-					Doc_PrintLine	( nDocID,  0, ""						);
+					Doc_PrintLine	( nDocID,  0, "1 Fire Root"						);
+					Doc_PrintLine	( nDocID,  0, "1 Meadow Knotweed"						);
 					
 					
 					
@@ -54,7 +56,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, "All work at the alchemist's bench requires a laboratory flask which is used up in the process."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a proper amount of a plant:"			);
+					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a proper mixture of plants:"			);
 					Doc_PrintLine	( nDocID,  1, "healing plants and fire plant, combined with Blue Elder for small and medium potions."		);
 					Doc_PrintLine	( nDocID,  1, "Stronger potions call for Meadow Knotweed."						);
 					Doc_PrintLines	( nDocID,  1, "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant:"						);
@@ -94,14 +96,16 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Essence of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 Healing Plants, 1 Blue Elder"						);
+					Doc_PrintLine	( nDocID,  0, "1 Healing Plants"						);
+					Doc_PrintLine	( nDocID,  0, "1 Woodland Berry"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Extract of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 Healing Herbs, 1 Blue Elder"						);
+					Doc_PrintLine	( nDocID,  0, "1 Healing Herb"						);
+					Doc_PrintLine	( nDocID,  0, "1 Blue Elder"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Elixir of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 Healing Roots, 1 Meadow Knotweed"						);
-					Doc_PrintLine	( nDocID,  0, ""						);
+					Doc_PrintLine	( nDocID,  0, "1 Healing Root"						);
+					Doc_PrintLine	( nDocID,  0, "1 Meadow Knotweed"						);
 					
 					
 					
@@ -110,7 +114,7 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, "All work at the alchemist's bench requires a laboratory flask which is used up in the process."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a proper amount of a plant:"			);
+					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a proper mixture of plants:"			);
 					Doc_PrintLine	( nDocID,  1, "healing plants and fire plant, combined with Blue Elder for small and medium potions."		);
 					Doc_PrintLine	( nDocID,  1, "Stronger potions call for Meadow Knotweed."						);
 					Doc_PrintLines	( nDocID,  1, "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant:"						);

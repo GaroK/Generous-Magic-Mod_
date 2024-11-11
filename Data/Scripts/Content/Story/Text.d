@@ -939,17 +939,18 @@ const string PRINT_NOTHINGTOGET03			= "Nothing to plunder ...";
 // StringKonstanten	für	Beten
 // *************************************
 
-const string PRINT_BlessSTR					= "Innos grants you: Strength + ";
-const string PRINT_BlessDEX					= "Innos grants you: Dexterity + ";
-const string PRINT_BlessMANA_MAX			= "Innos grants you: Mana + ";
-const string PRINT_BlessHitpoints_MAX		= "Innos grants you: Hitpoints + ";
-const string PRINT_BlessMANA				= "You are filled with mental clarity.";
-const string PRINT_BlessHitpoints			= "Innos hears you and heals you.";
-const string Print_BlessMana_Hit			= "You feel reborn.";
-const string Print_BlessNone				= "Innos thanks you for your prayer.";
-const string Print_NotEnoughGold			= "Not enough gold.";
-const string Bless_Sword					= "Consecrate Sword (5000 gold)";
-const string Bless_Sword2					= "Consecrate Sword (Tears of Innos)";
+const string PRINT_BlessSTR						= "Innos grants you: Strength + ";
+const string PRINT_BlessDEX						= "Innos grants you: Dexterity + ";
+const string PRINT_BlessMANA_MAX				= "Innos grants you: Mana + ";
+const string PRINT_BlessHitpoints_MAX			= "Innos grants you: Hitpoints + ";
+const string PRINT_BlessMANA					= "You are filled with mental clarity.";
+const string PRINT_BlessHitpoints				= "Innos hears you and heals you.";
+const string Print_BlessMana_Hit				= "You feel reborn.";
+const string Print_BlessNone					= "Innos thanks you for your prayer.";
+const string Print_NotEnoughGold				= "Not enough gold.";
+const string Bless_Sword						= "Consecrate Sword (5000 gold)";
+const string GMM_Bless_Regen					= "Consecrate Regeneration Staff (3000 gold)";
+const string Bless_Sword2						= "Consecrate Sword (Tears of Innos)";
 
 const string Pray_Paladin1					= "... Innos, extend your hand over your vassals ..." ;
 const string Pray_Paladin2					= "... bless them with your fire and grant them strength ..." ;

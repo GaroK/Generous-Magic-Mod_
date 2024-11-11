@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Mana essence (2 Fire Nettles, 1 Blue Elder)"; 
+	description		= "Mana essence (1 Fire Nettle, 1 Meadow Berry)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -373,12 +373,12 @@ FUNC INT PC_ItPo_Mana_01_Condition()
 
 FUNC VOID PC_ItPo_Mana_01_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Mana_Herb_01) >= 2)	
-	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
+	if (Npc_HasItems (hero, ItPl_Mana_Herb_01) >= 1)	
+	&& (Npc_HasItems (hero, ItPl_ForestBerry)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb)    >= 1) 
 	{
-		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_01,2);
-		Npc_RemoveInvItems (hero,ItPl_BluePlant	  ,1);
+		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_01,1);
+		Npc_RemoveInvItems (hero,ItPl_ForestBerry	  ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
 		
 		CreateInvItems 	   (hero,ItPo_Mana_01,1); 
@@ -400,7 +400,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Mana extract (2 Fireweeds, 1 Blue Elder) "; 
+	description		= "Mana extract (1 Fireweedw, 1 Blue Elder) "; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -414,11 +414,11 @@ FUNC INT PC_ItPo_Mana_02_Condition()
 
 FUNC VOID PC_ItPo_Mana_02_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Mana_Herb_02) >= 2)
+	if (Npc_HasItems (hero, ItPl_Mana_Herb_02) >= 1)
 	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb)    >= 1) 
 	{
-		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_02,2);
+		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_02,1);
 		Npc_RemoveInvItems (hero,ItPl_BluePlant	  ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
 		
@@ -440,7 +440,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Mana elixir (2 Fire roots, 1 Meadow Knotweed)"; 
+	description		= "Mana elixir (1 Fire root, 1 Meadow Knotweed)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -455,10 +455,10 @@ FUNC INT PC_ItPo_Mana_03_Condition()
 
 FUNC VOID PC_ItPo_Mana_03_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Mana_Herb_03) >= 2) 
+	if (Npc_HasItems (hero, ItPl_Mana_Herb_03) >= 1) 
 	&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	  >= 1) 
 	{
-		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_03,2);
+		Npc_RemoveInvItems (hero,ItPl_Mana_Herb_03,1);
 		Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  ,1);
 		
 		CreateInvItems	   (hero,ItPo_Mana_03,1);  
@@ -573,7 +573,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Essence of healing (2 Healing Plants, 1 Blue Elder)"; 
+	description		= "Essence of healing (1 Healing Plant, 1 Woodland Berry)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -589,12 +589,12 @@ FUNC INT PC_ItPo_Health_01_Condition()
 
 FUNC VOID PC_ItPo_Health_01_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Health_Herb_01) >= 2)
-	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
+	if (Npc_HasItems (hero, ItPl_Health_Herb_01) >= 1)
+	&& (Npc_HasItems (hero, ItPl_ForestBerry)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	 >= 1) 
 	{
-		Npc_RemoveInvItems (hero,ItPl_Health_Herb_01,2);
-		Npc_RemoveInvItems (hero,ItPl_BluePlant	    ,1);
+		Npc_RemoveInvItems (hero,ItPl_Health_Herb_01,1);
+		Npc_RemoveInvItems (hero,ItPl_ForestBerry	    ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	    ,1);
 		
 		CreateInvItem	   (hero,ItPo_Health_01);  
@@ -615,7 +615,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extract of healing (2 Healing Herbs, 1 Blue Plant)"; 
+	description		= "Extract of healing (1 Healing Herb, 1 Blue Plant)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -630,11 +630,11 @@ FUNC INT PC_ItPo_Health_02_Condition()
 
 FUNC VOID PC_ItPo_Health_02_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Health_Herb_02) >= 2)
+	if (Npc_HasItems (hero, ItPl_Health_Herb_02) >= 1)
 	&& (Npc_HasItems (hero, ItPl_BluePlant)    >= 1) 
 	//&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	 >= 1) 
 	{
-		Npc_RemoveInvItems (hero,ItPl_Health_Herb_02,2);
+		Npc_RemoveInvItems (hero,ItPl_Health_Herb_02,1);
 		Npc_RemoveInvItems (hero,ItPl_BluePlant	    ,1);
 		//Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  	,1);
 		
@@ -656,7 +656,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixir of healing (2 Healing Roots, 1 Meadow Knotweed)"; 
+	description		= "Elixir of healing (1 Healing Root, 1 Meadow Knotweed)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -670,10 +670,10 @@ FUNC INT PC_ItPo_Health_03_Condition()
 
 FUNC VOID PC_ItPo_Health_03_Info ()
 {
-	if (Npc_HasItems (hero, ItPl_Health_Herb_03) >= 2) 
+	if (Npc_HasItems (hero, ItPl_Health_Herb_03) >= 1) 
 	&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	  	>= 1) 
 	{
-		Npc_RemoveInvItems (hero,ItPl_Health_Herb_03,2);
+		Npc_RemoveInvItems (hero,ItPl_Health_Herb_03,1);
 		Npc_RemoveInvItems (hero,ItPl_Temp_Herb	  	,1);
 		
 		CreateInvItems	   (hero,ItPo_Health_03,1);  

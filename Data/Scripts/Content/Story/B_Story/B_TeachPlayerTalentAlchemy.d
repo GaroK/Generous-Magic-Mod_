@@ -31,22 +31,22 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	
 	// ------ Trank brauen lernen ------
 	if (potion == POTION_Health_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_01] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ESSENCE OF HEALING':2 Healing Plants."); };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ESSENCE OF HEALING':1 Healing Plant, 1 Forest Berry."); };
 	
 	if (potion == POTION_Health_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_02] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'EXTRACT OF HEALING':2 Healing Herbs.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'EXTRACT OF HEALING':1 Healing Herb, 1 Blue Elder.");  };
 	
 	if (potion == POTION_Health_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_03] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ELIXIR OF HEALING´:2 Healing Roots.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ELIXIR OF HEALING´:1 Healing Root, 1 Meadow Knotweed.");  };
 	
 	if (potion == POTION_Mana_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_01] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA ESSENCE': 2 Fire Nettles.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA ESSENCE': 1 Fire Nettle, 1 Meadow Berry.");  };
 	
 	if (potion == POTION_Mana_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_02] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA EXTRACT': 2 Fireweed.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA EXTRACT': 1 Fireweed, 1 Blue Elder.");  };
 	
 	if (potion == POTION_Mana_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_03] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA ELIXIR':2 Fire Roots.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA ELIXIR':1 Fire Root, 1 Meadow Knotweed.");  };
 	
 	if (potion == POTION_Speed)			{	PLAYER_TALENT_ALCHEMY[POTION_Speed] 		= TRUE;	
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'SPEED POTION': 1 Snapperweed and 1 Meadow Knotweed");  };

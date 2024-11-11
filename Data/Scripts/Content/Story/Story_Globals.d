@@ -1185,7 +1185,8 @@ var int RecueBennet_KnowsCornelius;	//Der SC hat erfahren, dass Cornelius der Ze
 var int Cornelius_ThreatenByMilSC;
 var int SCIstRichtersLakai;
 var int SCFoundMorgahard;
-const int Gold_BlessSword 	= 5000; //Soviel kostet die erste Segnung deines PalSchwertes (Hoshi: bei Änderung bitte auch in der Text.d ändern!!!!(const string Bless_Sword))
+const int Gold_BlessSword     	= 5000; //Soviel kostet die erste Segnung deines PalSchwertes (Hoshi: bei Änderung bitte auch in der Text.d ändern!!!!(const string Bless_Sword))
+const int Gold_BlessRegen_GMM   = 3000;
 const int CostForPAlSpells = 5; //Soviel kosten Pal Spells!!
 var int SalandrilMinenAnteil_MAINCounter; 
 var int SalandrilVerteilteMinenAnteil;
