@@ -909,7 +909,7 @@ instance ItRu_ChargeFireball(C_Item)
 	material					= MAT_STONE;
 
 	spell						= SPL_ChargeFireball;
-	mag_circle					= 4;
+	mag_circle					= 3;
 
 	value						= Value_Ru_ChargeFireball;
 
