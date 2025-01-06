@@ -256,7 +256,7 @@ func void DIA_Sagitta_Teach_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString ("Extract of Healing", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Sagitta_Teach_Health_02);
+		Info_AddChoice (DIA_Sagitta_Teach,B_BuildLearnString (NAME_ManaPotion1, B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Sagitta_Teach_Mana_01);
 		talente = (talente + 1);
 	};
 

@@ -746,108 +746,142 @@ func void DIA_Constantino_Mushrooms_Info()
 // *******************************************************
 //					Mushrooms Running
 // *******************************************************
-instance DIA_Constantino_MushroomsRunning(C_INFO)
+instance DIA_Constantino_MushroomsRunning (C_INFO)
 {
-	npc				= VLK_417_Constantino;
-	nr				= 2;
-	condition		= DIA_Constantino_MushroomsRunning_Condition;
-	information		= DIA_Constantino_MushroomsRunning_Info;
-	permanent		= TRUE;
-	description		= "You wanted mushrooms ...";
+	npc         = VLK_417_Constantino;
+	nr          = 2;
+	condition   = DIA_Constantino_MushroomsRunning_Condition;
+	information = DIA_Constantino_MushroomsRunning_Info;
+	permanent   = TRUE;
+	description = "You wanted mushrooms ...";
 };
-
-func int DIA_Constantino_MushroomsRunning_Condition()
-{
+FUNC INT DIA_Constantino_MushroomsRunning_Condition()
+{	
 	if (MIS_Constantino_Mushrooms == LOG_RUNNING)
 	{
 		return TRUE;
 	};
 };
-
-func void DIA_Constantino_MushroomsRunning_Info()
+FUNC VOID DIA_Constantino_MushroomsRunning_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_15_00"); //You wanted mushrooms ...
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_15_00"); //You wanted mushrooms ...
 
-	Info_ClearChoices(DIA_Constantino_MushroomsRunning);
-	Info_AddChoice(DIA_Constantino_MushroomsRunning, "I'm going to bring you some ...", DIA_Constantino_MushroomsRunning_Later);
+	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
+	Info_AddChoice (DIA_Constantino_MushroomsRunning, "I'm going to bring you some ...", DIA_Constantino_MushroomsRunning_Later);
 	if (Player_KnowsDunkelpilzBonus == FALSE)
 	{
-		Info_AddChoice(DIA_Constantino_MushroomsRunning, "Why are those things so important?", DIA_Constantino_MushroomsRunning_Why);
+		Info_AddChoice (DIA_Constantino_MushroomsRunning, "Why are those things so important?", DIA_Constantino_MushroomsRunning_Why);
 	};
-
-	if ((Npc_HasItems(other, ItPl_Mushroom_01) > 0)
-	|| (Npc_HasItems(other, ItPl_Mushroom_02) > 0))
+	if (Npc_HasItems (other, ItPl_Mushroom_01) > 0)
+	|| (Npc_HasItems (other, ItPl_Mushroom_02) > 0)
 	{
-		Info_AddChoice(DIA_Constantino_MushroomsRunning, "I've got a few ...", DIA_Constantino_MushroomsRunning_Sell);
+		Info_AddChoice (DIA_Constantino_MushroomsRunning, "I've got a few ...", DIA_Constantino_MushroomsRunning_Sell);
 	};
+};
+
+func void DIA_Constantino_MushroomsRunning_Why()
+{
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Why_15_00"); //Why are those things so important?
+	//THIS IF IS PROBABLY USELESS, SINCE WE CAN GET HERE ONLY AFTER 50 OR MORE MUSHES (THIS CONDITION IS ALWAYS FALSE)
+	// if (Constantino_DunkelpilzCounter == 0)
+	// {
+		// AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_01"); //Even though you are my apprentice, I won't tell you everything.
+	// }
+	//THIS SHOULD ALWAYS HAPPEN SINCE WE GET HERE ONLY AFTER 50 OR MORE MUSHES
+	// if (Constantino_DunkelpilzCounter >= 50){
+	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_02"); //All right - I shall tell you, then. But you must keep it to yourself.
+	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_03"); //Murky mushrooms are full of magic energy. And every time you eat one, a little bit of this energy will accumulate in your body.
+	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_04"); //Once you have eaten a sufficient amount of these mushrooms, your magic energy will increase ...
+	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_05"); //If I had told you that earlier, you would have gobbled up all the mushrooms yourself, wouldn't you?
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Why_15_06"); //(sighs) Oh, man!
+
+	Player_KnowsDunkelpilzBonus = TRUE;
+	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
+	// };
+	//THIS IF IS PROBABLY USELESS, SINCE WE CAN GET HERE ONLY AFTER 50 OR MORE MUSHES (THIS CONDITION IS ALWAYS FALSE)
+	// else // 1 - 49
+	// {
+		// AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_07"); //You have already asked me that. (mischievously) Who knows, maybe some day I'll actually tell you...
+	// };
 };
 
 func void DIA_Constantino_MushroomsRunning_Sell()
 {
 	var int Dunkelpilz_dabei; Dunkelpilz_dabei = FALSE;
-
-	if (Npc_HasItems(other, ItPl_Mushroom_01) > 0)
+	var int MushStacks;
+	
+	if (Npc_HasItems(other,ItPl_Mushroom_01) > 0)
 	{
-		AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_00"); //I've got a few murky mushrooms here ...
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Sell_10_01"); //Ah! Those are the best! Well done! Here's your gold!
+		AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_00"); //I've got a few murky mushrooms here ...
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Sell_10_01"); //Ah! Those are the best! Well done! Here's your gold!
 		Dunkelpilz_dabei = TRUE;
-
-		Constantino_DunkelpilzCounter = Constantino_DunkelpilzCounter + Npc_HasItems(other, ItPl_Mushroom_01);
-
-		B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItPl_Mushroom_01) * Value_Mushroom_01));
-		B_GiveInvItems(other, self, ItPl_Mushroom_01, Npc_HasItems(other, ItPl_Mushroom_01));
+		
+		Constantino_DunkelpilzCounter = Constantino_DunkelpilzCounter + Npc_HasItems(other,ItPl_Mushroom_01);
+				
+		B_GiveInvItems (self, other, itmi_gold, (Npc_HasItems(other,ItPl_Mushroom_01) * Value_Mushroom_01) );
+		
+		// ************************************************************
+		// Example: If we give 107 dark mushrooms, MushStacks will 
+		// be 2 (107 / 50 = 2) with 7 dark mushrooms remaining which 
+		// will be given to Constantino_DunkelpilzCounter for future 
+		// calculations
+		// ************************************************************
+		
+		//We check if we gave 50 or more dark mushrooms
+		if(Constantino_DunkelpilzCounter >= 50){
+			//Calculate how many stacks of 50 dark mushrooms we have
+			MushStacks = Constantino_DunkelpilzCounter / 50;
+			//Calculate the remaining dark mushrooms and set them to Constantino_DunkelpilzCounter
+			Constantino_DunkelpilzCounter = Constantino_DunkelpilzCounter - (50*MushStacks);
+			//We give X potions to player
+			B_GiveInvItems (self, other, ItPo_Perm_Mana,MushStacks);
+			//We remove all dark mushrooms
+			B_GiveInvItems (other, self, ItPl_Mushroom_01, Npc_HasItems (other, ItPl_Mushroom_01));
+			//and if it is the first time, we also saw why they are important (only once thanks to Player_KnowsDunkelpilzBonus variable)
+			if(!Player_KnowsDunkelpilzBonus){
+				//Actual call to the "Why are they so important" dialogue
+				DIA_Constantino_MushroomsRunning_Why();
+			};
+		}
+		//If we have less than 50 dark mushrooms, just give them all
+		else{
+			B_GiveInvItems (other, self, ItPl_Mushroom_01, Npc_HasItems (other, ItPl_Mushroom_01));
+		};
 	};
-
-	if (Npc_HasItems(other, ItPl_Mushroom_02) > 0)
+	
+	if (Npc_HasItems(other,ItPl_Mushroom_02) > 0)
 	{
 		if (Dunkelpilz_dabei == TRUE)
 		{
-			AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_02"); //And here are some of the others ...
+			AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_02"); //And here are some of the others ...
 		}
 		else
 		{
-			AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_03"); //I've got a few mushrooms here!
+			AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_03"); //I've got a few mushrooms here!
 		};
-
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Sell_10_04"); //These are not quite as good as murky mushrooms, but I'll take them anyway.
-
-		B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItPl_Mushroom_02) * Value_Mushroom_02));
-		B_GiveInvItems(other, self, ItPl_Mushroom_02, Npc_HasItems(other, ItPl_Mushroom_02));
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Sell_10_04"); //These are not quite as good as murky mushrooms, but I'll take them anyway.
+		
+		B_GiveInvItems (self, other, itmi_gold, (Npc_HasItems(other,ItPl_Mushroom_02) * Value_Mushroom_02) );
+		B_GiveInvItems (other, self, ItPl_Mushroom_02, Npc_HasItems (other, ItPl_Mushroom_02));
+		
+		   var int shroom1;
+				shroom1 = npc_hasitems(hero, ItPl_Mushroom_01);
+				Npc_RemoveInvItems(self, ItPl_Mushroom_01, shroom1);
+				
+			var int shroom2;
+				shroom1 = npc_hasitems(hero, ItPl_Mushroom_02);
+				Npc_RemoveInvItems(self, ItPl_Mushroom_02, shroom2);
 	};
-
-	Info_ClearChoices(DIA_Constantino_MushroomsRunning);
-};
-
-func void DIA_Constantino_MushroomsRunning_Why()
-{
-	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Why_15_00"); //Why are those things so important?
-	if (Constantino_DunkelpilzCounter == 0)
-	{
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_01"); //Even though you are my apprentice, I won't tell you everything.
-	}
-	else if (Constantino_DunkelpilzCounter >= 50)
-	{
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_02"); //All right - I shall tell you, then. But you must keep it to yourself.
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_03"); //Murky mushrooms are full of magic energy. And every time you eat one, a little bit of this energy will accumulate in your body.
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_04"); //Once you have eaten a sufficient amount of these mushrooms, your magic energy will increase ...
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_05"); //If I had told you that earlier, you would have gobbled up all the mushrooms yourself, wouldn't you?
-		AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Why_15_06"); //(sighs) Oh, man!
-
-		Player_KnowsDunkelpilzBonus = TRUE;
-		Info_ClearChoices(DIA_Constantino_MushroomsRunning);
-	}
-	else // 1 - 49
-	{
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_07"); //You have already asked me that. (mischievously) Who knows, maybe some day I'll actually tell you...
-	};
+	
+	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
 };
 
 func void DIA_Constantino_MushroomsRunning_Later()
 {
-	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Later_15_00"); //I'm going to bring you some ...
-	AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Later_10_01"); //Great! Bring me as many as you can find ...
-
-	Info_ClearChoices(DIA_Constantino_MushroomsRunning);
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Later_15_00"); //I'm going to bring you some ...
+	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Later_10_01"); //Great! Bring me as many as you can find ...
+	
+	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
 };
 
 // *******************************************************
