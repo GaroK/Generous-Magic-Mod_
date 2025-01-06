@@ -15,7 +15,7 @@
 //==========================\\
 //==========================\\
 
-INSTANCE 		GAMESTART					(C_SFX_DEF)		{file="nosound.wav";							vol=0;						};
+INSTANCE 		GAMESTART					(C_SFX_DEF)		{file="gamestart.wav";							vol=127;						};
 INSTANCE 		NEWGAME						(C_SFX_DEF)		{file="nosound.wav";							vol=0;							};
 INSTANCE 		OCEAN_WARN					(C_SFX_DEF)		{file="ocean_warn.wav";							vol=127;						};
 INSTANCE 		OPEN_PORTAL					(C_SFX_DEF)		{file="openportal.wav";							vol=127;						};
