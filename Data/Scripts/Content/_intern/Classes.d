@@ -232,3 +232,14 @@ instance item(C_Item);
 
 // Und der Player immer als globale Instanz
 instance hero(C_NPC);
+
+
+class C_Trigger
+{
+    var int delay;
+    var int enabled;
+    var int aivariables[16];
+};
+
+instance FirstTrigger, SelfTrigger(C_Trigger);
+

@@ -2,13 +2,6 @@
 // =====================================
 //             REGEN CODE
 // =====================================
-class C_Trigger
-{
-    var int delay;
-    var int enabled;
-    var int aivariables[16];
-};
-
 var C_Trigger mana_regen_controller;
 
 

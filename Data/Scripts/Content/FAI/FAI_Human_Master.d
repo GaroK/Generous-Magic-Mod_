@@ -5,8 +5,8 @@
 /*
 MOVE_RUN Gegner in meinem Fokus + steht wer dazwischen?(G)
 MOVE_RUNBACK Gegner in meinem Fokus
-MOVE_JUMPBACK löst t_ParadeJumpB aus(Attacke wird nur pariert, wenn man schnell genug aus der W - Reichweite kommt !
-MOVE_TURN Immer bis Gegner im Fokus(also nie durch neue Aktion unterbrochen, höchstens durch Gegner - Attacke)
+MOVE_JUMPBACK lÃ¶st t_ParadeJumpB aus(Attacke wird nur pariert, wenn man schnell genug aus der W - Reichweite kommt !
+MOVE_TURN Immer bis Gegner im Fokus(also nie durch neue Aktion unterbrochen, hÃ¶chstens durch Gegner - Attacke)
 MOVE_STRAFE(Richtung wird vom Programm entschieden)
 
 MOVE_ATTACK in ComboZone = Combo / im Rennen = Sturmattacke
@@ -55,7 +55,7 @@ instance FA_MY_W_COMBO_4(C_FightAI)
 // ------ Ich renne auf den Gegner zu ------
 instance FA_MY_W_RUNTO_4(C_FightAI)
 {
-	// move[0] = MOVE_WAIT; // --- Wait sorgt für besseres Parade-Fenster ---
+	// move[0] = MOVE_WAIT; // --- Wait sorgt fÃ¼r besseres Parade-Fenster ---
 	move[0] = MOVE_TURN; // --- STANDARDEINTRAG (Stehenbleiben) ---
 };
 
@@ -70,7 +70,7 @@ instance FA_MY_W_FOCUS_4(C_FightAI)
 {
 	move[0] = MOVE_FRONTATTACK;
 	move[1] = MOVE_ATTACK;
-	move[2] = MOVE_WAIT; // --- Wait sorgt für besseres Parade-Fenster ---
+	move[2] = MOVE_WAIT; // --- Wait sorgt fÃ¼r besseres Parade-Fenster ---
 };
 
 // ------- Ich habe Gegner NICHT im Fokus -------
@@ -118,14 +118,14 @@ instance FA_MY_FK_FOCUS_4(C_FightAI)
 	move[0] = MOVE_RUN; // --- STANDARDEINTRAG ---
 };
 
-// ------- Ich habe Gegner NICHT im Fokus (gilt auch für G-Distanz!) -------
+// ------- Ich habe Gegner NICHT im Fokus (gilt auch fÃ¼r G-Distanz!) -------
 instance FA_MY_G_FK_NOFOCUS_4(C_FightAI)
 {
 	move[0] = MOVE_TURN; // --- STANDARDEINTRAG ---
 };
 
 // ***********************************
-// FAI für Fernkampf
+// FAI fÃ¼r Fernkampf
 // ---------------------------
 // (wird bei jeder Entfernung benutzt)
 // ***********************************
@@ -143,7 +143,7 @@ instance FA_MY_FK_NOFOCUS_FAR_4(C_FightAI)
 };
 
 // ***********************************
-// FAI für Magie
+// FAI fÃ¼r Magie
 // ---------------------------
 // (wird bei jeder Entfernung benutzt)
 // ***********************************

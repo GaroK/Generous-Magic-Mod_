@@ -2,11 +2,11 @@
 // Kampf AI Klasse und Konstanten
 // *******************************
 
-// Reaktionen von NSCs können sein :
+// Reaktionen von NSCs kÃ¶nnen sein :
 const int MOVE_RUN = 1; // Gegner in meinem Fokus + steht wer dazwischen? (G)
 const int MOVE_RUNBACK = 2; // Gegner in meinem Fokus
 const int MOVE_JUMPBACK = 3;
-const int MOVE_TURN = 4; // Immer bis Gegner im Fokus (also nie durch neue Aktion unterbrochen, höchstens durch Gegner-Attacke)
+const int MOVE_TURN = 4; // Immer bis Gegner im Fokus (also nie durch neue Aktion unterbrochen, hÃ¶chstens durch Gegner-Attacke)
 const int MOVE_STRAFE = 5; // (Richtung wird vom Programm entschieden)
 const int MOVE_ATTACK = 6; // in ComboZone = Combo / im Rennen = Sturmattacke?
 const int MOVE_SIDEATTACK = 7;
@@ -23,7 +23,7 @@ const int MOVE_WAIT_EXT = 24; // Achtung: Muss 24 sein, da im Programm noch eini
 
 const int MAX_MOVE = 6; // FightMove-Variationen pro FAI-Funktion
 
-const int MAX_FIGHTAI = 50; // Anzahl vorhandener Fight-AIs // Konstante NICHT redundant im Programmcode, kann hier beliebig verändert werden
+const int MAX_FIGHTAI = 50; // Anzahl vorhandener Fight-AIs // Konstante NICHT redundant im Programmcode, kann hier beliebig verÃ¤ndert werden
 
 // ******
 // Klasse
