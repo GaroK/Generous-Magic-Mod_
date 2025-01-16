@@ -403,7 +403,7 @@ if (spellType == SPL_EnergyBall)
 		return COLL_DOEVERYTHING;
 	};
 
-            // ----- Water_GMM -----
+/*            // ----- Water_GMM -----
 	if ((spellType == SPL_Zap)
 	|| (spellTYpe == SPL_ChargeZap)
 	|| (spelltype == SPL_LightningFlash))
@@ -418,7 +418,7 @@ if (spellType == SPL_EnergyBall)
 		};
 		return COLL_DOEVERYTHING;
 	};
-
+*/
 
 // ----- Eis -----
 
