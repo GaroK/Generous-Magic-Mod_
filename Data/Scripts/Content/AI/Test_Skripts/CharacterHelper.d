@@ -603,6 +603,7 @@ func void CH_NOV()
 	Npc_SetTrueGuild(other, GIL_NOV);
 	CreateInvItem(hero, ITAR_NOV_L);
 	AI_EquipArmor(hero, ITAR_NOV_L);
+	Mdl_ApplyOverlayMDS(other, "Humans_Mage.mds");
 };
 
 func void CH_KDF()
@@ -613,6 +614,8 @@ func void CH_KDF()
 	Npc_SetTrueGuild(other, GIL_KDF);
 	CreateInvItem(hero, ITAR_KDF_L);
 	AI_EquipArmor(hero, ITAR_KDF_L);
+	Mdl_ApplyOverlayMDS(other, "Humans_Mage.mds");
+
 };
 
 func void CH_SLD()

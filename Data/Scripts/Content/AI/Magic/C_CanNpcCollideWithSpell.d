@@ -403,6 +403,23 @@ if (spellType == SPL_EnergyBall)
 		return COLL_DOEVERYTHING;
 	};
 
+            // ----- Water_GMM -----
+	if ((spellType == SPL_Zap)
+	|| (spellTYpe == SPL_ChargeZap)
+	|| (spelltype == SPL_LightningFlash))
+	{
+		// 
+		if ((C_NpcIsDown(self))
+		|| (Npc_IsInState(self, ZS_MAGICWET))
+		|| (C_BodyStateContains(self, BS_SWIM))	
+		|| (C_BodyStateContains(self, BS_DIVE)))
+		{
+			return COLL_APPLYDOUBLEDAMAGE;
+		};
+		return COLL_DOEVERYTHING;
+	};
+
+
 // ----- Eis -----
 
 	if ((spellType == SPL_IceCube)

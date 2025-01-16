@@ -974,7 +974,7 @@ instance ItRu_Fear(C_Item)
 	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_FEAR;
 	text[2]						= NAME_Sec_Duration;							count[2] = SPL_TIME_Fear;
 	text[3]						= "";											count[3] = 0;
-	TEXT	[4]			=	GMM_Fear_Description;											count[4] = 0;
+	TEXT[4]						= GMM_Fear_Description;							count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
