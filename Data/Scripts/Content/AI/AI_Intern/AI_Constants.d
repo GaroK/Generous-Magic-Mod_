@@ -332,6 +332,10 @@
 	const int REAL_TALENT_CROSSBOW						= 87;
 
 	const int AIV_SpellLevel							= 88;
+	
+	
+// ------ GMM -------
+	const int AIV_StateWet								= 89;
 
 // ***************************************************
 // Globalvariablen fÃƒÂ¼r Petzen/Absolution/News - System
