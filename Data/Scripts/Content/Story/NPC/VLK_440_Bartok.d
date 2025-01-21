@@ -32,7 +32,7 @@ instance VLK_440_Bartok(Npc_Default)
 	CreateInvItems(self, ItPo_Health_03, 5);
 
 	// -------- equipped weapons --------
-	EquipItem(self, ItRw_Bow_M_03);
+//	EquipItem(self, ItRw_Bow_M_03);
 	EquipItem(self, ItMW_Addon_Hacker_1h_01);
 
 	// -------- daily routine --------
