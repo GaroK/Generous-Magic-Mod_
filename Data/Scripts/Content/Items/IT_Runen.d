@@ -1371,7 +1371,7 @@ instance ItRu_ArmyOfDarkness(C_Item)
 	description					= NAME_SPL_ArmyOfDarkness;
 	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
 	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_ARMYOFDARKNESS;
-	text[2]						= "";											count[2] = 0;
+	text[2]						= NAME_Addon_NeedsAllMana;						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;

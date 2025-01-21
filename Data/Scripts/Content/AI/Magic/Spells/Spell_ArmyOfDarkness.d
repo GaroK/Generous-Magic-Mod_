@@ -59,17 +59,24 @@ func void Spell_Cast_ArmyOfDarkness(var int spellLevel)
 	}
 	else
 	{
-		self.attribute[ATR_MANA] = self.attribute[ATR_MANA] - C_CheckManaCost(self,SPL_Cost_ArmyOfDarkness);
+		self.attribute[ATR_MANA] = 0; // kostet alles, mindestens 250
+//		self.attribute[ATR_MANA] = self.attribute[ATR_MANA] - C_CheckManaCost(self,SPL_Cost_ArmyOfDarkness);
 	};
+	
+	
 
 	if (Npc_IsPlayer(self))
 	{
-		Wld_SpawnNpcRange(self, Summoned_Skeleton, 6, 800);
+		Wld_SpawnNpcRange(self, Summoned_Skeleton, 4, 800);
+		Wld_SpawnNpcRange(self, Summoned_Gobbo_Skeleton, 3, 800);
+		Wld_SpawnNpcRange(self, Summoned_Zombie, 1, 800);
+		
 	}
 	else
 	{
 		Wld_SpawnNpcRange(self, Skeleton, 6, 800);
 	};
+	
 
 	self.aivar[AIV_SelectSpell] += 1;
 };

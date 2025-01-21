@@ -59,5 +59,5 @@ func void B_RaiseAttribute(var C_Npc oth, var int attrib, var int points)
 		PrintScreen(concatText, -1, -1, FONT_SCREEN, 2);
 	};
 
-	B_RaiseRealAttributeLearnCounter(oth, attrib, points);
+//	B_RaiseRealAttributeLearnCounter(oth, attrib, points);
 };

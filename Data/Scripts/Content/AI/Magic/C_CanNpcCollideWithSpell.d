@@ -67,7 +67,6 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 			return COLL_APPLYDOUBLEDAMAGE;
 		};
 		
-	
 		return COLL_DOEVERYTHING;	
 	};
 
