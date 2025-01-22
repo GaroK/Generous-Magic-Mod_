@@ -801,7 +801,7 @@ func void Use_Astronomy()
 {
 	if (Astronomy_once == FALSE)
 	{
-		B_RaiseAttribute(self, ATR_MANA_MAX, 2);
+		B_RaiseAttribute_Bonus_Independent(self, ATR_MANA_MAX, 2);
 		Print(PRINT_ReadAstronomy);
 		Astronomy_once = TRUE;
 	};

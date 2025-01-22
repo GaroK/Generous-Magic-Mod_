@@ -151,7 +151,7 @@ func void UseLouHammer()
 {
 	if (Hammer_Once == FALSE)
 	{
-		B_RaiseAttribute(self, ATR_MANA_MAX, Mana_LousHammer);
+		B_RaiseAttribute_Bonus_Independent(self, ATR_MANA_MAX, Mana_LousHammer);
 		Hammer_Once = TRUE;
 	};
 };
@@ -288,7 +288,7 @@ instance ItFo_Addon_FireStew(C_Item)
 
 func void Use_FireStew()
 {
-	B_RaiseAttribute(self, ATR_STRENGTH, STR_FireStew);
+	B_RaiseAttribute_Bonus_Independent(self, ATR_STRENGTH, STR_FireStew);
 	Npc_ChangeAttribute(self, ATR_HITPOINTS_MAX, HP_FireStew);
 
 	PrintScreen(PRINT_STR_HP_BONUS, -1, 34, FONT_ScreenSmall, 2);
@@ -326,6 +326,6 @@ func void Use_MeatSoup()
 	var string ConcatText;
 	ConcatText = ConcatStrings(NAME_Bonus_Str, IntToString(STR_MeatSoup));
 
-	B_RaiseAttribute(self, ATR_STRENGTH, STR_MeatSoup);
+	B_RaiseAttribute_Bonus_Independent(self, ATR_STRENGTH, STR_MeatSoup);
 	PrintScreen(ConcatText, -1, 34, FONT_ScreenSmall, 2);
 };

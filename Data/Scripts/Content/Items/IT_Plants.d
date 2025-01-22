@@ -325,7 +325,7 @@ instance ItPl_Dex_Herb_01(C_Item)
 
 func void USE_Dex_Herb_01()
 {
-	B_RaiseAttribute(self, ATR_DEXTERITY, 1);
+	B_RaiseAttribute_Bonus_Independent(self, ATR_DEXTERITY, 1);
 };
 
 /******************************************************************************************/
@@ -355,7 +355,7 @@ instance ItPl_Strength_Herb_01(C_Item)
 
 func void USE_Strength_Herb_01()
 {
-	B_RaiseAttribute(self, ATR_STRENGTH, 1);
+	B_RaiseAttribute_Bonus_Independent(self, ATR_STRENGTH, 1);
 };
 
 /******************************************************************************************/
@@ -423,7 +423,7 @@ func void Use_Mushroom_01()
 
 		if (Dunkelpilz_Bonus == 50)
 		{
-			B_RaiseAttribute(self, ATR_MANA_MAX, 5);
+			B_RaiseAttribute_Bonus_Independent(self, ATR_MANA_MAX, 5);
 			Npc_ChangeAttribute(self, ATR_MANA, 5);
 			Snd_Play("LevelUp");
 			Dunkelpilz_Bonus = 0;
