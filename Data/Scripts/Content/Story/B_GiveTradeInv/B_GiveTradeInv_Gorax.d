@@ -35,11 +35,11 @@ func void B_GiveTradeInv_Gorax(var C_Npc slf)
 		//CreateInvItems 	 (slf, ItMW_Addon_Stab01, 1);
 		//CreateInvItems 	 (slf, ItMW_Addon_Stab02, 1);
 		//CreateInvItems 	 (slf, ItMW_Addon_Stab04, 1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_01_Mana, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_02_Regen, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_03_Eff, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_04_Summon, 	1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_05_Combat, 	1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_01_Mana_V0, 		1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_02_Regen_V0, 		1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_03_Eff_V0, 	1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_04_Summon_V0, 	1);
+//		CreateInvItems   (slf, ItMW_GMM_Stab_05_Combat, 	1);
 		
 
 		CreateInvItems(slf, ItRi_Mana_01, 1);

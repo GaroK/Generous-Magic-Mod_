@@ -11,7 +11,6 @@ const int T_LOW = 60;
 
 
 var int GMM_Summon_Time;
-var int heroHasEquippedSpecialStaff;
 
 //**************
 //	ADDON

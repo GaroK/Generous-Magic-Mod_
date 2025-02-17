@@ -12,11 +12,11 @@ func void B_GiveTradeInv_Addon_Cronos_ADW(var C_Npc slf)
 		
 		//CreateInvItems   (slf, ItMW_Addon_Stab03, 		1);
 		//CreateInvItems   (slf, ItMW_Addon_Stab05, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_01_Mana, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_02_Regen, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_03_Eff, 		1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_04_Summon, 	1);
-		CreateInvItems   (slf, ItMW_GMM_Stab_05_Combat, 	1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_01_Mana_V0, 		1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_02_Regen_V0, 		1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_03_Eff_V0, 		1);
+		CreateInvItems   (slf, ItMW_GMM_Stab_04_Summon_V0, 	1);
+	//	CreateInvItems   (slf, ItMW_GMM_Stab_05_Combat, 	1);
 
 		CreateInvItems(slf, ItMi_Sulfur, 2);
 		CreateInvItems(slf, ItMi_Quartz, 2);
