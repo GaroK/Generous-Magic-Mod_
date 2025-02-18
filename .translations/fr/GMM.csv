@@ -41,7 +41,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:22","Wand of Rejuvenation","Sceptre de méditation","","False","GMM_Name_Regen_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:1","Summoner's Wand","Sceptre d'invocateur","","False","GMM_Name_Summon_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:1","Wand of Efficiency","Sceptre d'efficacité","","False","GMM_Name_Efficiency_Wand","",""
-"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:2","Spells cost 35% mana less to cast.","Coût de lancement de sorts est réduit de 30%.","","False","GMM_Desc_Efficiency_Wand_V1","",""
+"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:2","Spells cost 35% mana less to cast.","Coût de lancement de sorts est réduit de 35%.","","False","GMM_Desc_Efficiency_Wand_V1","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:2","Extends summon duration to 3 minutes.","Prolonge la durée des créatures invoquées à 3 minutes.","","False","GMM_Desc_Summon_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Améliore le sceptre","","False","GMM_Bless_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:8","Staff is now active!","Sceptre activé !","","False","GMM_Staff_Activated","",""
