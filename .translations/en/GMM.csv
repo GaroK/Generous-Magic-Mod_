@@ -5,6 +5,7 @@
 "Data/Scripts/Content/Story/Text.d:766","Stops enemy attacks and makes them flee.","Stops enemy attacks and makes them flee.","","","GMM_Fear_Description","",""
 "Data/Scripts/Content/Story/Text.d:767","Steals life energy from human targets.","Steals life energy from human targets.","","","GMM_SuckEnergy_Description","",""
 "Data/Scripts/Content/Story/Text.d:768","Temporarily incapacitates human target.","Temporarily incapacitates human target.","","","GMM_Swarm_Description","",""
+"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:373","Mana essence (2 fire nettles, 1 meadow knotweed)","Mana essence (2 fire nettles, 1 meadow knotweed)","","","PC_ItPo_Mana_01.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:416","Mana extract (2 Fireweeds, 1 Blue Elder) ","Mana extract (2 Fireweeds, 1 Blue Elder)","","False","PC_ItPo_Mana_02.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:459","Mana elixir (2 Fire Roots, 1 Meadow Knotweed)","Mana elixir (2 Fire Roots, 1 Meadow Knotweed)","","","PC_ItPo_Mana_03.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:500","Mana potion (3 Mana Essences, 1 Meadow Knotweed)","Full Mana (3 Mana Essences, 1 Meadow Knotweed)","","False","PC_ItPo_Mana_04.description","",""
