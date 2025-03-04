@@ -51,7 +51,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:10","I need to pray first!","I muss zunächst beten!","","False","GMM_Staff_Inactive_PrayFirst","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:11","Activate Staff","Stab aktivieren","","False","GMM_Activate_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:4","Spawns additional creature.","Beschwört eine weitere Kreatur.","","False","GMM_Desc_Summon_Wand_V3","",""
-"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:373","Mana essence (2 fire nettles, 1 meadow knotweed)","Mana Essenz (2 Feuernesseln, 1 Feldknöterich)","","False","PC_ItPo_Mana_01.description","",""
+"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:373","Mana essence (2 fire nettles, 1 meadow knotweed)","Mana Essenz (2 Feuernesseln, 1 Waldbeere)","","True","PC_ItPo_Mana_01.description","",""
 "Data/Scripts/Content/Items/IT_GMM_Mana_Wand.d:2","Magic Wand","Magischer Zauberstab","","False","GMM_Name_Mana_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:23","Magic Circle too low.","Magiekreis zu niedrig.","","False","GMM_MagicCircleLow","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:3","Spawns additional Goblin.","Beschwört einen weiteren Goblin.","","False","GMM_Desc_Summon_Wand_V2","",""
