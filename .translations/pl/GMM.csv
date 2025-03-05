@@ -40,7 +40,7 @@
 "Data/Scripts/Content/Story/Text.d:765","Temporarily incapacitates target.","Chwilowo unieszkodliwia cel.","","False","GMM_Temp_stun","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:2","Spells cost 35% mana less to cast.","Koszt rzucania czarów zmniejszony o 35%.","","False","GMM_Desc_Efficiency_Wand_V1","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:3","Spells cost 40% mana less to cast.","Koszt rzucania czarów zmniejszony o 40%.","","False","GMM_Desc_Efficiency_Wand_V2","",""
-"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Ulepsz Kostur","","False","GMM_Bless_Wand","",""
+"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Ulepsz Kostur (1000 szt. złota)","","False","GMM_Bless_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:8","Staff is now active!","Kostur aktywowany!","","False","GMM_Staff_Activated","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:9","Staff inactive","Kostur nieaktywny","","False","GMM_Staff_Inactive","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:10","I need to pray first!","Najpierw muszę się pomodlić!","","False","GMM_Staff_Inactive_PrayFirst","",""
