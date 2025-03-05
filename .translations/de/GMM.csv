@@ -45,7 +45,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:1","Summoner's Wand","Zauberstab des Beschwörers","","False","GMM_Name_Summon_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:2","Extends summon duration to 3 minutes.","Verlängert Beschwörungszeiten auf 3 Minuten.","","False","GMM_Desc_Summon_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:1","Wand of Efficiency","Zauberstab der Effizienz","","False","GMM_Name_Efficiency_Wand","",""
-"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Stab verbessern","","False","GMM_Bless_Wand","",""
+"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Stab verbessern (1000 Goldstücke)","","False","GMM_Bless_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:8","Staff is now active!","Stab ist nun aktiv!","","False","GMM_Staff_Activated","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:9","Staff inactive","Stab inaktiv","","False","GMM_Staff_Inactive","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:10","I need to pray first!","I muss zunächst beten!","","False","GMM_Staff_Inactive_PrayFirst","",""
