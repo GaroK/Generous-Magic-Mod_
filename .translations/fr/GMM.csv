@@ -43,7 +43,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:1","Wand of Efficiency","Sceptre d'efficacité","","False","GMM_Name_Efficiency_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:2","Spells cost 35% mana less to cast.","Coût de lancement de sorts est réduit de 35%.","","False","GMM_Desc_Efficiency_Wand_V1","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:2","Extends summon duration to 3 minutes.","Prolonge la durée des créatures invoquées à 3 minutes.","","False","GMM_Desc_Summon_Wand","",""
-"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Améliore le sceptre","","False","GMM_Bless_Wand","",""
+"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Améliore le sceptre (1000 pièces d'or)","","False","GMM_Bless_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:8","Staff is now active!","Sceptre activé !","","False","GMM_Staff_Activated","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:9","Staff inactive","Sceptre inactif","","False","GMM_Staff_Inactive","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:10","I need to pray first!","Je dois d'abord prier!","","False","GMM_Staff_Inactive_PrayFirst","",""
