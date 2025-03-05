@@ -46,7 +46,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:22","Wand of Rejuvenation","Bagheta Intineririi","","False","GMM_Name_Regen_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:1","Summoner's Wand","Bagheta Invocatorului","","False","GMM_Name_Summon_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:2","Extends summon duration to 3 minutes.","Prelungeste durata invocarilor la 3 minute.","","False","GMM_Desc_Summon_Wand","",""
-"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Imbunatateste Bagheta","","False","GMM_Bless_Wand","",""
+"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Imbunatateste Bagheta (1000 de aur)","","False","GMM_Bless_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:8","Staff is now active!","Bagheta este acum activa!","","False","GMM_Staff_Activated","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:9","Staff inactive","Bagheta inactiva","","False","GMM_Staff_Inactive","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:10","I need to pray first!","Trebuie sa ma rog prima data!","","False","GMM_Staff_Inactive_PrayFirst","",""
