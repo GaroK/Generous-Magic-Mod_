@@ -46,7 +46,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:22","Wand of Rejuvenation","Посох восстановления","","False","GMM_Name_Regen_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:1","Summoner's Wand","Посох призывателя","","False","GMM_Name_Summon_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:2","Extends summon duration to 3 minutes.","Продляет время призыва до 3 минут.","","False","GMM_Desc_Summon_Wand","",""
-"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Улучшить посох","","False","GMM_Bless_Wand","",""
+"Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:7","Improve Staff","Улучшить посох (1000 золотых)","","False","GMM_Bless_Wand","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:8","Staff is now active!","Посох активен!","","False","GMM_Staff_Activated","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:9","Staff inactive","Посох не активен","","False","GMM_Staff_Inactive","",""
 "Data/Scripts/Content/Items/IT_GMM_Efficiency_Wand.d:10","I need to pray first!","Сначала я должен помолиться!","","False","GMM_Staff_Inactive_PrayFirst","",""
