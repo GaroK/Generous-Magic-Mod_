@@ -370,7 +370,7 @@ instance PC_ItPo_Mana_01(C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Mana essence (2 fire nettles, 1 meadow knotweed)";
+	description		= "Mana essence (2 fire nettles, 1 forest berry)";
 };
 
 func int PC_ItPo_Mana_01_Condition()

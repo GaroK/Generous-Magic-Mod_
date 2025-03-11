@@ -4,7 +4,7 @@ const string GMM_Desc_Efficiency_Wand_V2 = "Spells cost 40% mana less to cast.";
 const string GMM_Desc_Efficiency_Wand_V3 = "Spells cost 45% mana less to cast.";
 
 
-const string GMM_Bless_Wand							= "Improve Staff";
+const string GMM_Bless_Wand							= "Improve Staff (1000 Gold)";
 const string GMM_Staff_Activated					= "Staff is now active!";
 const string GMM_Staff_Inactive						= "Staff inactive";
 const string GMM_Staff_Inactive_PrayFirst			= "I need to pray first!";

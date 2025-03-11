@@ -1047,10 +1047,11 @@ func void DIA_Constantino_Teach_BACK()
 
 func void DIA_Constantino_TEACH_Health01()
 {
-	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_01))
+/*	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_01))
 	{
 		AI_Output(self, other, "DIA_Constantino_TEACH_Health01_10_00"); //The ingredients for an essence of healing are healing plants and meadow knotweed.
 	};
+*/
 
 	Info_ClearChoices(DIA_Constantino_Teach);
 };
@@ -1059,7 +1060,7 @@ func void DIA_Constantino_TEACH_Health02()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_02))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_00"); //To prepare a healing extract, you need healing herbs and meadow knotweed.
+	//	AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_00"); //To prepare a healing extract, you need healing herbs and meadow knotweed.
 		AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_01"); //Be sure to heat that extract very carefully.
 	};
 
@@ -1082,7 +1083,7 @@ func void DIA_Constantino_TEACH_PermHealth()
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Perm_Health))
 	{
 		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_00"); //The elixir of life! A rare brew. Not so much because of the effort - the potion actually isn't all that hard to make.
-		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_01"); //But the ingredients are very rare. You need healing roots and king's sorrel.
+//		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_01"); //But the ingredients are very rare. You need healing roots and king's sorrel.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1093,7 +1094,7 @@ func void DIA_Constantino_TEACH_Mana01()
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Mana_01))
 	{
 		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_00"); //The essence of magic is the simplest of magic potions.
-		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_01"); //Take fire nettles and meadow knotweed and heat them slowly.
+//		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_01"); //Take fire nettles and meadow knotweed and heat them slowly.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1104,7 +1105,7 @@ func void DIA_Constantino_TEACH_Mana02()
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Mana_02))
 	{
 		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_00"); //Since you can already prepare an essence of magic, with a little effort you should be able to produce an extract as well.
-		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_01"); //You need to put the right kind of feeling into decocting that brew. Use fireweed and meadow knotweed for this potion.
+//		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_01"); //You need to put the right kind of feeling into decocting that brew. Use fireweed and meadow knotweed for this potion.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1114,7 +1115,7 @@ func void DIA_Constantino_TEACH_PermSTR()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Perm_STR))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_00"); //The elixir of strength! An excellent potion. You need the rare dragonroot and king's sorrel.
+	//	AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_00"); //The elixir of strength! An excellent potion. You need the rare dragonroot and king's sorrel.
 		AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_01"); //When boiling the brew, don't let the bubbles get too big or you'll be in for a nasty surprise!
 	};
 
