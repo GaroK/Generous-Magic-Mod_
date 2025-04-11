@@ -19,8 +19,12 @@ var C_Trigger mana_regen_controller;
 // };
 
 
-const string GMM_Name_Regen_Wand = "Wand of Rejuvenation";
-const string GMM_MagicCircleLow = "Magic Circle too low.";
+const string GMM_Name_Regen_Wand 	= "Wand of Rejuvenation";
+const string GMM_MagicCircleLow		= "Magic Circle too low.";
+const string GMM_Desc_Regen_Wand = "Mana regeneration per second:";
+
+
+
 
 const int MANA_PER_SEC_2 = 2;
 const int MANA_PER_SEC_4 = 4;
@@ -79,7 +83,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V0 (C_Item)
 
     TEXT [0]      = NAME_Damage;                    COUNT[0]    = damageTotal;
     TEXT [1]      = NAME_MANA_needed;               COUNT[1]    = cond_value[2];
-    TEXT [4]      = "Mana regeneration per second:";
+    TEXT [4]      = GMM_Desc_Regen_Wand;
     COUNT[4]      = MANA_PER_SEC_2;
 
 
@@ -114,7 +118,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V1 (C_Item)
 
     TEXT [0]      = NAME_Damage;                    COUNT[0]    = damageTotal;
     TEXT [1]      = NAME_MANA_needed;               COUNT[1]    = cond_value[2];
-    TEXT [4]      = "Mana regeneration per second:";
+    TEXT [4]      = GMM_Desc_Regen_Wand;
     COUNT[4]      = MANA_PER_SEC_2;
 
 
@@ -168,7 +172,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V2 (C_Item)
 
     TEXT [0]      = NAME_Damage;                    COUNT[0]    = damageTotal;
     TEXT [1]      = NAME_MANA_needed;               COUNT[1]    = cond_value[2];
-    TEXT [4]      = "Mana regeneration per second:";
+    TEXT [4]      = GMM_Desc_Regen_Wand;
     COUNT[4]      = MANA_PER_SEC_4;
 
 
@@ -222,7 +226,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V3 (C_Item)
 
     TEXT [0]      = NAME_Damage;                    COUNT[0]    = damageTotal;
     TEXT [1]      = NAME_MANA_needed;               COUNT[1]    = cond_value[2];
-    TEXT [4]      = "Mana regeneration per second:";
+    TEXT [4]      = GMM_Desc_Regen_Wand;
     COUNT[4]      = MANA_PER_SEC_6;
 
 

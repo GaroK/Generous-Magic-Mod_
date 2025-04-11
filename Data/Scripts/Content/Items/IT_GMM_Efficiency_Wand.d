@@ -172,6 +172,7 @@ INSTANCE ItMW_GMM_Stab_03_Eff_V3 (C_Item)
 
 
 
+
 FUNC VOID PC_PrayShrine_Bless_Efficiency_V1_Info()
 {
 	if (ShrineIsObsessed == TRUE)
@@ -193,6 +194,7 @@ FUNC VOID PC_PrayShrine_Bless_Efficiency_V1_Info()
 			};
 			
 };
+
 
 
 FUNC VOID PC_PrayShrine_Bless_Efficiency_V2_Info()
