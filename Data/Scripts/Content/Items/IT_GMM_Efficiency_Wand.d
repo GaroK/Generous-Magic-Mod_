@@ -1,3 +1,5 @@
+
+
 const string GMM_Name_Efficiency_Wand		        = "Wand of Efficiency";
 const string GMM_Desc_Efficiency_Wand_V1 = "Spells cost 35% mana less to cast.";
 const string GMM_Desc_Efficiency_Wand_V2 = "Spells cost 40% mana less to cast.";

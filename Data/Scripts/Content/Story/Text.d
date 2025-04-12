@@ -766,7 +766,7 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string GMM_Fear_Description				= "Stops enemy attacks and makes them flee.";
 	const string GMM_SuckEnergy_Description			= "Steals life energy from human targets.";
 	const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
-	const string GMM_Version_Check                  = "21.01.2025 - 16:00";
+	const string GMM_Version_Check                  = "Compiled - 11.04.2025 - 15:00";
 
 // *************************************************************
 // NAMEN FÃƒÅ“R Produktionsitems
