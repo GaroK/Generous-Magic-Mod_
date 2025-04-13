@@ -18,9 +18,19 @@ func int C_CheckManaCost(var C_Npc npc,var int cost)
 	if(Npc_HasEquippedMeleeWeapon(npc))
 	{
 		EquipWeap = Npc_GetEquippedMeleeWeapon(npc);
-		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff))
+		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V1))
 		{
 			return (cost * 65) / 100;
+		};
+		
+		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V2))
+		{
+			return (cost * 60) / 100;
+		};
+		
+		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V3))
+		{
+			return (cost * 55) / 100;
 		};
 	};
 	return cost;
@@ -59,17 +69,37 @@ func void Spell_Cast_ArmyOfDarkness(var int spellLevel)
 	}
 	else
 	{
-		self.attribute[ATR_MANA] = self.attribute[ATR_MANA] - C_CheckManaCost(self,SPL_Cost_ArmyOfDarkness);
+		self.attribute[ATR_MANA] = 0; // kostet alles, mindestens 250
+//		self.attribute[ATR_MANA] = self.attribute[ATR_MANA] - C_CheckManaCost(self,SPL_Cost_ArmyOfDarkness);
 	};
+	
+	
 
 	if (Npc_IsPlayer(self))
 	{
-		Wld_SpawnNpcRange(self, Summoned_Skeleton, 6, 800);
+		Wld_SpawnNpcRange(self, Summoned_Skeleton, 4, 800);
+		Wld_SpawnNpcRange(self, Summoned_Gobbo_Skeleton, 3, 800);
+		Wld_SpawnNpcRange(self, Summoned_Zombie, 1, 800);
+				  if (HeroHasEquippedSpecialStaff_V2)
+		{
+        Wld_SpawnNpcRange(self, SUMMONED_GOBBO_SKELETON, 1, 500); //or any other instance
+		Wld_SpawnNpcRange(self, Summoned_Skeleton, 1, 800);
+		Wld_SpawnNpcRange(self, Summoned_Zombie, 1, 800);
+		};
+						  if (HeroHasEquippedSpecialStaff_V3)
+		{
+        Wld_SpawnNpcRange(self, SUMMONED_GOBBO_SKELETON, 1, 500); //or any other instance
+		Wld_SpawnNpcRange(self, Summoned_Skeleton, 1, 800);
+		Wld_SpawnNpcRange(self, Summoned_Zombie, 1, 800);
+		Wld_SpawnNpcRange(self, Summoned_Demon, 1, 1000);
+		};
+		
 	}
 	else
 	{
 		Wld_SpawnNpcRange(self, Skeleton, 6, 800);
 	};
+	
 
 	self.aivar[AIV_SelectSpell] += 1;
 };

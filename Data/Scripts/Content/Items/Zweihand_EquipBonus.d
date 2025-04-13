@@ -5,13 +5,15 @@ Talent Bonus
 // const fÃƒÂ¼r Talentboni stehen in Tuning Melee Weaposn
 
 //----------------------------GMM----------------------------------
+var int herohasequippedspecialstaff_v1;
+
 FUNC VOID GMM_Equip_2H_04()
 {
 	if Npc_IsPlayer (self)
 	{ 
 	
 		GMM_SUMMON_TIME = 180;
-		heroHasEquippedSpecialStaff = true;
+		heroHasEquippedSpecialStaff_V1 = true;
 	};
 };
 FUNC VOID GMM_UnEquip_2H_04()
@@ -19,11 +21,11 @@ FUNC VOID GMM_UnEquip_2H_04()
 	if Npc_IsPlayer (self)
 	{ 
 		GMM_SUMMON_TIME = 60;
-		heroHasEquippedSpecialStaff = false;
+		heroHasEquippedSpecialStaff_V1 = false;
 	};
 };
 
-FUNC VOID Equip_2H_05_GMM()
+/*FUNC VOID Equip_2H_05_GMM()
 {
 	if Npc_IsPlayer (self)
 	{ 
@@ -36,7 +38,7 @@ FUNC VOID UnEquip_2H_05_GMM()
 	{ 
 		B_AddFightSkill (self, NPC_TALENT_2H, - Waffenbonus_11_GMM);
 	};
-};
+};*/
 
 // ----------------------------1----------------------------------
 func void Equip_2H_01()

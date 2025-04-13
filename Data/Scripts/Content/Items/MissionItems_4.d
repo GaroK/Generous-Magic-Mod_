@@ -294,7 +294,7 @@ instance ItPo_DragonEggDrinkNeoras_MIS(C_Item)
 func void Use_DragonEggDrinkNeoras()
 {
 	Npc_ChangeAttribute(self, ATR_HITPOINTS, HP_Elixier);
-	B_RaiseAttribute(self, ATR_STRENGTH, + 3);
+	B_RaiseAttribute_Bonus_Independent(self, ATR_STRENGTH, + 3);
 	Snd_Play("DEM_Warn");
 	Neoras_SCUsedDragonEggDrink = TRUE;
 };

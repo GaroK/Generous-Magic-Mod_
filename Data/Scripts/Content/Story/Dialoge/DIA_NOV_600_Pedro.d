@@ -373,6 +373,7 @@ func void DIA_Pedro_AUFNAHME_YES()
 
 	other.guild = GIL_NOV;
 	Npc_SetTrueGuild(other, GIL_NOV);
+	Mdl_ApplyOverlayMDS(self, "Humans_Mage.mds");
 
 	DIA_Pedro_AUFNAHME_NOPERM = TRUE;
 	NOV_Aufnahme = TRUE;

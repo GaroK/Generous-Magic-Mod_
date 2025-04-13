@@ -33,7 +33,7 @@ instance DJG_703_Cipher(Npc_Default)
 
 	// -------- equipped weapons --------
 	EquipItem(self, ItMw_1h_Sld_Sword);
-	EquipItem(self, ItRw_Crossbow_M_01);
+//	EquipItem(self, ItRw_Crossbow_M_01);
 
 	// -------- daily routine --------
 	daily_routine = Rtn_Start_703;

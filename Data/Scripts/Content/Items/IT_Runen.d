@@ -909,7 +909,7 @@ instance ItRu_ChargeFireball(C_Item)
 	material					= MAT_STONE;
 
 	spell						= SPL_ChargeFireball;
-	mag_circle					= 4;
+	mag_circle					= 3;
 
 	value						= Value_Ru_ChargeFireball;
 
@@ -974,7 +974,7 @@ instance ItRu_Fear(C_Item)
 	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_FEAR;
 	text[2]						= NAME_Sec_Duration;							count[2] = SPL_TIME_Fear;
 	text[3]						= "";											count[3] = 0;
-	TEXT	[4]			=	GMM_Fear_Description;											count[4] = 0;
+	TEXT[4]						= GMM_Fear_Description;							count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
@@ -1371,7 +1371,7 @@ instance ItRu_ArmyOfDarkness(C_Item)
 	description					= NAME_SPL_ArmyOfDarkness;
 	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
 	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_ARMYOFDARKNESS;
-	text[2]						= "";											count[2] = 0;
+	text[2]						= NAME_Addon_NeedsAllMana;						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;

@@ -511,6 +511,7 @@ func void DIA_Pyrokar_OATH_Info()
 	Npc_ExchangeRoutine(Lothar, "START");
 
 	Npc_SetTrueGuild(other, GIL_KDF);
+	Mdl_ApplyOverlayMDS(other, "Humans_Mage.mds");
 
 	Fire_Contest = TRUE; // fÃƒÂ¼rs Log
 

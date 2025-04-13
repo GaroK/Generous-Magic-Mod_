@@ -1140,7 +1140,7 @@ func void DIA_Addon_Vatras_Free_Info()
 	AI_Output(self, other, "DIA_Addon_Vatras_Free_05_02"); //But your own journey must go on. So go with the blessing of Adanos.
 	AI_Output(self, other, "DIA_Addon_Vatras_Free_05_03"); //(praying) Adanos, bless this man. Light his path and grant him the strength to withstand all dangers.
 
-	B_RaiseAttribute(other, ATR_MANA_MAX, 3);
+	B_RaiseAttribute_Bonus_Independent(other, ATR_MANA_MAX, 3);
 	other.attribute[ATR_MANA] = other.attribute[ATR_MANA_MAX];
 	other.attribute[ATR_HITPOINTS] = other.attribute[ATR_HITPOINTS_MAX];
 
@@ -1399,7 +1399,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info()
 	if (anzahl >= 10)
 	{
 		AI_Output(self, other, "DIA_Addon_Vatras_SellStonplate_05_02"); //I shall increase your magical power!
-		B_RaiseAttribute(other, ATR_MANA_MAX, anzahl);
+		B_RaiseAttribute_Bonus_Independent(other, ATR_MANA_MAX, anzahl);
 		Npc_ChangeAttribute(other, ATR_MANA, anzahl);
 	}
 	else if (anzahl >= 5)

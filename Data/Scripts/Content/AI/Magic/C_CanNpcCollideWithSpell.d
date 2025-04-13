@@ -29,6 +29,49 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 
 // ### KDW ###
 
+// ----- GMM -----
+	if (spellType == SPL_Waterfist)
+	|| (spellType == SPL_Geyser)
+	|| (spellType == SPL_IceCube)
+	|| (spellType == SPL_Icelance)
+	|| (spellType == SPL_IceBolt)
+	|| (spellType == SPL_IceWave)
+	{
+//		Print("Enemy is wet");
+		self.aivar[AIV_StateWet] = true;
+		if ((C_NpcIsDown(self))
+		|| (C_BodyStateContains(self, BS_SWIM))
+		|| (C_BodyStateContains(self, BS_DIVE)))
+		{
+			return COLL_DONOTHING;
+		};
+		return COLL_APPLYDAMAGE | COLL_DONTKILL;
+	};
+
+
+	if   (spellType == SPL_ChargeZap)
+		||(spellType == SPL_Zap)
+		||(spellType == SPL_LightningFlash)
+	{
+		if (C_NpcIsDown(self))
+		{
+			return COLL_DONOTHING;	
+		};
+		
+		if self.aivar[AIV_StateWet] == true 
+		|| (C_BodyStateContains(self,BS_SWIM)) 	
+		|| (C_BodyStateContains(self,BS_DIVE))
+
+		{
+//			Print("effect is working");
+			return COLL_APPLYDOUBLEDAMAGE;
+		};
+		
+		return COLL_DOEVERYTHING;	
+	};
+
+
+
 // ----- Whirlwind -----
 
 	if (spellType == SPL_Whirlwind)
@@ -174,9 +217,10 @@ if (spellType == SPL_Geyser)
 		{
 			return COLL_APPLYDOUBLEDAMAGE;
 		};
-
 		return COLL_APPLYDAMAGE | COLL_DONTKILL;
 	};
+
+
 
 // ### Beliar ###
 
@@ -403,6 +447,7 @@ if (spellType == SPL_EnergyBall)
 		return COLL_DOEVERYTHING;
 	};
 
+
 // ----- Eis -----
 
 	if ((spellType == SPL_IceCube)
@@ -450,7 +495,9 @@ if (spellType == SPL_EnergyBall)
 
 //----- Blitz -----	
 	
-	if (spellType == SPL_LightningFlash)
+	if    (spellType == SPL_ChargeZap)
+		||(spellType == SPL_Zap)
+		||(spellType == SPL_LightningFlash)
 	{
 		if (C_NpcIsDown(self))
 		{
@@ -459,6 +506,7 @@ if (spellType == SPL_EnergyBall)
 		
 		if (C_BodyStateContains(self,BS_SWIM)) 	
 		|| (C_BodyStateContains(self,BS_DIVE))
+
 		{
 			return COLL_APPLYDOUBLEDAMAGE;
 		};

@@ -4,7 +4,7 @@
 
 const int SPL_Cost_ChargeZap = 40; // 4*10
 const int STEP_ChargeZap = 10;
-const int SPL_Damage_ChargeZap = 30;
+const int SPL_Damage_ChargeZap = 40;
 
 instance Spell_ChargeZap(C_Spell_Proto)
 {

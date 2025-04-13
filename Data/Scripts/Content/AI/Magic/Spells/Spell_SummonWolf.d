@@ -40,10 +40,20 @@ func void Spell_Cast_SummonWolf()
 	if (Npc_IsPlayer(self))
 	{
 		Wld_SpawnNpcRange(self, Summoned_Wolf, 1, 500);
+					 if (HeroHasEquippedSpecialStaff_V2)
+		{
+        Wld_SpawnNpcRange(self, SUMMONED_GOBBO_SKELETON, 1, 500); //or any other instance
+		};
+							 if (HeroHasEquippedSpecialStaff_V3)
+		{
+        Wld_SpawnNpcRange(self, SUMMONED_GOBBO_SKELETON, 1, 500); //or any other instance
+		Wld_SpawnNpcRange(self, Summoned_Wolf, 1, 500);
+		};
 	}
 	else
 	{
 		Wld_SpawnNpcRange(self, Wolf, 1, 500);
+			
 	};
 
 	self.aivar[AIV_SelectSpell] += 1;

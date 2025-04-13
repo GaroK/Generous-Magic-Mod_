@@ -609,7 +609,7 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SHEEP);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_GOBBO); // Green Goblin / Black Goblin
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_GOBBO_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SUMMONED_GOBBO_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SUMMONED_GOBBO_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SCAVENGER);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_GIANT_RAT);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_GIANT_BUG);
@@ -620,7 +620,7 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_MINECRAWLER); // Minecrawler / Minecrawler Warrior
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_LURKER);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SUMMONED_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SUMMONED_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SKELETON_MAGE);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_ZOMBIE);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SNAPPER); // Snapper / Dragon Snapper
@@ -632,7 +632,7 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_ICEGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SUMMONED_GOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_DEMON);
-	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SUMMONED_DEMON);
+	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SUMMONED_DEMON);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_TROLL); // Troll / Schwarzer Troll
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_SWAMPSHARK);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_DRAGON); // Feuerdrache / Eisdrache / Felsdrache / Sumpfdrache / Untoter Drache
@@ -1253,18 +1253,18 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SHEEP);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_GOBBO); // Green Goblin / Black Goblin
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_GOBBO_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SUMMONED_GOBBO_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SUMMONED_GOBBO_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SCAVENGER);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_GIANT_RAT);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_GIANT_BUG);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_BLOODFLY);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_WARAN); // Waren / Feuerwaran
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_WOLF); // Wolf / Warg
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SUMMONED_WOLF);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SUMMONED_WOLF);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_MINECRAWLER); // Minecrawler / Minecrawler Warrior
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_LURKER);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SUMMONED_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SUMMONED_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SKELETON_MAGE);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_ZOMBIE);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SNAPPER); // Snapper / Dragon Snapper
@@ -1274,9 +1274,9 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_STONEGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_FIREGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_ICEGOLEM);
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SUMMONED_GOLEM);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SUMMONED_GOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_DEMON);
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SUMMONED_DEMON);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SUMMONED_DEMON);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_TROLL); // Troll / Schwarzer Troll
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SWAMPSHARK);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_DRAGON); // Feuerdrache / Eisdrache / Felsdrache / Sumpfdrache / Untoter Drache
@@ -1289,8 +1289,8 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SWAMPGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_STONEGUARDIAN);
 	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_GARGOYLE);
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SummonedGuardian);
-	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_HOSTILE, GIL_SummonedZombie);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SummonedGuardian);
+	B_SetMonsterAttitude(GIL_SUMMONED_GOLEM, ATT_NEUTRAL, GIL_SummonedZombie);
 
 	// ------ Demon zu allen anderen ------
 	B_SetMonsterAttitude(GIL_DEMON, ATT_HOSTILE, GIL_SEPERATOR_HUM);
@@ -1345,18 +1345,18 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SHEEP);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_GOBBO); // Green Goblin / Black Goblin
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_GOBBO_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SUMMONED_GOBBO_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SUMMONED_GOBBO_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SCAVENGER);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_GIANT_RAT);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_GIANT_BUG);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_BLOODFLY);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_WARAN); // Waren / Feuerwaran
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_WOLF); // Wolf / Warg
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SUMMONED_WOLF);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SUMMONED_WOLF);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_MINECRAWLER); // Minecrawler / Minecrawler Warrior
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_LURKER);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SUMMONED_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SUMMONED_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SKELETON_MAGE);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_ZOMBIE);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SNAPPER); // Snapper / Dragon Snapper
@@ -1366,9 +1366,9 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_STONEGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_FIREGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_ICEGOLEM);
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SUMMONED_GOLEM);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SUMMONED_GOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_DEMON);
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SUMMONED_DEMON);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SUMMONED_DEMON);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_TROLL); // Troll / Schwarzer Troll
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SWAMPSHARK);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_DRAGON); // Feuerdrache / Eisdrache / Felsdrache / Sumpfdrache / Untoter Drache
@@ -1381,8 +1381,8 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SWAMPGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_STONEGUARDIAN);
 	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_GARGOYLE);
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SummonedGuardian);
-	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_HOSTILE, GIL_SummonedZombie);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SummonedGuardian);
+	B_SetMonsterAttitude(GIL_SUMMONED_DEMON, ATT_NEUTRAL, GIL_SummonedZombie);
 
 	// ------ Trolle zu allen anderen ------
 	B_SetMonsterAttitude(GIL_TROLL, ATT_HOSTILE, GIL_SEPERATOR_HUM);
@@ -1947,18 +1947,18 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SHEEP);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_GOBBO); // Green Goblin / Black Goblin
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_GOBBO_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SUMMONED_GOBBO_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SUMMONED_GOBBO_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SCAVENGER);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_GIANT_RAT);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_GIANT_BUG);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_BLOODFLY);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_WARAN); // Waren / Feuerwaran
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_WOLF); // Wolf / Warg
-	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SUMMONED_WOLF);
+	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SUMMONED_WOLF);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_MINECRAWLER); // Minecrawler / Minecrawler Warrior
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_LURKER);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SUMMONED_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SUMMONED_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SKELETON_MAGE);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_ZOMBIE);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SNAPPER); // Snapper / Dragon Snapper
@@ -1968,9 +1968,9 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_STONEGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_FIREGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_ICEGOLEM);
-	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SUMMONED_GOLEM);
+	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SUMMONED_GOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_DEMON);
-	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SUMMONED_DEMON);
+	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SUMMONED_DEMON);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_TROLL); // Troll / Schwarzer Troll
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SWAMPSHARK);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_DRAGON); // Feuerdrache / Eisdrache / Felsdrache / Sumpfdrache / Untoter Drache
@@ -1984,7 +1984,7 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_STONEGUARDIAN);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_GARGOYLE);
 	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SummonedGuardian);
-	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_HOSTILE, GIL_SummonedZombie);
+	B_SetMonsterAttitude(GIL_SUMMONEDGuardian, ATT_NEUTRAL, GIL_SummonedZombie);
 
 	// ----------------------- Summoned Zombie ----------------------------------------------------
 
@@ -1994,18 +1994,18 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SHEEP);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_GOBBO); // Green Goblin / Black Goblin
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_GOBBO_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SUMMONED_GOBBO_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SUMMONED_GOBBO_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SCAVENGER);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_GIANT_RAT);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_GIANT_BUG);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_BLOODFLY);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_WARAN); // Waren / Feuerwaran
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_WOLF); // Wolf / Warg
-	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SUMMONED_WOLF);
+	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SUMMONED_WOLF);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_MINECRAWLER); // Minecrawler / Minecrawler Warrior
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_LURKER);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SKELETON);
-	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SUMMONED_SKELETON);
+	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SUMMONED_SKELETON);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SKELETON_MAGE);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_ZOMBIE);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SNAPPER); // Snapper / Dragon Snapper
@@ -2015,9 +2015,9 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_STONEGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_FIREGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_ICEGOLEM);
-	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SUMMONED_GOLEM);
+	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SUMMONED_GOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_DEMON);
-	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SUMMONED_DEMON);
+	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SUMMONED_DEMON);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_TROLL); // Troll / Schwarzer Troll
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SWAMPSHARK);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_DRAGON); // Feuerdrache / Eisdrache / Felsdrache / Sumpfdrache / Untoter Drache
@@ -2030,6 +2030,6 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SWAMPGOLEM);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_STONEGUARDIAN);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_GARGOYLE);
-	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_HOSTILE, GIL_SummonedGuardian);
+	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SummonedGuardian);
 	B_SetMonsterAttitude(GIL_SUMMONEDZombie, ATT_NEUTRAL, GIL_SummonedZombie);
 };

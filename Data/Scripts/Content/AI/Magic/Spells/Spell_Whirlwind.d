@@ -4,7 +4,7 @@
 
 const int SPL_Cost_Whirlwind = 30;
 const int SPL_Whirlwind_DAMAGE = 0;
-const int SPL_TIME_WHIRLWIND = 10;
+const int SPL_TIME_WHIRLWIND = 15;
 
 instance Spell_Whirlwind(C_Spell_Proto)
 {

@@ -2497,6 +2497,7 @@ INSTANCE spellFX_Zap	(CFx_Base_Proto)
      	emtrjeasefunc_s 		= "LINEAR";
      	emActionCollStat_S		= "COLLIDE CREATE";
      	emActionCollDyn_S 		= "COLLIDE CREATEONCE";
+		emfxcolldynperc_s	    = "spellFX_Zap_SENDPERCEPTION";
 		emFXCollStat_S	   		= "spellFX_Zap_COLLIDE";
 		emFXCollDyn_S     		= "spellFX_Zap_COLLIDEDYNFX";
 		emTrjTargetRange	 	= 20;
@@ -2505,6 +2506,11 @@ INSTANCE spellFX_Zap	(CFx_Base_Proto)
 
 		//visAlpha				= 0;
 
+		};
+
+		instance spellFX_Zap_SENDPERCEPTION(CFX_BASE_PROTO) 
+		{
+		sendassessmagic = 1;
 		};
 
 		INSTANCE spellFX_Zap_KEY_INIT (C_ParticleFXEmitKey)

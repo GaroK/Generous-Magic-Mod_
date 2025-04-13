@@ -41,7 +41,7 @@ instance PC_ThiefOW(Npc_Default)
 
 	// -------- equipped weapons --------
 	EquipItem(self, ItMw_1H_SLD_Sword);
-	EquipItem(self, ItRw_Bow_M_03);
+//	EquipItem(self, ItRw_Bow_M_03);
 
 	// -------- daily routine --------
 	daily_routine = Rtn_Start_1;

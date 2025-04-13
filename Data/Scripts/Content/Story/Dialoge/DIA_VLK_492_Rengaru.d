@@ -359,6 +359,6 @@ func void DIA_Rengaru_Zeichen_Info()
 	AI_Output(self, other, "DIA_Rengaru_Zeichen_07_02"); //They are pretty sharp at watching their stuff. But I can give you a tip.
 	AI_Output(self, other, "DIA_Rengaru_Zeichen_07_03"); //Try to grab the desired object with one hand, and wave about with the other. That distracts them.
 
-	B_RaiseAttribute(other, ATR_DEXTERITY, 1);
+	B_RaiseAttribute_Bonus_Independent(other, ATR_DEXTERITY, 1);
 	Snd_Play("LEVELUP");
 };
