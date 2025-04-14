@@ -436,8 +436,8 @@
 	const int ZivilAnquatschDist						= 400;									// Distanz, ab der dich ein NSC zivil anspricht (Maximum ist PERC_DIST_ACTIVE_MAX --> B_AssessPlayer)
 
 // ---------------------------------------------
-	const float RANGED_CHANCE_MINDIST					= 1500;									// Unterhalb dieser Distanz steigt die Trefferchance linear bis 100% an. (Default sind 10m)
-	const float RANGED_CHANCE_MAXDIST					= 4500;									// Ab RANGED_CHANCE_MINDIST bis RANGED_CHANCE_MAXDIST sinkt die Trefferchance bis auf 0% ab (default sind 100m)
+	const float RANGED_CHANCE_MINDIST					= 1500.0;									// Unterhalb dieser Distanz steigt die Trefferchance linear bis 100% an. (Default sind 10m)
+	const float RANGED_CHANCE_MAXDIST					= 4500.0;									// Ab RANGED_CHANCE_MINDIST bis RANGED_CHANCE_MAXDIST sinkt die Trefferchance bis auf 0% ab (default sind 100m)
 
 /********************************************************************
 ** Zeit - Konstanten *

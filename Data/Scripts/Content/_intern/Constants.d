@@ -1091,7 +1091,7 @@ const string TEXT_FONT_Inventory = "Font_old_10_white.tga";
 // wenn kein wav da ist (msec/character)
 // ****************************************
 
-const float VIEW_TIME_PER_CHAR = 550;
+const float VIEW_TIME_PER_CHAR = 550.0;
 
 // ****************************************
 //	LevelZen-Abfrage im B_Kapitelwechsel
