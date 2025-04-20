@@ -34,7 +34,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]             =
     TEXT[3]             = "Ulthar enchanted this wand.";
-    TEXT[4]                 = NAME_Bonus_Mana;              COUNT[4]    = 40;//FIXME_FILLER
+    TEXT[4]                 = NAME_Bonus_Mana;              COUNT[4]    = 50;//FIXME_FILLER
 
     TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
 };

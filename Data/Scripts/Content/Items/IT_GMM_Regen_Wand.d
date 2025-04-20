@@ -26,9 +26,9 @@ const string GMM_Desc_Regen_Wand = "Mana regeneration per second:";
 
 
 
-const int MANA_PER_SEC_2 = 2;
-const int MANA_PER_SEC_4 = 4;
-const int MANA_PER_SEC_6 = 6;
+const int MANA_PER_SEC_2 = 1;
+const int MANA_PER_SEC_4 = 3;
+const int MANA_PER_SEC_6 = 5;
 const int TICS_PER_SEC = 1;
 var int Pray_Staff_Regen;
 var int regenstaffone;
