@@ -779,6 +779,7 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string Circle_4						    = "Circle 4";
 	const string Circle_5						    = "Circle 5";
 	const string Circle_6 							= "Circle 6";
+	const string GMM_Desc_Regen_Wand			    = "Mana regeneration per second:";
 
 
 // *************************************************************
