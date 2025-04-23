@@ -140,6 +140,14 @@ func void ZS_Talk()
 	AI_ProcessInfos(self);
 
 	zsTalkBugfix = FALSE; // var resetten!
+	
+	
+	// GMM Rune Exchange
+		if(C_NpcCanExchangeRunes(self))
+	{
+		B_AssignExchangeRunesInfos(self);
+	};
+	
 };
 
 func int ZS_Talk_Loop()
