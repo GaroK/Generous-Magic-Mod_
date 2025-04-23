@@ -760,13 +760,14 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 
 
 	//Generous Magic Mod
+	const string GMM_Version_Check                  = "Compiled - 23.04.2025 - 11:30";
+	
 	const string GMM_Non_Lethal_Scroll				= "Non-lethal Scroll";
 	const string GMM_Non_Lethal_Circle				= "Non-lethal, Circle:";
 	const string GMM_Temp_stun						= "Temporarily incapacitates target.";
 	const string GMM_Fear_Description				= "Stops enemy attacks and makes them flee.";
 	const string GMM_SuckEnergy_Description			= "Steals life energy from human targets.";
 	const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
-	const string GMM_Version_Check                  = "Compiled - 20.04.2025 - 12:40";
 	const string PRINT_1_LP 						= "+ 1 Learning Point";
 	const string PRINT_2_LP						    = "+ 2 Learning Points";
 	const string PRINT_3_LP						    = "+ 3 Learning Points";
