@@ -1,3 +1,21 @@
+
+func int C_NpcCanExchangeRunes(var C_Npc npc)
+{
+	if(npc.id == 508) //Gorax
+	||(npc.id == 14010) //Cronos
+	{
+		return TRUE;
+	};
+	return FALSE;
+};
+ 
+func void B_AssignExchangeRunesInfos(var C_Npc npc)
+{
+	Dia_Exchange_Rune.npc = Hlp_GetInstanceID(npc);
+};
+ 
+
+
 // ********************
 // ZS_Talk
 // -------
