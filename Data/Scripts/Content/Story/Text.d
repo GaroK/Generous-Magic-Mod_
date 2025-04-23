@@ -767,6 +767,19 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string GMM_SuckEnergy_Description			= "Steals life energy from human targets.";
 	const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
 	const string GMM_Version_Check                  = "Compiled - 20.04.2025 - 12:40";
+	const string PRINT_1_LP 						= "+ 1 Learning Point";
+	const string PRINT_2_LP						    = "+ 2 Learning Points";
+	const string PRINT_3_LP						    = "+ 3 Learning Points";
+	const string PRINT_4_LP 						= "+ 4 Learning Points";
+	const string PRINT_5_LP						    = "+ 5 Learning Points";
+	const string Exchange_Rune_Name 				= "Exchange Runes";
+	const string Circle_1						    = "Circle 1";
+	const string Circle_2 							= "Circle 2";
+	const string Circle_3						    = "Circle 3";
+	const string Circle_4						    = "Circle 4";
+	const string Circle_5						    = "Circle 5";
+	const string Circle_6 							= "Circle 6";
+
 
 // *************************************************************
 // NAMEN FÃƒÅ“R Produktionsitems
