@@ -768,6 +768,7 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string GMM_Fear_Description				= "Stops enemy attacks and makes them flee.";
 	const string GMM_SuckEnergy_Description			= "Steals life energy from human targets.";
 	const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
+/*
 	const string PRINT_1_LP 						= "+ 1 Learning Point";
 	const string PRINT_2_LP						    = "+ 2 Learning Points";
 	const string PRINT_3_LP						    = "+ 3 Learning Points";
@@ -780,7 +781,9 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string Circle_4						    = "Circle 4";
 	const string Circle_5						    = "Circle 5";
 	const string Circle_6 							= "Circle 6";
-	const string GMM_Desc_Regen_Wand			    = "Mana regeneration per second:";
+*/	const string GMM_Desc_Regen_Wand			    = "Mana regeneration per second:";
+
+
 
 
 // *************************************************************
