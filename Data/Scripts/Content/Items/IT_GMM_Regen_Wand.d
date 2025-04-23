@@ -21,7 +21,7 @@ var C_Trigger mana_regen_controller;
 
 const string GMM_Name_Regen_Wand 	= "Wand of Rejuvenation";
 const string GMM_MagicCircleLow		= "Magic Circle too low.";
-const string GMM_Desc_Regen_Wand = "Mana regeneration per second:";
+// const string GMM_Desc_Regen_Wand = "Mana regeneration per second:";
 
 
 
