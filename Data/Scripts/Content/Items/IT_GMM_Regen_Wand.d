@@ -27,8 +27,8 @@ const string GMM_MagicCircleLow		= "Magic Circle too low.";
 
 
 const int MANA_PER_SEC_2 = 1;
-const int MANA_PER_SEC_4 = 3;
-const int MANA_PER_SEC_6 = 5;
+const int MANA_PER_SEC_4 = 2;
+const int MANA_PER_SEC_6 = 4;
 const int TICS_PER_SEC = 1;
 var int Pray_Staff_Regen;
 var int regenstaffone;
