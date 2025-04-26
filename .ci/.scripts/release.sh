@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # function for correct encodings
 get_encoding() {
     case "$1" in
