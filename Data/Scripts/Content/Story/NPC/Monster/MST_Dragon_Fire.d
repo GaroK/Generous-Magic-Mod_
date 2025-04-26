@@ -80,7 +80,7 @@ instance Dragon_Fire(Mst_Default_Dragon_Fire)
 {
 	// -------- NPC --------
 	name							= "Feomathar";
-	// flags						= NPC_FLAG_IMMORTAL;
+	 flags							= NPC_FLAG_IMMORTAL;
 
 	// -------- attributes --------
 
