@@ -760,7 +760,7 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 
 
 	//Generous Magic Mod
-	const string GMM_Version_Check                  = "Compiled - 24.04.2025 - 9:40";
+	const string GMM_Version_Check                  = "Compiled - 10.05.2025 - 12:30";
 	
 	const string GMM_Non_Lethal_Scroll				= "Non-lethal Scroll";
 	const string GMM_Non_Lethal_Circle				= "Non-lethal, Circle:";
