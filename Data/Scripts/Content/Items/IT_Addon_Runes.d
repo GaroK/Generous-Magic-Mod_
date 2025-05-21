@@ -51,7 +51,7 @@ instance ItRu_Thunderstorm(C_Item)
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_Thunderstorm;
 	text[2]						= NAME_Damage;									count[2] = SPL_DAMAGE_Thunderstorm;
 	text[3]						= "";											count[3] = 0;
-	text[4]						= "";											count[4] = 0;
+	text[4]						= NAME_Addon_NeedsAllMana;						count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
