@@ -304,9 +304,10 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
-	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == FALSE)
+	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
+/*	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_02] == FALSE)
-	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_03] == FALSE)
+	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_03] == FALSE)*/
 	{
 		Info_ClearChoices (DIA_Ignaz_Teach);
 		Info_AddChoice (DIA_Ignaz_Teach,DIALOG_BACK,DIA_Ignaz_Teach_BACK);
@@ -324,8 +325,8 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 		talente = (talente + 1);
 	};
 	
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == FALSE)
-	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
+	/* if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == FALSE)
+	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
 		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Essence of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX_01)) ,DIA_Ignaz_Teach_Dexterity_01);
@@ -336,11 +337,10 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 	{
 		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Extract of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX_02)) ,DIA_Ignaz_Teach_Dexterity_02);
 		talente = (talente + 1);
-	};
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_02] == TRUE)
-	&& ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_03] == FALSE)
+	};*/
+	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == False)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Elixir of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX_03)) ,DIA_Ignaz_Teach_Dexterity_03);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Elixir of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)) ,DIA_Ignaz_Teach_Dexterity);
 		talente = (talente + 1);
 	};
 	if (talente > 0)
@@ -374,7 +374,7 @@ FUNC VOID DIA_Ignaz_Teach_Mana()
 	B_TeachPlayerTalentAlchemy (self, other, POTION_Mana_01);
 	Info_ClearChoices (DIA_Ignaz_Teach);
 };
-FUNC VOID DIA_Ignaz_Teach_Dexterity_01()
+/*FUNC VOID DIA_Ignaz_Teach_Dexterity_01()
 {
 	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX_01);
 	Info_ClearChoices (DIA_Ignaz_Teach);
@@ -383,14 +383,15 @@ FUNC VOID DIA_Ignaz_Teach_Dexterity_02()
 {
 	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX_02);
 	Info_ClearChoices (DIA_Ignaz_Teach);
-};
-FUNC VOID DIA_Ignaz_Teach_Dexterity_03()
+};*/
+FUNC VOID DIA_Ignaz_Teach_Dexterity()
 {
-	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX_03);
+	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX);
 	Info_ClearChoices (DIA_Ignaz_Teach);
 };
 FUNC VOID DIA_Ignaz_Teach_BACK()
 {
 	Info_ClearChoices (DIA_Ignaz_Teach);
 };
+
 
