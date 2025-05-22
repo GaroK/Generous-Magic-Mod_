@@ -32,6 +32,7 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 // ----- GMM -----
 	if (spellType == SPL_Waterfist)
 	|| (spellType == SPL_Geyser)
+	|| (spellType == SPL_Thunderstorm)
 	|| (spellType == SPL_IceCube)
 	|| (spellType == SPL_Icelance)
 	|| (spellType == SPL_IceBolt)
