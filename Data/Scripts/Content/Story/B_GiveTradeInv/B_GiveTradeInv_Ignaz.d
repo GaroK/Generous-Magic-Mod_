@@ -27,9 +27,6 @@ func void B_GiveTradeInv_Ignaz(var C_Npc slf)
 		CreateInvItems(slf, ItSc_TrfWaran, 1);
 		CreateInvItems(slf, ItSc_TrfSnapper, 3);
 		CreateInvItems(slf, ItSc_TrfWarg, 1);
-		CreateInvItems(slf, ItSc_TrfShadowbeast, 1);
-		CreateInvItems(slf, ItSc_TrfDragonSnapper, 1);
-		CreateInvItems(slf, ItSc_TrfFireWaran, 1);
 		CreateInvItems(slf, ITSC_Charm, 5);
 		CreateInvItems(slf, ITSC_Sleep, 1);
 
@@ -47,7 +44,6 @@ func void B_GiveTradeInv_Ignaz(var C_Npc slf)
 		CreateInvItems(slf, ItPo_Speed, 2);
 		CreateInvItems(slf, ITSC_Charm, 5);
 		CreateInvItems(slf, ITMI_Flask, 10);
-
 		Ignaz_ItemsGiven_Chapter_2 = TRUE;
 	};
 
@@ -62,6 +58,9 @@ func void B_GiveTradeInv_Ignaz(var C_Npc slf)
 		CreateInvItems(slf, ItPo_Speed, 3);
 		CreateInvItems(slf, ITSC_Charm, 5);
 		CreateInvItems(slf, ITMI_Flask, 10);
+		CreateInvItems(slf, ItSc_TrfShadowbeast, 1);
+		CreateInvItems(slf, ItSc_TrfDragonSnapper, 1);
+		CreateInvItems(slf, ItSc_TrfFireWaran, 1);
 
 		Ignaz_ItemsGiven_Chapter_3 = TRUE;
 	};
