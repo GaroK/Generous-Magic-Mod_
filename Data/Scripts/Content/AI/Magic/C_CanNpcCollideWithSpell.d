@@ -123,6 +123,7 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 		};
 
 		if ((self.guild == GIL_FIREGOLEM)
+		|| (self.guild == GIL_SWAMPGOLEM)
 		|| (self.aivar[AIV_MM_REAL_ID] == ID_FIREWARAN)
 		|| (self.aivar[AIV_MM_REAL_ID] == ID_DRAGON_FIRE)
 		|| (self.guild == GIL_GARGOYLE))
@@ -212,6 +213,7 @@ if (spellType == SPL_EnergyBall)
 	};
 	
 		if (self.guild == GIL_STONEGOLEM)
+	|| (self.guild == GIL_SWAMPGOLEM)
 	|| (self.guild == GIL_STONEGUARDIAN)
 	|| (self.aivar[AIV_MM_REAL_ID] == ID_DRAGON_ROCK) 
 	{
@@ -336,6 +338,7 @@ if (spellType == SPL_EnergyBall)
 		};
 		
 	if (self.guild == GIL_STONEGOLEM)
+	|| (self.guild == GIL_SWAMPGOLEM)
 	|| (self.guild == GIL_STONEGUARDIAN)
 	|| (self.aivar[AIV_MM_REAL_ID] == ID_DRAGON_ROCK) 
 	|| (self.aivar[AIV_StateWet] == TRUE)
@@ -485,6 +488,7 @@ if (spellType == SPL_EnergyBall)
 		};
 		
 	if (self.guild == GIL_STONEGOLEM)
+	|| (self.guild == GIL_SWAMPGOLEM)
 	|| (self.guild == GIL_STONEGUARDIAN)
 	|| (self.aivar[AIV_MM_REAL_ID] == ID_DRAGON_ROCK) 
 	{
