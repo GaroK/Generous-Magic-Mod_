@@ -359,7 +359,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	"TXT_SPL_RESERVED_92",																		// 92 SPL_Reserved_92
 	"TXT_SPL_RESERVED_93",																		// 93 SPL_Reserved_93
 	"TXT_SPL_RESERVED_94",																		// 94 SPL_Reserved_94
-	"TXT_SPL_RESERVED_95",																		// 95 SPL_Reserved_95
+	"Pick locks",																		// 95 SPL_Picklock_95
 	"TXT_SPL_RESERVED_96",																		// 96 SPL_Reserved_96
 	"TXT_SPL_RESERVED_97",																		// 97 SPL_Reserved_97
 	"TXT_SPL_RESERVED_98",																		// 98 SPL_Reserved_98
@@ -501,7 +501,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	const string NAME_SPL_Reserved_92					= "NAME_SPL_RESERVED_92";
 	const string NAME_SPL_Reserved_93					= "NAME_SPL_RESERVED_93";
 	const string NAME_SPL_Reserved_94					= "NAME_SPL_RESERVED_94";
-	const string NAME_SPL_Reserved_95					= "NAME_SPL_RESERVED_95";
+	const string NAME_SPL_Picklock_95					= "Picklock";
 	const string NAME_SPL_Reserved_96					= "NAME_SPL_RESERVED_96";
 	const string NAME_SPL_Reserved_97					= "NAME_SPL_RESERVED_97";
 	const string NAME_SPL_Reserved_98					= "NAME_SPL_RESERVED_98";
