@@ -38,38 +38,8 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 	|| (spellType == SPL_IceWave)
 	{
 //		Print("Enemy is wet");
-		self.aivar[AIV_StateWet] = true;
-		if ((C_NpcIsDown(self))
-		|| (C_BodyStateContains(self, BS_SWIM))
-		|| (C_BodyStateContains(self, BS_DIVE)))
-		{
-			return COLL_DONOTHING;
-		};
-		return COLL_APPLYDAMAGE | COLL_DONTKILL;
+		self.aivar[AIV_StateWet] = TRUE;
 	};
-
-
-	if   (spellType == SPL_ChargeZap)
-		||(spellType == SPL_Zap)
-		||(spellType == SPL_LightningFlash)
-	{
-		if (C_NpcIsDown(self))
-		{
-			return COLL_DONOTHING;	
-		};
-		
-		if self.aivar[AIV_StateWet] == true 
-		|| (C_BodyStateContains(self,BS_SWIM)) 	
-		|| (C_BodyStateContains(self,BS_DIVE))
-
-		{
-//			Print("effect is working");
-			return COLL_APPLYDOUBLEDAMAGE;
-		};
-		
-		return COLL_DOEVERYTHING;	
-	};
-
 
 
 // ----- Whirlwind -----
@@ -367,6 +337,7 @@ if (spellType == SPL_EnergyBall)
 	if (self.guild == GIL_STONEGOLEM)
 	|| (self.guild == GIL_STONEGUARDIAN)
 	|| (self.aivar[AIV_MM_REAL_ID] == ID_DRAGON_ROCK) 
+	|| (self.aivar[AIV_StateWet] == TRUE)
 	{
 		return COLL_APPLYDOUBLEDAMAGE;
 	};
@@ -505,7 +476,8 @@ if (spellType == SPL_EnergyBall)
 		};
 		
 		if (C_BodyStateContains(self,BS_SWIM)) 	
-		|| (C_BodyStateContains(self,BS_DIVE))
+		|| (C_BodyStateContains(self,BS_DIVE)
+		|| (self.aivar[AIV_StateWet] == TRUE))
 
 		{
 			return COLL_APPLYDOUBLEDAMAGE;
