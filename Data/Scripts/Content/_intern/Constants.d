@@ -626,7 +626,7 @@ const int SPL_Reserved_91 = 91;
 const int SPL_Reserved_92 = 92;
 const int SPL_Reserved_93 = 93;
 const int SPL_Reserved_94 = 94;
-const int SPL_Reserved_95 = 95;
+const int SPL_Picklock = 95;
 const int SPL_Reserved_96 = 96;
 const int SPL_Reserved_97 = 97;
 const int SPL_Reserved_98 = 98;
@@ -771,7 +771,7 @@ const string spellFxInstanceNames[MAX_SPELL] =
 	"Light", // 92 SPL_Reserved_92
 	"Light", // 93 SPL_Reserved_93
 	"Light", // 94 SPL_Reserved_94
-	"Light", // 95 SPL_Reserved_95
+	"Picklock", // 95 SPL_Picklock
 	"Light", // 96 SPL_Reserved_96
 	"Light", // 97 SPL_Reserved_97
 	"Light", // 98 SPL_Reserved_98
@@ -915,7 +915,7 @@ const string spellFxAniLetters[MAX_SPELL] =
 	"XXX", // 92 SPL_Reserved_92
 	"XXX", // 93 SPL_Reserved_93
 	"XXX", // 94 SPL_Reserved_94
-	"XXX", // 95 SPL_Reserved_95
+	"SLE", // 95 SPL_Picklock
 	"XXX", // 96 SPL_Reserved_96
 	"XXX", // 97 SPL_Reserved_97
 	"XXX", // 98 SPL_Reserved_98

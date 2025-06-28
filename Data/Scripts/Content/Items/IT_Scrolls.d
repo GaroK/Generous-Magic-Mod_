@@ -60,6 +60,8 @@ const int Value_Sc_TrfLurker = 80;
 const int Value_Sc_TrfShadowbeast = 200;
 const int Value_Sc_TrfDragonSnapper = 200;
 
+const int Value_Sc_Picklock = 100;
+
 /*******************************************************************************************/
 // 			Paladin Scrolls
 /*******************************************************************************************/
@@ -1475,6 +1477,35 @@ instance ItSc_TrfDragonSnapper(C_Item) // Joly:Auf Dracheninsel in Truhe der Sch
 	value						= Value_Sc_TrfDragonSnapper;
 
 	description					= NAME_SPL_TrfDragonSnapper;
+	text[0]						= Name_MageScroll;								count[0] = 0;
+	text[1]						= NAME_Mana_needed;								count[1] = SPL_Cost_Scroll;
+	text[2]						= "";											count[2] = 0;
+	text[3]						= "";											count[3] = 0;
+	text[4]						= "";											count[4] = 0;
+	text[5]						= NAME_Value;									count[5] = value;
+};
+
+/*******************************************************************************************/
+instance ItSc_Picklock(C_Item)
+{
+	name						= NAME_Spruchrolle;
+
+	mainflag					= ITEM_KAT_RUNE;
+	flags						= ITEM_MULTI;
+
+	wear						= WEAR_EFFECT;
+	effect						= "SPELLFX_WEAKGLIMMER";
+
+	visual						= "ItSc_Picklock.3DS";
+	material					= MAT_LEATHER;
+
+	cond_atr[2]					= ATR_MANA_MAX;
+	cond_value[2]				= SPL_Cost_Scroll;
+	spell						= SPL_Picklock;
+
+	value						= Value_Sc_Picklock;
+
+	description					= NAME_SPL_Picklock;
 	text[0]						= Name_MageScroll;								count[0] = 0;
 	text[1]						= NAME_Mana_needed;								count[1] = SPL_Cost_Scroll;
 	text[2]						= "";											count[2] = 0;
