@@ -117,6 +117,20 @@ instance Focus_Throw_Mob(C_Focus)
 	mob_elevdo = - 45.0;
 };
 
+func int FocusVobBySpellID()
+{
+	var int activeSpell;
+	if(Npc_IsDrawingSpell(hero))
+	{
+		activeSpell = Npc_GetActiveSpell(hero);
+		if(activeSpell == 0)
+		{
+			return 0;
+		};
+	};
+	return -1;
+};
+
 // ACHTUNG!!!!!!!: Der Magie Fokus sollte nicht verÃƒÂ¤ndert werden. Alle spezifischen Focus Modes sind PRO SPELL in der Spell_Params.d einstellbar.
 // Diese Magie Focus Instanz trifft die Vorentscheidung, welche Vobs ÃƒÂ¼berhaupt in Frage kommen. Der eigentlich Test findet in den einzelnen Spells statt!
 instance Focus_Magic(C_Focus)
@@ -162,5 +176,6 @@ instance Focus_Magic(C_Focus)
 	mob_azi = 45.0;
 	mob_elevup = 45.0;
 	mob_elevdo = - 45.0;
-	mob_prio = - 1;
+	//mob_prio = - 1;
+	mob_prio = FocusVobBySpellID();
 };
