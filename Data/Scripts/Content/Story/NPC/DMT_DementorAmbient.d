@@ -38,6 +38,33 @@ prototype Default_AmbientDementor(C_NPC)
 	// -------- daily routine --------
 };
 
+
+
+// *******************************************************
+// DMT_FirstDementor
+// *******************************************************
+
+instance DMT_FirstDementor(Default_AmbientDementor)
+{
+	id								= 3001;
+	// -------- NPC --------
+
+	// -------- attributes --------
+
+	// -------- visuals --------
+
+	// -------- talents --------
+
+	// -------- fighting skills --------
+
+	// -------- inventory --------
+	CreateInvItems(self,ITRU_FireBolt,1);
+
+	// -------- daily routine --------
+	start_aistate = ZS_Stand_Dementor;
+};
+
+
 // *******************************************************
 // DMT_DementorAmbient
 // *******************************************************

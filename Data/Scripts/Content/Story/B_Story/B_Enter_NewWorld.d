@@ -245,7 +245,7 @@ func void B_ENTER_NEWWORLD_Kapitel_3()
 			B_StartOtherRoutine(Lares, "START"); // damit er auch wieder in der Stadt steht
 		};
 
-		Wld_InsertNpc(DMT_DementorAmbientSpeaker, "NW_PASS_GATE_02"); // Im Pass
+		Wld_InsertNpc(DMT_FirstDementor, "NW_PASS_GATE_02"); // Im Pass
 		B_KillNpc(PAL_297_Ritter); // Passwache
 		B_KillNpc(PAL_298_Ritter); // Passwache
 

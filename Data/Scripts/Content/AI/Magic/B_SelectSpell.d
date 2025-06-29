@@ -51,6 +51,11 @@ func int B_SelectSpell(var C_Npc slf, var C_Npc oth)
 			B_ReadySpell(slf, SPL_Skull, SPL_Cost_Skull);
 			return TRUE;
 		}
+		if (Hlp_GetInstanceID(slf) == Hlp_GetInstanceID(DMT_FirstDementor))
+		{
+			B_ReadySpell(slf, SPL_FireBolt, SPL_Cost_FireBolt);
+			return TRUE;
+		}
 		else // alle anderen Dementoren
 		{
 			if (Npc_IsDrawingWeapon(slf))
