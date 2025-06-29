@@ -119,11 +119,9 @@ instance Focus_Throw_Mob(C_Focus)
 
 func int FocusVobBySpellID()
 {
-	var int activeSpell;
 	if(Npc_IsDrawingSpell(hero))
 	{
-		activeSpell = Npc_GetActiveSpell(hero);
-		if(activeSpell == 0)
+		if(Npc_GetActiveSpell(hero) == SPL_Picklock)
 		{
 			return 0;
 		};
