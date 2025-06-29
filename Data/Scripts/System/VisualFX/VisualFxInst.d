@@ -5697,3 +5697,37 @@ instance spellFX_InvisibleProjectile		(CFx_Base_Proto)
 	{
 	     	emtrjeasevel 			= 0.000001;
 };
+
+////////////////////////////////////////////////////////////////////////////////
+
+instance SPELLFX_PICKLOCK(CFX_BASE_PROTO)
+{
+	visname_s = "MFX_PICKLOCK_INIT";
+	emtrjoriginnode = "ZS_RIGHTHAND";
+	emtrjmode_s = "fixed";
+	emtrjloopmode_s = "NONE";
+	emtrjeasefunc_s = "LINEAR";
+	emtrjdynupdatedelay = 0;
+	emfxinvesttarget_s = "SPELLFX_PICKLOCK_TARGET";
+};
+
+instance SPELLFX_PICKLOCK_KEY_INIT(C_PARTICLEFXEMITKEY)
+{
+	visname_s = "MFX_PICKLOCK_INIT";
+};
+
+instance SPELLFX_PICKLOCK_KEY_CAST(C_PARTICLEFXEMITKEY)
+{
+	visname_s = "MFX_PICKLOCK_ORIGIN";
+//	sfxid = "MFX_CHARM_CAST";
+//	sfxisambient = 1;
+	emtrjeasevel = 1400;
+};
+
+instance SPELLFX_PICKLOCK_ORIGIN(CFX_BASE_PROTO)
+{
+	visname_s = "MFX_PICKLOCK_ORIGIN";
+	emtrjmode_s = "FIXED";
+	emtrjoriginnode = "ZS_RIGHTHAND";
+	emtrjdynupdatedelay = 0;
+};
