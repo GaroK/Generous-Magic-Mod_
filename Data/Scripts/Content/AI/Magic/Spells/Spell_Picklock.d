@@ -6,11 +6,12 @@ const int SPL_COST_Picklock = 10;
 
 func int C_CanUnlockFocusVob(var C_NPC npc)
 {
-	return FALSE;
+	return FALSE; //see system\autorun\zPicklock.d
 };
 
 func void B_UnlockFocusVob(var C_NPC npc)
 {
+	//see system\autorun\zPicklock.d
 };
 
 instance Spell_Picklock(C_Spell_Proto)
@@ -19,8 +20,8 @@ instance Spell_Picklock(C_Spell_Proto)
 	spellType = 1; //SPELL_NEUTRAL
 	canTurnDuringInvest = 0;
 	canChangeTargetDuringInvest = 0;
-	targetCollectAlgo = TARGET_COLLECT_FOCUS;
-	targetCollectType = TARGET_TYPE_ALL;
+	targetCollectAlgo = 2; //TARGET_COLLECT_FOCUS
+	targetCollectType = 1; //TARGET_TYPE_ALL
 	targetCollectRange = 1000;
 };
 
