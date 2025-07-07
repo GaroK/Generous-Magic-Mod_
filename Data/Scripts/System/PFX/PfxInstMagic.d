@@ -12067,10 +12067,86 @@ INSTANCE DRAGON_EYE_RIGHT (C_PARTICLEFX)
      useemittersfor = 0;
 };
 
+////////////////////////////////////////////////////////////////////////////////
 
+instance MFX_PICKLOCK_INIT(C_PARTICLEFX)
+{
+	ppsvalue = 90;
+	ppsscalekeys_s = "1";
+	ppsislooping = 1;
+	ppsissmooth = 1;
+	ppsfps = 10;
+	shptype_s = "POINT";
+	shpfor_s = "object";
+	shpoffsetvec_s = "0 0 0";
+	shpdistribtype_s = "RAND";
+	shpdim_s = "15";
+	shpscalekeys_s = "1";
+	shpscaleislooping = 1;
+	shpscaleissmooth = 1;
+	shpscalefps = 2;
+	dirmode_s = "RAND";
+	dirfor_s = "object";
+	dirmodetargetfor_s = "OBJECT";
+	dirmodetargetpos_s = "0 0 0";
+	dirangleheadvar = 180;
+	dirangleelevvar = 180;
+	velavg = 0.05;
+	lsppartavg = 1400;
+	flygravity_s = "0 0 0";
+	flycolldet_b = 0;
+	visname_s = "MFX_SLEEP_STAR.TGA";
+	visorientation_s = "NONE";
+	vistexisquadpoly = 1;
+	vistexanifps = 18;
+	vistexaniislooping = 1;
+	vistexcolorstart_s = "100 50 255";
+	vistexcolorend_s = "255 255 255";
+	vissizestart_s = "20 20";
+	vissizeendscale = 0.01;
+	visalphafunc_s = "ADD";
+	visalphastart = 255;
+	visalphaend = 255;
+};
 
-
-
+instance MFX_PICKLOCK_ORIGIN(C_PARTICLEFX)
+{
+	ppsvalue = 190;
+	ppsscalekeys_s = "1 1.1 1 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1";
+	ppsissmooth = 1;
+	ppsfps = 10;
+	shptype_s = "POINT";
+	shpfor_s = "object";
+	shpoffsetvec_s = "0 0 0";
+	shpdistribtype_s = "RAND";
+	shpdim_s = "15";
+	shpscalekeys_s = "1";
+	shpscaleislooping = 1;
+	shpscaleissmooth = 1;
+	shpscalefps = 2;
+	dirmode_s = "RAND";
+	dirfor_s = "object";
+	dirmodetargetfor_s = "OBJECT";
+	dirmodetargetpos_s = "0 0 0";
+	dirangleheadvar = 180;
+	dirangleelevvar = 180;
+	velavg = 0.1;
+	lsppartavg = 2000;
+	flygravity_s = "0 0 0";
+	flycolldet_b = 1;
+	visname_s = "MFX_SLEEP_STAR.TGA";
+	visorientation_s = "NONE";
+	vistexisquadpoly = 1;
+	vistexanifps = 18;
+	vistexaniislooping = 1;
+	vistexcolorstart_s = "100 50 255";
+	vistexcolorend_s = "255 255 255";
+	vissizestart_s = "25 25";
+	vissizeendscale = 0.01;
+	visalphafunc_s = "ADD";
+	visalphastart = 255;
+	visalphaend = 255;
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

@@ -162,5 +162,6 @@ instance Focus_Magic(C_Focus)
 	mob_azi = 45.0;
 	mob_elevup = 45.0;
 	mob_elevdo = - 45.0;
-	mob_prio = - 1;
+	//mob_prio = - 1;
+	mob_prio = 0;
 };
