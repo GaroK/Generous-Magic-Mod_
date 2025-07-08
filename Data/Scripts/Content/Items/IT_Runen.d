@@ -783,32 +783,6 @@ instance ItRu_Icebolt(C_Item)
 */
 
 /*******************************************************************************************/
-instance ItRu_SumWolfPack(C_Item)
-{
-	name						= NAME_Rune;
-
-	mainflag					= ITEM_KAT_RUNE;
-	flags						= 0;
-
-	wear						= WEAR_EFFECT;
-	effect						= "SPELLFX_WEAKGLIMMER";
-
-	visual						= "ItRu_SumWolf.3DS";
-	material					= MAT_STONE;
-
-	spell						= SPL_SummonWolfPack;
-	mag_circle					= 2;
-
-	value						= Value_Ru_SumWolf;
-
-	description					= NAME_SPL_SummonWolf;
-	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
-	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_SummonWolfPack;
-	text[2]						= "";											count[2] = 0;
-	text[3]						= "";											count[3] = 0;
-	text[4]						= "";											count[4] = 0;
-	text[5]						= NAME_Value;									count[5] = value;
-};
 
 /*******************************************************************************************/
 instance ItRu_Windfist(C_Item)

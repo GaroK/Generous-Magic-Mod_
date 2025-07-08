@@ -1,4 +1,4 @@
-const int SPL_COST_Picklock = 10;
+/*const int SPL_COST_Picklock = 10;
 
 instance Spell_Picklock(C_Spell_Proto)
 {
@@ -51,4 +51,4 @@ func void Spell_Cast_Picklock()
         Npc_SendPassivePerc(self, PERC_ASSESSUSEMOB, self, self);
     };
     self.aivar[AIV_SelectSpell] += 1;
-};
+};*/

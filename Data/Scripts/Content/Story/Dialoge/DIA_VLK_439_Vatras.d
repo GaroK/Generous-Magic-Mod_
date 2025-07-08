@@ -1588,6 +1588,10 @@ func int DIA_Vatras_Spende_Condition()
 	};
 };
 
+var int Vatras_Blessing_Day;
+var int Vatras_Blessing_Bonus;
+const int Vatras_Bonus = 3;
+
 func void DIA_Vatras_Spende_Info()
 {
 	AI_Output(other, self, "DIA_Vatras_Spende_15_00"); //I want to make a donation to Adanos!
@@ -1624,18 +1628,24 @@ func void DIA_Vatras_Spende_50()
 
 func void DIA_Vatras_Spende_100()
 {
-	AI_Output(other, self, "DIA_Vatras_Spende_100_15_00"); //I've got 100 gold pieces ...
-	AI_Output(self, other, "DIA_Vatras_Spende_100_05_01"); //I bless you in the name of Adanos for this generous act!
-	Snd_Play("LevelUp");
-	AI_Output(self, other, "DIA_Vatras_Spende_100_05_02"); //May the path you follow be blessed by Adanos!
-	B_GiveInvItems(other, self, ITmi_Gold, 100);
-	Vatras_Segen = TRUE;
-	Info_ClearChoices(DIA_Vatras_Spende);
-	if (MIS_Thorben_GetBlessings == LOG_RUNNING)
-	{
-		B_LogEntry(TOPIC_Thorben, TOPIC_Thorben_1);
-	};
+    AI_Output(other, self, "DIA_Vatras_Spende_100_15_00"); //I've got 100 gold pieces ...
+    AI_Output(self, other, "DIA_Vatras_Spende_100_05_01"); //I bless you in the name of Adanos for this generous act!
+    Snd_Play("LevelUp");
+    AI_Output(self, other, "DIA_Vatras_Spende_100_05_02"); //May the path you follow be blessed by Adanos!
+    B_GiveInvItems(other, self, ITmi_Gold, 100);
+    if (Wld_GetDay() != Vatras_Blessing_Day  || (Wld_GetDay() == 0 && !Vatras_Blessing_Bonus)){
+      other.protection [PROT_POINT] += Vatras_Bonus;
+      Vatras_Blessing_Bonus = TRUE;
+      Vatras_Blessing_Day = Wld_GetDay();
+    };
+    if (MIS_Thorben_GetBlessings == LOG_RUNNING)
+    {
+        B_LogEntry(TOPIC_Thorben, TOPIC_Thorben_1);
+    };
+    Vatras_Segen = TRUE;
+    Info_ClearChoices(DIA_Vatras_Spende);
 };
+
 
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach

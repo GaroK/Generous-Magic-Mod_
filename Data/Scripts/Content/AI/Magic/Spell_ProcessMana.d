@@ -13,7 +13,6 @@ func int Spell_ProcessMana(var int manaInvested)
 	var int activeSpell; activeSpell = Npc_GetActiveSpell(self);
 
 	// Paladin-Runen
-	if (activeSpell == SPL_PickLock) { return Spell_Logic_PickLock(manaInvested); };
 	if (activeSpell == SPL_PalLight) { return Spell_Logic_PalLight(manaInvested); };
 	if (activeSpell == SPL_PalLightHeal) { return Spell_Logic_PalLightHeal(manaInvested); };
 	if (activeSpell == SPL_PalHolyBolt) { return Spell_Logic_PalHolyBolt(manaInvested); };

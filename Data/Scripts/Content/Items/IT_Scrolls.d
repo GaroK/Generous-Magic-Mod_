@@ -61,25 +61,6 @@ const int Value_Sc_TrfShadowbeast = 200;
 const int Value_Sc_TrfDragonSnapper = 200;
 
 
-//Picklock scroll
-instance ItSc_Picklock(C_Item)
-{
-    name = NAME_SPL_Picklock;
-    mainflag = ITEM_KAT_RUNE;
-    flags = ITEM_MULTI;
-    value = 300;
-    visual = "ITSC_LOCKPICKING.3DS";
-    material = MAT_LEATHER;
-    spell = SPL_Picklock;
-    cond_atr[2] = ATR_MANA_MAX;
-    cond_value[2] = SPL_Cost_Scroll;
-    description = name;
-    text[0] = NAME_MageScroll;
-    text[1] = NAME_Mana_needed;
-    count[1] = SPL_Cost_Scroll;
-    text[5] = NAME_Value;
-    count[5] = value;
-};
 
 
 
