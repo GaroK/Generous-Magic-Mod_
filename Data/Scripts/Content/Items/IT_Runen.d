@@ -67,8 +67,6 @@ const int Value_Ru_TeleportOWDemonTower = 500;
 const int Value_Ru_TeleportTaverne = 500;
 const int Value_Ru_Teleport_3 = 500;
 
-const int Value_Ru_Picklock = 500;
-
 /*******************************************************************************************/
 instance ItRu_PalLight(C_Item)
 {
@@ -1401,34 +1399,6 @@ instance ItRu_Shrink(C_Item)
 	description					= NAME_SPL_Shrink;
 	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
 	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_SHRINK;
-	text[2]						= "";											count[2] = 0;
-	text[3]						= "";											count[3] = 0;
-	text[4]						= "";											count[4] = 0;
-	text[5]						= NAME_Value;									count[5] = value;
-};
-
-/*******************************************************************************************/
-instance ItRu_Picklock(C_Item)
-{
-	name						= NAME_Rune;
-
-	mainflag					= ITEM_KAT_RUNE;
-	flags						= 0;
-
-	wear						= WEAR_EFFECT;
-	effect						= "SPELLFX_WEAKGLIMMER";
-
-	visual						= "ItRu_Picklock.3DS";
-	material					= MAT_STONE;
-
-	spell						= SPL_Picklock;
-	mag_circle					= 1;
-
-	value						= Value_Ru_Picklock;
-
-	description					= NAME_SPL_Picklock;
-	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
-	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_Picklock;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
