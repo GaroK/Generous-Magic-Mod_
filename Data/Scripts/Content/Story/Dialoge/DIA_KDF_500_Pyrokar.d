@@ -1031,6 +1031,11 @@ func void DIA_Pyrokar_PERM_Info()
       {
           AI_Output(self, other, "DIA_Pyrokar_PERM_11_02"); //May your final battle against our archenemy be crowned with success. Innos be with you.
           other.protection [PROT_POINT] += Pyrokar_Bonus;
+		  other.protection [PROT_EDGE] += Pyrokar_Bonus;
+		  other.protection [PROT_BLUNT] += Pyrokar_Bonus;
+		  other.protection [PROT_FLY] += Pyrokar_Bonus;
+		  other.protection [PROT_MAGIC] += Pyrokar_Bonus;
+		  other.protection [PROT_FIRE] += Pyrokar_Bonus;
           Pyrokar_Blessing_Bonus = TRUE;
           Pyrokar_Blessing_Day = Wld_GetDay();
       }
@@ -1038,6 +1043,12 @@ func void DIA_Pyrokar_PERM_Info()
       {
           AI_Output(self, other, "DIA_Pyrokar_PERM_11_03"); //May Innos stand between you and harm on all the unholy paths you will have to walk.
           other.protection [PROT_POINT] += Pyrokar_Bonus;
+		  other.protection [PROT_EDGE] += Pyrokar_Bonus;
+		  other.protection [PROT_BLUNT] += Pyrokar_Bonus;
+		  other.protection [PROT_FLY] += Pyrokar_Bonus;
+		  other.protection [PROT_MAGIC] += Pyrokar_Bonus;
+		  other.protection [PROT_FIRE] += Pyrokar_Bonus;
+		  
           Pyrokar_Blessing_Bonus = TRUE;
           Pyrokar_Blessing_Day = Wld_GetDay();
       };

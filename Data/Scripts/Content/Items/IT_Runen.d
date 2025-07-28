@@ -754,7 +754,7 @@ instance ItRu_Icebolt(C_Item)
 };
 
 /*******************************************************************************************/
-/*instance ItRu_SumWolf(C_Item)
+instance ItRu_SumWolf(C_Item)
 {
 	name						= NAME_Rune;
 
@@ -780,7 +780,7 @@ instance ItRu_Icebolt(C_Item)
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
-*/
+
 
 /*******************************************************************************************/
 
