@@ -80,6 +80,7 @@ func int DIA_Xardas_Hello_Condition()
 
 func void DIA_Xardas_Hello_Info()
 {
+	Snd_Play   ("howling_01");
 	AI_Output(self, other, "DIA_Addon_Xardas_Hello_14_00"); //There you are again! (smiling) I never thought the two of us would meet again.
 	AI_Output(other, self, "DIA_Addon_Xardas_Hello_15_01"); //I feel like I spent three weeks lying under a load of rocks.
 	AI_Output(self, other, "DIA_Addon_Xardas_Hello_14_02"); //Well, so you did. Only the magic within your armor kept you alive. 
