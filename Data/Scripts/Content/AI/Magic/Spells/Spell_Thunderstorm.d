@@ -2,7 +2,7 @@
 // SPL_Thunderstorm /K3
 // ****************
 
-const int SPL_Cost_Thunderstorm = 250;
+const int SPL_Cost_Thunderstorm = 150;
 const int SPL_Damage_Thunderstorm = 250;
 
 instance Spell_Thunderstorm(C_Spell_Proto)

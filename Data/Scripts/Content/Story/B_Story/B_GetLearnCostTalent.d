@@ -205,7 +205,7 @@ func int B_GetLearnCostTalent(var C_Npc oth, var int talent, var int skill)
 		else if (skill == SPL_SummonSkeleton) { kosten = (10); }
 		else if (skill == SPL_Fear) { kosten = (5); }
 		else if (skill == SPL_IceCube) { kosten = (10); }
-		else if (skill == SPL_Thunderstorm) { kosten = (5); }
+		else if (skill == SPL_Thunderstorm) { kosten = (10); }
 		else if (skill == SPL_Geyser) { kosten = (10); }
 		// 4
 		else if (skill == SPL_ChargeZap) { kosten = (10); }

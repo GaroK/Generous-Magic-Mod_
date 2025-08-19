@@ -2,8 +2,8 @@
 // SPL_Waterfist /k4
 // *************
 
-const int SPL_Cost_Waterfist = 25;
-const int SPL_Damage_Waterfist = 125;
+const int SPL_Cost_Waterfist = 40;
+const int SPL_Damage_Waterfist = 160;
 
 instance Spell_Waterfist(C_Spell_Proto)
 {

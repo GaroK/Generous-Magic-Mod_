@@ -295,103 +295,80 @@ FUNC INT DIA_Ignaz_Teach_Condition()
 		return TRUE;
 	};
 };
-FUNC VOID DIA_Ignaz_Teach_Info()
+func void DIA_Ignaz_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//Instruct me in the art of alchemy.
-	
-	
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
-	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
-	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
-/*	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == FALSE)
-	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_02] == FALSE)
-	|| ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_03] == FALSE)*/
+	AI_Output(other, self, "DIA_Ignaz_Teach_15_00"); //Lehre mich die Kunst der Alchemie.
+
+	if ((PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
+	|| (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
+	|| (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE))
 	{
-		Info_ClearChoices (DIA_Ignaz_Teach);
-		Info_AddChoice (DIA_Ignaz_Teach,DIALOG_BACK,DIA_Ignaz_Teach_BACK);
+		Info_ClearChoices(DIA_Ignaz_Teach);
+		Info_AddChoice(DIA_Ignaz_Teach, DIALOG_BACK, DIA_Ignaz_Teach_BACK);
 	};
-	
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
+
+	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Ignaz_Teach_Mana);
+		Info_AddChoice(DIA_Ignaz_Teach, B_BuildLearnString(NAME_Speed_Potion, B_GetLearnCostTalent(other, NPC_TALENT_ALCHEMY, POTION_Speed)), DIA_Ignaz_Teach_Speed);
 		talente = (talente + 1);
 	};
-	
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
+
+	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Essence of Healing", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
+		Info_AddChoice(DIA_Ignaz_Teach, B_BuildLearnString(NAME_ManaPotion1, B_GetLearnCostTalent(other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Ignaz_Teach_Mana);
 		talente = (talente + 1);
 	};
-	
-	/* if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == FALSE)
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
-	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
+
+	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Essence of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX_01)) ,DIA_Ignaz_Teach_Dexterity_01);
+		Info_AddChoice(DIA_Ignaz_Teach, B_BuildLearnString(NAME_HealthPotion1, B_GetLearnCostTalent(other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Ignaz_Teach_Health);
 		talente = (talente + 1);
 	};
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_01] == TRUE)
-	&& ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX_02] == FALSE)
-	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Extract of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX_02)) ,DIA_Ignaz_Teach_Dexterity_02);
-		talente = (talente + 1);
-	};*/
-	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == False)
-	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Elixir of Dexterity", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)) ,DIA_Ignaz_Teach_Dexterity);
-		talente = (talente + 1);
-	};
+
 	if (talente > 0)
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //To prepare a potion at the alchemist's bench, you need a laboratory flask.
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //And you're going to need different plants or other ingredients for each potion.
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benötigten Pflanzen dafür sehr selten sind.
+			AI_Output(self, other, "DIA_Ignaz_Teach_14_01"); //Zur Herstellung eines Tranks am Alchimietisch brauchst du eine Laborflasche.
+			AI_Output(self, other, "DIA_Ignaz_Teach_14_02"); //Und du benötigst unterschiedliche Pflanzen oder andere Ingredienzen für jeden Trank.
+			// AI_Output(self, other,"DIA_Ignaz_Teach_14_03"); // Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benötigten Pflanzen dafür sehr selten sind.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //What do you want to know?
+			AI_Output(self, other, "DIA_Ignaz_Teach_14_04"); //Was willst du wissen?
 		};
 	}
-	else 
+	else
 	{
-		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //You have learned all that I can teach you.
+		AI_Output(self, other, "DIA_Ignaz_Teach_14_05"); //Du hast alles gelernt, was ich dir beibringen kann.
 		DIA_Ignaz_Teach_permanent = TRUE;
 	};
 };
-	
-FUNC VOID DIA_Ignaz_Teach_Health()
+
+func void DIA_Ignaz_Teach_Health()
 {
-	B_TeachPlayerTalentAlchemy (self, other, POTION_Health_01);
-	Info_ClearChoices (DIA_Ignaz_Teach);
+	B_TeachPlayerTalentAlchemy(self, other, POTION_Health_01);
+	Info_ClearChoices(DIA_Ignaz_Teach);
 };
-FUNC VOID DIA_Ignaz_Teach_Mana()
+
+func void DIA_Ignaz_Teach_Mana()
 {
-	B_TeachPlayerTalentAlchemy (self, other, POTION_Mana_01);
-	Info_ClearChoices (DIA_Ignaz_Teach);
+	B_TeachPlayerTalentAlchemy(self, other, POTION_Mana_01);
+	Info_ClearChoices(DIA_Ignaz_Teach);
 };
-/*FUNC VOID DIA_Ignaz_Teach_Dexterity_01()
+
+func void DIA_Ignaz_Teach_Speed()
 {
-	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX_01);
-	Info_ClearChoices (DIA_Ignaz_Teach);
+	B_TeachPlayerTalentAlchemy(self, other, POTION_Speed);
+	Info_ClearChoices(DIA_Ignaz_Teach);
 };
-FUNC VOID DIA_Ignaz_Teach_Dexterity_02()
+
+func void DIA_Ignaz_Teach_BACK()
 {
-	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX_02);
-	Info_ClearChoices (DIA_Ignaz_Teach);
-};*/
-FUNC VOID DIA_Ignaz_Teach_Dexterity()
-{
-	B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_DEX);
-	Info_ClearChoices (DIA_Ignaz_Teach);
-};
-FUNC VOID DIA_Ignaz_Teach_BACK()
-{
-	Info_ClearChoices (DIA_Ignaz_Teach);
+	Info_ClearChoices(DIA_Ignaz_Teach);
 };
 
 
