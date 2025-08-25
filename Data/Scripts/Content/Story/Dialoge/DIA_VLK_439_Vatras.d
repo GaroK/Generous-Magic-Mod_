@@ -1,3 +1,58 @@
+
+// Vatras Health Regen
+
+var C_Trigger health_regen_controller;
+
+
+// =====================================
+//             REGEN CODE
+// =====================================
+
+const int HP_PER_SEC_1 = 1;
+const int HP_PER_SEC_2 = 2;
+const int HP_PER_SEC_3 = 3;
+var int Vatras_HP_Regen_1;
+var int Vatras_HP_Regen_2;
+var int Vatras_HP_Regen_3;
+func int Regen_hp()
+{
+    if (Vatras_HP_Regen_1)
+    {
+        Npc_ChangeAttribute(hero, atr_hitpoints, HP_PER_SEC_1);
+        return LOOP_CONTINUE;
+    }
+    else if (Vatras_HP_Regen_2)
+    {
+        Npc_ChangeAttribute(hero, atr_hitpoints, HP_PER_SEC_2);
+        return LOOP_CONTINUE;
+    }
+    else if (Vatras_HP_Regen_3)
+    {
+        Npc_ChangeAttribute(hero, atr_hitpoints, HP_PER_SEC_3);
+        return LOOP_CONTINUE;
+    };
+    return LOOP_END;
+};
+
+
+func void Health_Regen_ON()
+{
+
+        health_regen_controller = AI_StartTriggerScript("Regen_hp", 1000);
+};
+
+func void Health_Regen_OFF() 
+{ 
+ 
+    Vatras_HP_Regen_1 = false;
+	Vatras_HP_Regen_2 = false;
+	Vatras_HP_Regen_3 = false;
+
+};
+
+
+
+
 // *********************************************************
 // 			  				EXIT
 // *********************************************************
@@ -1588,6 +1643,10 @@ func int DIA_Vatras_Spende_Condition()
 	};
 };
 
+var int Vatras_Blessing_Day;
+var int Vatras_Blessing_Bonus;
+const int Vatras_Bonus = 3;
+
 func void DIA_Vatras_Spende_Info()
 {
 	AI_Output(other, self, "DIA_Vatras_Spende_15_00"); //I want to make a donation to Adanos!
@@ -1624,18 +1683,40 @@ func void DIA_Vatras_Spende_50()
 
 func void DIA_Vatras_Spende_100()
 {
-	AI_Output(other, self, "DIA_Vatras_Spende_100_15_00"); //I've got 100 gold pieces ...
-	AI_Output(self, other, "DIA_Vatras_Spende_100_05_01"); //I bless you in the name of Adanos for this generous act!
-	Snd_Play("LevelUp");
-	AI_Output(self, other, "DIA_Vatras_Spende_100_05_02"); //May the path you follow be blessed by Adanos!
-	B_GiveInvItems(other, self, ITmi_Gold, 100);
-	Vatras_Segen = TRUE;
-	Info_ClearChoices(DIA_Vatras_Spende);
-	if (MIS_Thorben_GetBlessings == LOG_RUNNING)
-	{
-		B_LogEntry(TOPIC_Thorben, TOPIC_Thorben_1);
-	};
+    AI_Output(other, self, "DIA_Vatras_Spende_100_15_00"); //I've got 100 gold pieces ...
+    AI_Output(self, other, "DIA_Vatras_Spende_100_05_01"); //I bless you in the name of Adanos for this generous act!
+    Snd_Play("LevelUp");
+    AI_Output(self, other, "DIA_Vatras_Spende_100_05_02"); //May the path you follow be blessed by Adanos!
+    B_GiveInvItems(other, self, ITmi_Gold, 100);
+    if (Wld_GetDay() != Vatras_Blessing_Day  || (Wld_GetDay() == 0 && !Vatras_Blessing_Bonus)){
+      Vatras_Blessing_Bonus = TRUE;
+ 
+ if (Kapitel == 1) || (Kapitel == 2)
+		{
+			Vatras_HP_Regen_1 = TRUE;
+		}
+		else if (Kapitel == 3)
+		{
+			Vatras_HP_Regen_2 = TRUE;
+		}
+		else 
+		{
+			Vatras_HP_Regen_3 = TRUE;
+		};
+
+	 
+	  Health_Regen_ON();
+      Vatras_Blessing_Day = Wld_GetDay();
+    };
+    if (MIS_Thorben_GetBlessings == LOG_RUNNING)
+    {
+        B_LogEntry(TOPIC_Thorben, TOPIC_Thorben_1);
+    };
+    Vatras_Segen = TRUE;
+    Info_ClearChoices(DIA_Vatras_Spende);
 };
+
+
 
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach

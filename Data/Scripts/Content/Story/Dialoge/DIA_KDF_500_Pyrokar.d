@@ -995,42 +995,69 @@ func void DIA_Pyrokar_TEACH_MANA_5()
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pyrokar_PERM(C_INFO)
 {
-	npc				= KDF_500_Pyrokar;
-	nr				= 900;
-	condition		= DIA_Pyrokar_PERM_Condition;
-	information		= DIA_Pyrokar_PERM_Info;
-	permanent		= TRUE;
-	description		= "(Blessing)";
+    npc               = KDF_500_Pyrokar;
+    nr                = 900;
+    condition         = DIA_Pyrokar_PERM_Condition;
+    information       = DIA_Pyrokar_PERM_Info;
+    permanent         = TRUE;
+    description       = "(Blessing)";
 };
 
 func int DIA_Pyrokar_PERM_Condition()
 {
-	if (Kapitel >= 2)
-	{
-		return TRUE;
-	};
+    if (Kapitel >= 2)
+    {
+        return TRUE;
+    };
 };
+var int Pyrokar_Blessing_Day;
+var int Pyrokar_Blessing_Bonus;
+var int Pyrokar_Blessing_Bonus_Chapter_5;
+
+const int Pyrokar_Bonus = 5;
+const int Pyrokar_Bonus_Chapter_5 = 8;
 
 func void DIA_Pyrokar_PERM_Info()
 {
-	if (hero.guild == GIL_KDF)
-	{
-		AI_Output(other, self, "DIA_Pyrokar_PERM_15_00"); //Bless me, Master.
-	}
-	else
-	{
-		AI_Output(other, self, "DIA_Pyrokar_PERM_15_01"); //What about a little blessing? I could surely use it.
-	};
-
-	if ((Kapitel == 5)
-	&& (MIS_PyrokarClearDemonTower == LOG_SUCCESS))
-	{
-		AI_Output(self, other, "DIA_Pyrokar_PERM_11_02"); //May your final battle against our archenemy be crowned with success. Innos be with you.
-	}
-	else
-	{
-		AI_Output(self, other, "DIA_Pyrokar_PERM_11_03"); //May Innos stand between you and harm on all the unholy paths you will have to walk.
-	};
+    if (hero.guild == GIL_KDF)
+    {
+        AI_Output(other, self, "DIA_Pyrokar_PERM_15_00"); //Bless me, Master.
+    }
+    else
+    {
+        AI_Output(other, self, "DIA_Pyrokar_PERM_15_01"); //What about a little blessing? I could surely use it.
+    };
+    if (Wld_GetDay() != Pyrokar_Blessing_Day || (Wld_GetDay() == 0 && !Pyrokar_Blessing_Bonus && !Pyrokar_Blessing_Bonus_Chapter_5)){
+      if ((Kapitel == 5)
+      && (MIS_PyrokarClearDemonTower == LOG_SUCCESS))
+      {
+          AI_Output(self, other, "DIA_Pyrokar_PERM_11_02"); //May your final battle against our archenemy be crowned with success. Innos be with you.
+          other.protection [PROT_POINT] += Pyrokar_Bonus_Chapter_5;
+		  other.protection [PROT_EDGE] += Pyrokar_Bonus_Chapter_5;
+		  other.protection [PROT_BLUNT] += Pyrokar_Bonus_Chapter_5;
+		  other.protection [PROT_FLY] += Pyrokar_Bonus_Chapter_5;
+		  other.protection [PROT_MAGIC] += Pyrokar_Bonus_Chapter_5;
+		  other.protection [PROT_FIRE] += Pyrokar_Bonus_Chapter_5;
+          Pyrokar_Blessing_Bonus_Chapter_5 = TRUE;
+          Pyrokar_Blessing_Day = Wld_GetDay();
+      }
+      else
+      {
+          AI_Output(self, other, "DIA_Pyrokar_PERM_11_03"); //May Innos stand between you and harm on all the unholy paths you will have to walk.
+          other.protection [PROT_POINT] += Pyrokar_Bonus;
+		  other.protection [PROT_EDGE] += Pyrokar_Bonus;
+		  other.protection [PROT_BLUNT] += Pyrokar_Bonus;
+		  other.protection [PROT_FLY] += Pyrokar_Bonus;
+		  other.protection [PROT_MAGIC] += Pyrokar_Bonus;
+		  other.protection [PROT_FIRE] += Pyrokar_Bonus;
+		  
+          Pyrokar_Blessing_Bonus = TRUE;
+          Pyrokar_Blessing_Day = Wld_GetDay();
+      };
+    }else
+    {
+      //BLESSING ALREADY RECEIVED FOR TODAY!
+    };
 };
 
 // ##############################################################
