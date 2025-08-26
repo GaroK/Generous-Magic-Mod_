@@ -44,11 +44,18 @@ func int B_SelectSpell(var C_Npc slf, var C_Npc oth)
 		if (Npc_HasItems(slf, ItRu_LightningFlash) == 0) { CreateInvItems(slf, ItRu_LightningFlash, 1); };
 		if (Npc_HasItems(slf, ItRu_Firestorm) == 0) { CreateInvItems(slf, ItRu_Firestorm, 1); };
 		if (Npc_HasItems(slf, ItRu_Skull) == 0) { CreateInvItems(slf, ItRu_Skull, 1); };
+		if (Npc_HasItems(slf, ItRu_Skull) == 0) { CreateInvItems(slf, ItRu_Firebolt, 1); };
 		// ------------------------------
 
 		if (Hlp_GetInstanceID(slf) == Hlp_GetInstanceID(DMT_1299_OberDementor_DI))
 		{
 			B_ReadySpell(slf, SPL_Skull, SPL_Cost_Skull);
+			return TRUE;
+		}
+		
+		if (Hlp_GetInstanceID(slf) == Hlp_GetInstanceID(DMT_1212_FirstDementor))
+		{
+			B_ReadySpell(slf, SPL_FireBolt, SPL_Cost_FireBolt);
 			return TRUE;
 		}
 		else // alle anderen Dementoren
