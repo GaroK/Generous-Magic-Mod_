@@ -44,7 +44,7 @@ func int B_SelectSpell(var C_Npc slf, var C_Npc oth)
 		if (Npc_HasItems(slf, ItRu_LightningFlash) == 0) { CreateInvItems(slf, ItRu_LightningFlash, 1); };
 		if (Npc_HasItems(slf, ItRu_Firestorm) == 0) { CreateInvItems(slf, ItRu_Firestorm, 1); };
 		if (Npc_HasItems(slf, ItRu_Skull) == 0) { CreateInvItems(slf, ItRu_Skull, 1); };
-		if (Npc_HasItems(slf, ItRu_Skull) == 0) { CreateInvItems(slf, ItRu_Firebolt, 1); };
+		if (Npc_HasItems(slf, ItRu_Firebolt) == 0) { CreateInvItems(slf, ItRu_Firebolt, 1); };
 		// ------------------------------
 
 		if (Hlp_GetInstanceID(slf) == Hlp_GetInstanceID(DMT_1299_OberDementor_DI))
