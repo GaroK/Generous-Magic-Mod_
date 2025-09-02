@@ -870,11 +870,11 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 	};
 	
 			var int shroom1;
-				shroom1 = npc_hasitems(hero, ItPl_Mushroom_01);
+				shroom1 = Npc_HasItems(self, ItPl_Mushroom_01);
 				Npc_RemoveInvItems(self, ItPl_Mushroom_01, shroom1);
 				
 			var int shroom2;
-				shroom1 = npc_hasitems(hero, ItPl_Mushroom_02);
+				shroom2 = Npc_HasItems(self, ItPl_Mushroom_02);
 				Npc_RemoveInvItems(self, ItPl_Mushroom_02, shroom2);
 			Info_ClearChoices (DIA_Constantino_MushroomsRunning);
 };
