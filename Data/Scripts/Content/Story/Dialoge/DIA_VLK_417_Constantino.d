@@ -864,16 +864,19 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 		B_GiveInvItems (self, other, itmi_gold, (Npc_HasItems(other,ItPl_Mushroom_02) * Value_Mushroom_02) );
 		B_GiveInvItems (other, self, ItPl_Mushroom_02, Npc_HasItems (other, ItPl_Mushroom_02));
 		
-		   var int shroom1;
-				shroom1 = npc_hasitems(hero, ItPl_Mushroom_01);
+
+
+				
+	};
+	
+			var int shroom1;
+				shroom1 = Npc_HasItems(self, ItPl_Mushroom_01);
 				Npc_RemoveInvItems(self, ItPl_Mushroom_01, shroom1);
 				
 			var int shroom2;
-				shroom1 = npc_hasitems(hero, ItPl_Mushroom_02);
+				shroom2 = Npc_HasItems(self, ItPl_Mushroom_02);
 				Npc_RemoveInvItems(self, ItPl_Mushroom_02, shroom2);
-	};
-	
-	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
+			Info_ClearChoices (DIA_Constantino_MushroomsRunning);
 };
 
 func void DIA_Constantino_MushroomsRunning_Later()
