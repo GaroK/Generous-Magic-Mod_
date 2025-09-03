@@ -225,6 +225,7 @@ func int B_GetLearnCostTalent(var C_Npc oth, var int talent, var int skill)
 		else if (skill == SPL_MassDeath) { kosten = (10); }
 		else if (skill == SPL_ArmyOfDarkness) { kosten = (10); }
 		else if (skill == SPL_Shrink) { kosten = (10); }
+		else if (skill == SPL_PickLock) { kosten = (5); }
 		else { kosten = (5); };
 	};
 

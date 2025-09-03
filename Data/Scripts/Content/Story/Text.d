@@ -414,6 +414,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	const string NAME_SPL_SummonWolf					= "Summon Wolf";
 	const string NAME_SPL_WINDFIST						= "Wind Fist";
 	const string NAME_SPL_Sleep							= "Sleep";
+	const string NAME_SPL_Picklock					    = "Open Locks";
 
 // Kreis 3
 	const string NAME_SPL_MediumHeal					= "Heal Medium Wounds";

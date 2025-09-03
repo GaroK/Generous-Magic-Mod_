@@ -151,6 +151,7 @@ const string TOPIC_TalentRunes_30			= "Ingredients for the rune ´Breath of Deat
 const string TOPIC_TalentRunes_31			= "Ingredients for the rune ´Wave of Death´: 1 Skeletonbone and 1 Black Perl";
 const string TOPIC_TalentRunes_32			= "Ingredients for the rune ´Army of Darkness´: 1 Skeletonbone, 1 Black Perl, 1 Heart of a Stonegolem and 1 Heart of a Demon. ";
 const string TOPIC_TalentRunes_33			= "Ingredients for the rune ´Shrink Monster´: 1 Goblinbone and 1 Trolltooth";
+const string TOPIC_TalentRunes_PickLock		= "Ingredients for the rune Â´Pick LocksÂ´: 1 Lockpick";
 
 const string TOPIC_TalentAlchemy			= "Potions";
 const string TOPIC_TalentAlchemy_1			= "To make a healing potion, I need 1 meadow knotweed and 3 essences of healing.";

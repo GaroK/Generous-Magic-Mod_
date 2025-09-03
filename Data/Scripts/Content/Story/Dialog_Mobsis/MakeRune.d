@@ -1309,7 +1309,7 @@ func void PC_ItRu_PickLock_Info()
 		Npc_RemoveInvItems(hero, ItSc_PickLock, 1);
 		Npc_RemoveInvItems(hero, ItKe_LockPick, 1);
 
-		CreateInvItems(hero, ItRu_LockPick, 1);
+		CreateInvItems(hero, ItRu_PickLock, 1);
 		Print(PRINT_RuneSuccess);
 	}
 	else
