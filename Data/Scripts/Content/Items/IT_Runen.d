@@ -1497,3 +1497,4 @@ instance ItRu_Concussionbolt(C_Item)
 instance ItRu_Picklock(C_Item)
 {
 };
+
