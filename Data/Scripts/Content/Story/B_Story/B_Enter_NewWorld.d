@@ -66,9 +66,9 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 
 	if (GMM_PicklockScrollsSpawned == FALSE)
 	{
-		Wld_InsertItem(ItSc_Picklock,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
-		Wld_InsertItem(ItSc_Picklock,"FP_ITEM_XARDAS_03");				// Table Inside Brago's Cave
-		Wld_InsertItem(ItSc_Picklock,"FP_ROAM_BIGFARM_LAKE_CAVE_04"); 			// Greg's Goblin Treasure Cave
+		Wld_InsertItem(ItSc_Picklock,"FP_SPAWN_X_GUERTEL");			// Xardas' Tower, Plants bench on Ground Floor
+		Wld_InsertItem(ItSc_Picklock,"FP_ITEM_XARDAS_03");			// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_Picklock,"FP_ROAM_BIGFARM_LAKE_CAVE_04");		// Greg's Goblin Treasure Cave
 		GMM_PicklockScrollsSpawned = TRUE;
 	};
 	
