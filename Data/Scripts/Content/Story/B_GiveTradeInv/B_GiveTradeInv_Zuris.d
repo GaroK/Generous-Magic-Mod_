@@ -41,6 +41,7 @@ func void B_GiveTradeInv_Zuris(var C_Npc slf)
 		CreateInvItems(slf, ItSc_SumWolf, 1);
 		CreateInvItems(slf, ItSc_SumGol, 1);
 		CreateInvItems(slf, ItSc_SumDemon, 1);
+		CreateInvItems(slf, ItSc_PickLock, 5);
 
 		// ------ AmRiBe ------
 		CreateInvItems(slf, ItBe_Addon_Prot_MAGIC, 1);

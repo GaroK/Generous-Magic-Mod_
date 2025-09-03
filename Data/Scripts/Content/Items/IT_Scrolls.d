@@ -1669,4 +1669,7 @@ INSTANCE ItSc_TrfDragonSnapper (C_Item)//Joly:Auf Dracheninsel in Truhe der Schw
 };
 /*******************************************************************************************/
 
-
+// GMM
+instance ItSc_Picklock(C_Item)
+{
+};

@@ -29,6 +29,7 @@ func void B_GiveTradeInv_Ignaz(var C_Npc slf)
 		CreateInvItems(slf, ItSc_TrfWarg, 1);
 		CreateInvItems(slf, ITSC_Charm, 5);
 		CreateInvItems(slf, ITSC_Sleep, 1);
+		CreateInvItems(slf, ItSc_PickLock, 4);
 
 		Ignaz_ItemsGiven_Chapter_1 = TRUE;
 	};
