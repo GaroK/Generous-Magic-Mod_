@@ -9,7 +9,7 @@ const int T_HIGH = 120;
 const int T_MED = 90;
 const int T_LOW = 60;
 
-
+const int Ignaz_PicklockScrollsGiven = 999;
 var int GMM_Summon_Time;
 
 //**************
