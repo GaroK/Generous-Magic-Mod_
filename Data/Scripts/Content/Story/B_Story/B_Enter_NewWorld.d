@@ -2,6 +2,9 @@
 //  			B_ENTER_NEWWORLD
 // ***************************************************
 
+var int itemsspawned;
+var int GMM_PicklockScrollsSpawned;
+
 // B_ENTER_NEWWORLD_Kapitel_1
 //****************************************************
 func void B_ENTER_NEWWORLD_Kapitel_1()
@@ -10,7 +13,6 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		// ------         GMM      	    	------
 //	func void b_enter_newworld_kapitel_1
 {
-	var int itemsspawned;
 	if (!itemsspawned)
 		{
 			itemsspawned = true;
@@ -19,7 +21,6 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		Wld_InsertItem(ItSc_Firestorm,"FP_ITEM_XARDAS_05"); 				// Xardas' Tower, Table on Top Floor
 		Wld_InsertItem(ItSc_FireBolt,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
 		Wld_InsertItem(ItSc_FireBolt,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
-		Wld_InsertItem(ItSc_PickLock,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
 		Wld_InsertItem(ItSc_SumWolf,"FP_ITEM_XARDAS_04");					// Next to Waterfall Near Xardas' Tower, Behind Trees
 		Wld_InsertItem(ItSc_SumWolf,"FP_ROAM_XARDAS_CAVE_05");				// Cave Leading to Lester's Valley, the Part Filled With Goblins
 		Wld_InsertItem(ItSc_SumWolf,"FP_ROAM_XARDAS_CAVE_05");				// Cave Leading to Lester's Valley, the Part Filled With Goblins
@@ -28,7 +29,7 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		Wld_InsertItem(ItSc_SumWolf,"FP_ITEM_XARDAS_06");					// Lester's Fireplace in his Valley
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_ITEM_XARDAS_01");	   		// Grave Cave in Lester's Valley
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_ROAM_XARDAS_SECRET_25");	// Lizard Plateau near Xardas
-		Wld_InsertItem(ItSc_PickLock,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
 		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
 		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_XARDAS_03");					// Table Inside Brago's Cave
 		Wld_InsertItem(ItSc_FireBolt,"FP_ITEM_FARM1_03"); 					// Innos Shrine near Lobart's Farm
@@ -38,16 +39,15 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 				
 				// On the way to the Dead Harpy
 		//****************************************************
-		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_NW_CITY_TO_FOREST_04_05_6");			 // Harad's Orc Cave
-		Wld_InsertItem(ItSc_Icelance,"FP_ROAM_NW_CITY_TO_FOREST_04_05_6");		 		 // Harad's Orc Cave
-		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_NW_CITY_SMFOREST_05_03");				 // Free Orc Weapon Cave
-		Wld_InsertItem(ItSc_InstantFireball,"FP_ROAM_NW_CITY_SMFOREST_05_03");	 		 // Free Orc Weapon Cave
-		Wld_InsertItem(ItSc_IceLance,"FP_ROAM_CITY_TO_FOREST_39");					     // Under the Erol's Bandits Bridge
-		Wld_InsertItem(ItSc_IceLance,"FP_ROAM_CITY_TO_FOREST_39");				 		 // Under the Erol's Bandits Bridge
-		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_BIGFARM_LAKE_CAVE_04"); 				     // Greg's Goblin Treasure Cave
-		Wld_InsertItem(ItSc_PickLock,"FP_ROAM_BIGFARM_LAKE_CAVE_04"); 				     // Greg's Goblin Treasure Cave
-		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_BIGFARM_LAKE_CAVE_10"); 			     // Greg's Goblin Treasure Cave
-		Wld_InsertItem(ItSc_SumGobSkel,"FP_ITEM_MONASTERY_02"); 					     // Innos' Shrine on the Way to Monastery
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_NW_CITY_TO_FOREST_04_05_6");		  // Harad's Orc Cave
+		Wld_InsertItem(ItSc_Icelance,"FP_ROAM_NW_CITY_TO_FOREST_04_05_6");		 	  // Harad's Orc Cave
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_NW_CITY_SMFOREST_05_03");			  // Free Orc Weapon Cave
+		Wld_InsertItem(ItSc_InstantFireball,"FP_ROAM_NW_CITY_SMFOREST_05_03");	 	 // Free Orc Weapon Cave
+		Wld_InsertItem(ItSc_IceLance,"FP_ROAM_CITY_TO_FOREST_39");				  // Under the Erol's Bandits Bridge
+		Wld_InsertItem(ItSc_IceLance,"FP_ROAM_CITY_TO_FOREST_39");				  // Under the Erol's Bandits Bridge
+		Wld_InsertItem(ItSc_Firestorm,"FP_ROAM_BIGFARM_LAKE_CAVE_04"); 				  // Greg's Goblin Treasure Cave
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ROAM_BIGFARM_LAKE_CAVE_10"); 			  // Greg's Goblin Treasure Cave
+		Wld_InsertItem(ItSc_SumGobSkel,"FP_ITEM_MONASTERY_02"); 					  // Innos' Shrine on the Way to Monastery
 		
 						// Test of Fire Route
 		//****************************************************
@@ -63,6 +63,14 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
 			};
+
+	if (GMM_PicklockScrollsSpawned == FALSE)
+	{
+		Wld_InsertItem(ItSc_Picklock,"FP_SPAWN_X_GUERTEL"); 				// Xardas' Tower, Plants bench on Ground Floor
+		Wld_InsertItem(ItSc_Picklock,"FP_ITEM_XARDAS_03");				// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_Picklock,"FP_ROAM_BIGFARM_LAKE_CAVE_04"); 			// Greg's Goblin Treasure Cave
+		GMM_PicklockScrollsSpawned = TRUE;
+	};
 	
 		
 	// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
