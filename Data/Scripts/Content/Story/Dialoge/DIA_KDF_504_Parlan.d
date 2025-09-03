@@ -1131,6 +1131,13 @@ func void DIA_Parlan_TEACH_Info()
 		abletolearn = (abletolearn + 1);
 	};
 
+	if ((Npc_GetTalentSkill(other, NPC_TALENT_MAGE) >= 2)
+	&& (PLAYER_TALENT_RUNES [SPL_PickLock] == FALSE))
+	{
+		Info_AddChoice(DIA_Parlan_TEACH, B_BuildLearnString(NAME_SPL_PickLock, B_GetLearnCostTalent(other, NPC_TALENT_RUNES, SPL_PickLock)), DIA_Parlan_TEACH_Picklock);
+		abletolearn = (abletolearn + 1);
+	};
+
 	if (abletolearn < 1)
 	{
 		AI_Output(self, other, "DIA_Parlan_TEACH_05_01"); //I cannot teach you more formulas at the moment.
@@ -1175,6 +1182,11 @@ func void DIA_Parlan_TEACH_Fear()
 func void DIA_Parlan_TEACH_DestroyUndead()
 {
 	B_TeachPlayerTalentRunes(self, other, SPL_DestroyUndead);
+};
+
+func void DIA_Parlan_TEACH_PickLock()
+{
+	B_TeachPlayerTalentRunes(self, other, SPL_PickLock);
 };
 
 func void DIA_Parlan_TEACH_FullHeal()

@@ -620,17 +620,20 @@ const int SPL_Skull = 87;
 const int SPL_SummonZombie = 88;
 const int SPL_SummonMud = 89;
 
-// ...
+// GMM
 const int SPL_Reserved_90 = 90;
 const int SPL_Reserved_91 = 91;
 const int SPL_Reserved_92 = 92;
 const int SPL_Reserved_93 = 93;
 const int SPL_Reserved_94 = 94;
-const int SPL_Reserved_95 = 95;
+const int SPL_Picklock = 95;
 const int SPL_Reserved_96 = 96;
 const int SPL_Reserved_97 = 97;
 const int SPL_Reserved_98 = 98;
 const int SPL_Reserved_99 = 99;
+
+const int SPL_Cost_Picklock = 2;
+const int Value_Sc_Picklock = 40;
 
 const int MAX_SPELL = 100; // 59 (Gothic), 68 (Gothic2), 100 (G2Addon)
 

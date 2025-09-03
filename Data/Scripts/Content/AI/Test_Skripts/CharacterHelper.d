@@ -2188,6 +2188,11 @@ func void DIA_CH_Runen_2()
 	{
 		Info_AddChoice(DIA_CH_Runen, B_BuildLearnString(NAME_SPL_WINDFIST, B_GetLearnCostTalent(other, NPC_TALENT_RUNES, SPL_WINDFIST)), CH_Training_Runen_Circle_2_SPL_WINDFIST);
 	};
+	
+	if (PLAYER_TALENT_RUNES [SPL_PickLock] == FALSE)
+	{
+		Info_AddChoice(DIA_CH_Runen, B_BuildLearnString(NAME_SPL_PickLock, B_GetLearnCostTalent(other, NPC_TALENT_RUNES, SPL_PickLock)), CH_Training_Runen_Circle_2_SPL_PickLock);
+	};
 
 	if (PLAYER_TALENT_RUNES [SPL_Sleep] == FALSE)
 	{
@@ -2220,6 +2225,10 @@ func void CH_Training_Runen_Circle_2_SPL_WINDFIST()
 func void CH_Training_Runen_Circle_2_SPL_Sleep()
 {
 	B_TeachPlayerTalentRunes(self, other, SPL_Sleep);
+};
+func void CH_Training_Runen_Circle_2_SPL_PickLock()
+{
+	B_TeachPlayerTalentRunes(self, other, SPL_PickLock);
 };
 
 //**********************************************************
