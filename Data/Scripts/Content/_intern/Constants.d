@@ -632,6 +632,9 @@ const int SPL_Reserved_97 = 97;
 const int SPL_Reserved_98 = 98;
 const int SPL_Reserved_99 = 99;
 
+const int SPL_Cost_Picklock = 2;
+const int Value_Sc_Picklock = 40;
+
 const int MAX_SPELL = 100; // 59 (Gothic), 68 (Gothic2), 100 (G2Addon)
 
 ////////////////////////////////////////////////////////////////////////////////
