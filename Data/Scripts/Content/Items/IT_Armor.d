@@ -1637,7 +1637,7 @@ instance ITAR_Dementor_H(C_Item)
 	protection[PROT_FIRE]		= 75;
 	protection[PROT_MAGIC]		= 100;
 
-	value						= VALUE_ITAR_Dementor;
+	value						= VALUE_ITAR_Dementor_H;
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
