@@ -5,6 +5,15 @@
 // wird auch vom Spieler ausgefÃƒÂ¼hrt
 // *****************************************
 
+func void B_GiveDeathXP(var C_Npc slf)
+{
+	if(slf.aivar[AIV_VictoryXPGiven] == FALSE)
+	{
+		B_GivePlayerXP(slf.level * XP_PER_VICTORY);
+		slf.aivar[AIV_VictoryXPGiven] = TRUE;
+	};
+};
+
 func void ZS_Dead()
 {
 	// ------ aivars resetten ------
@@ -15,12 +24,16 @@ func void ZS_Dead()
 	AI_StopPointAt(self);
 
 	// ------ XP ------
-	if ((Npc_IsPlayer(other) || (other.aivar[AIV_PARTYMEMBER] == TRUE))
-	&& (self.aivar[AIV_VictoryXPGiven] == FALSE))
+	if(!Hlp_IsValidNpc(other))
 	{
-		B_GivePlayerXP(self.level * XP_PER_VICTORY);
-
-		self.aivar[AIV_VictoryXPGiven] = TRUE;
+		if(self.aivar[AIV_LastHitByWindFist] == TRUE)
+		{
+			B_GiveDeathXP(self);
+		};
+	}
+	else if(Npc_IsPlayer(other) || (other.aivar[AIV_PARTYMEMBER] == TRUE))
+	{
+		B_GiveDeathXP(self);
 	};
 
 	// ------ Greg ------

@@ -322,6 +322,7 @@ if (spellType == SPL_EnergyBall)
 		{
 			return COLL_DONOTHING;
 		};
+		self.aivar[AIV_LastHitByWindFist] = TRUE;
 
 		return COLL_DOEVERYTHING;
 	};
