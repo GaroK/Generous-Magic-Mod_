@@ -54,7 +54,7 @@ const int VALUE_ITAR_LESTER = 300;
 const int VALUE_ITAR_DIEGO = 450;
 const int VALUE_ITAR_CorAngar = 600;
 const int VALUE_ITAR_Dementor = 500;
-const int VALUE_ITAR_Dementor_H = 500;
+const int VALUE_ITAR_Dementor_H = 750;
 const int VALUE_ITAR_KDW_H = 450;
 const int VALUE_ITAR_Prisoner = 10;
 
