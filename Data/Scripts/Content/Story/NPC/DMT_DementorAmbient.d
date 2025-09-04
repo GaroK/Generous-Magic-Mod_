@@ -38,6 +38,47 @@ prototype Default_AmbientDementor(C_NPC)
 	// -------- daily routine --------
 };
 
+prototype Default_AmbientDementor_Elite(C_NPC)
+{
+	// -------- NPC --------
+	name							= NAME_Dementor;
+	npctype							= NPCTYPE_AMBIENT;
+	guild							= GIL_DMT;
+	flags							= 0;
+
+	voice							= 19;
+
+	// -------- attributes --------
+	B_SetAttributesToChapter(self, 3);
+
+	// -------- visuals --------
+	B_SetNpcVisual(self, MALE, "Hum_Head_Bald", Face_N_MadPsi, BodyTex_N, ITAR_Dementor_H);
+	Mdl_SetModelFatness(self, 0);
+	Mdl_ApplyOverlayMDS(self, "Humans_Mage.mds");
+
+	// -------- aivars --------
+	aivar[AIV_MM_FollowTime]		= NPC_TIME_FOLLOW;
+	aivar[AIV_FightDistCancel]		= FIGHT_DIST_CANCEL;
+	aivar[AIV_MagicUser]			= MAGIC_ALWAYS;
+	aivar[AIV_MM_REAL_ID]		    = ID_DEMENTOR_ELITE;
+
+	bodyStateInterruptableOverride = TRUE;
+
+	// -------- fight tactic --------
+	fight_tactic = FAI_HUMAN_NORMAL;
+
+	// -------- talents --------
+	B_GiveNpcTalents(self);
+
+	// -------- fighting skills --------
+	B_SetFightSkills(self, 80);
+
+	// -------- inventory --------
+	B_CreateAmbientInv(self);
+
+	// -------- daily routine --------
+};
+
 // *******************************************************
 // DMT_DementorAmbient
 // *******************************************************
@@ -939,7 +980,7 @@ instance DragonIsle_Keymaster(Default_AmbientDementor)
 //	Akademie Dragonisland
 //**************************************************************
 
-instance DMT_DementorAmbientWalker_DI_01(Default_AmbientDementor)
+instance DMT_DementorAmbientWalker_DI_01(Default_AmbientDementor_Elite)
 {
 	// -------- NPC --------
 
@@ -1130,7 +1171,7 @@ func void Rtn_Start_1237()
 	TA_Stand_Dementor(05, 50, 06, 00, "DI_UNDEADDRAGONTEMPEL_03");
 };
 
-instance DMT_DementorAmbientWalker_DI_02(Default_AmbientDementor)
+instance DMT_DementorAmbientWalker_DI_02(Default_AmbientDementor_Elite)
 {
 	// -------- NPC --------
 
@@ -1321,7 +1362,7 @@ func void Rtn_Start_1238()
 	TA_Stand_Dementor(05, 50, 06, 00, "DI_UNDEADDRAGONTEMPEL_02");
 };
 
-instance DMT_DementorAmbientWalker_DI_03(Default_AmbientDementor)
+instance DMT_DementorAmbientWalker_DI_03(Default_AmbientDementor_Elite)
 {
 	// -------- NPC --------
 
@@ -1512,7 +1553,7 @@ func void Rtn_Start_1239()
 	TA_Stand_Dementor(05, 50, 06, 00, "DI_UNDEADDRAGONTEMPEL_12");
 };
 
-instance DMT_DementorAmbientWalker_DI_04(Default_AmbientDementor)
+instance DMT_DementorAmbientWalker_DI_04(Default_AmbientDementor_Elite)
 {
 	// -------- NPC --------
 
@@ -1703,7 +1744,7 @@ func void Rtn_Start_1240()
 	TA_Stand_Dementor(05, 55, 06, 05, "DI_UNDEADDRAGONTEMPEL_01");
 };
 
-instance DMT_DementorAmbientWalker_DI_05(Default_AmbientDementor)
+instance DMT_DementorAmbientWalker_DI_05(Default_AmbientDementor_Elite)
 {
 	// -------- NPC --------
 
@@ -1894,7 +1935,7 @@ func void Rtn_Start_1242()
 	TA_Stand_Dementor(05, 55, 06, 05, "DI_UNDEADDRAGONTEMPEL_11");
 };
 
-instance DMT_DementorAmbientWalker_DI_06(Default_AmbientDementor)
+instance DMT_DementorAmbientWalker_DI_06(Default_AmbientDementor_Elite)
 {
 	// -------- NPC --------
 
