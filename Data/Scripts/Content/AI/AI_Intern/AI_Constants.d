@@ -219,6 +219,9 @@
 	const int ID_Keiler									= 63;
 	const int ID_SWAMPDRONE								= 64;
 
+// ------ GMM -----
+	const int ID_DEMENTOR_ELITE							= 163;
+
 // ----------------------------------------------
 	const int AIV_LASTBODY								= 44;									// der Body, an dem ich zuletzt gefressen habe
 

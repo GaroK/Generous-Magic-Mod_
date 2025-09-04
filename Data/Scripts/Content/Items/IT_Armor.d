@@ -54,6 +54,7 @@ const int VALUE_ITAR_LESTER = 300;
 const int VALUE_ITAR_DIEGO = 450;
 const int VALUE_ITAR_CorAngar = 600;
 const int VALUE_ITAR_Dementor = 500;
+const int VALUE_ITAR_Dementor_H = 750;
 const int VALUE_ITAR_KDW_H = 450;
 const int VALUE_ITAR_Prisoner = 10;
 
@@ -1613,6 +1614,41 @@ instance ITAR_Dementor(C_Item)
 	text[4]						= NAME_Prot_Magic;								count[4] = protection[PROT_MAGIC];
 	text[5]						= NAME_Value;									count[5] = value;
 };
+
+// ******************************************************
+
+instance ITAR_Dementor_H(C_Item)
+{
+	name						= "Dark Cloak";
+
+	mainflag					= ITEM_KAT_ARMOR;
+	flags						= 0;
+
+	wear						= WEAR_TORSO;
+
+	visual						= "ItAr_Xardas.3ds";
+	visual_change				= "Armor_Dementor.asc";
+	visual_skin					= 0;
+	material					= MAT_LEATHER;
+
+	protection[PROT_EDGE]		= 190;
+	protection[PROT_BLUNT]		= 170;
+	protection[PROT_POINT]		= 170;
+	protection[PROT_FIRE]		= 75;
+	protection[PROT_MAGIC]		= 100;
+
+	value						= VALUE_ITAR_Dementor_H;
+
+	description					= name;
+	text[0]						= "";											count[0] = 0;
+	text[1]						= NAME_Prot_Edge;								count[1] = protection[PROT_EDGE];
+	text[2]						= NAME_Prot_Point;								count[2] = protection[PROT_POINT];
+	text[3]						= NAME_Prot_Fire;								count[3] = protection[PROT_FIRE];
+	text[4]						= NAME_Prot_Magic;								count[4] = protection[PROT_MAGIC];
+	text[5]						= NAME_Value;									count[5] = value;
+};
+
+// ******************************************************
 
 // ******************************************************
 instance ITAR_KDW_H(C_Item)
