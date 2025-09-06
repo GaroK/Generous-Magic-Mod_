@@ -54,7 +54,7 @@
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:23","Magic Circle too low.","Слишком низкий круг магии.","","False","GMM_MagicCircleLow","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:3","Spawns additional Goblin.","Призывает дополнительных гоблинов.","","False","GMM_Desc_Summon_Wand_V2","",""
 "Data/Scripts/Content/Items/IT_GMM_Summon_Wand.d:4","Spawns additional creature.","Призывает дополнительное существо.","","False","GMM_Desc_Summon_Wand_V3","",""
-"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:373","Mana essence (2 fire nettles, 1 meadow knotweed)","Эссенция маны (2 огненных крапивы и 1 лесная ягода)","","True","PC_ItPo_Mana_01.description","",""
+"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:373","Mana essence (2 fire nettles, 1 meadow knotweed)","Эссенция маны (2 огненных крапивы и 1 лесная ягода)","","False","PC_ItPo_Mana_01.description","",""
 "Data/Scripts/Content/Story/Text.d:770","+ 1 Learning Point","Единицы опыта + 1","","False","PRINT_1_LP","",""
 "Data/Scripts/Content/Story/Text.d:771","+ 2 Learning Points","Единицы опыта + 2","","False","PRINT_2_LP","",""
 "Data/Scripts/Content/Story/Text.d:772","+ 3 Learning Points","Единицы опыта + 3","","False","PRINT_3_LP","",""
