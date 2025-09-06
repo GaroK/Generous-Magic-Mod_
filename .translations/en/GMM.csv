@@ -1,4 +1,7 @@
 "location","source","target","id","fuzzy","context","translator_comments","developer_comments"
+"Data/Scripts/Content/Story/Text.d:417","Open Locks","Open Locks","","","NAME_SPL_Picklock","",""
+"Data/Scripts/Content/Story/Text.d:418","Mana per combination","Mana per combination","","","GMM_NAME_ManaPerCombination","",""
+"Data/Scripts/Content/Story/Text.d:419","Not enough mana","Not enough mana","","","GMM_PRINT_LockIsTooComplex","",""
 "Data/Scripts/Content/Story/Text.d:763","Non-lethal Scroll","(Non-lethal) Scroll","","False","GMM_Non_Lethal_Scroll","",""
 "Data/Scripts/Content/Story/Text.d:764","Non-lethal, Circle:","(Non-lethal) Circle:","","False","GMM_Non_Lethal_Circle","",""
 "Data/Scripts/Content/Story/Text.d:765","Temporarily incapacitates target.","Temporarily incapacitates target.","","","GMM_Temp_stun","",""
