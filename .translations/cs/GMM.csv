@@ -68,3 +68,6 @@
 "Data/Scripts/Content/Story/Text.d:780","Circle 5","Kruh 5","","False","Circle_5","",""
 "Data/Scripts/Content/Story/Text.d:781","Circle 6","Kruh 6","","False","Circle_6","",""
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:24","Mana regeneration per second:","Regenerace many za sekundu:","","False","GMM_Desc_Regen_Wand","",""
+"Data/Scripts/Content/Story/Text.d:418","Mana per combination","Mana za kombinaci","","False","GMM_NAME_ManaPerCombination","",""
+"Data/Scripts/Content/Story/Text.d:417","Open Locks","Otevřít zámek","","False","NAME_SPL_Picklock","",""
+"Data/Scripts/Content/Story/Text.d:419","Not enough mana","Nedostatek many","","False","GMM_PRINT_LockIsTooComplex","",""
