@@ -415,7 +415,6 @@ const string TXT_SPELLS[MAX_SPELL] =
 	const string NAME_SPL_WINDFIST						= "Wind Fist";
 	const string NAME_SPL_Sleep							= "Sleep";
 	const string NAME_SPL_Picklock					    = "Open Locks";
-	
 
 // Kreis 3
 	const string NAME_SPL_MediumHeal					= "Heal Medium Wounds";
@@ -771,8 +770,8 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string GMM_Fear_Description				= "Stops enemy attacks and makes them flee.";
 	const string GMM_SuckEnergy_Description			= "Steals life energy from human targets.";
 	const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
-	const string NAME_ManaPerCombination            = "Mana per combination"
-	const string PRINT_LockIsTooComplex       	    = "Not enough mana"
+	const string NAME_ManaPerCombination            = "Mana per combination";
+	const string PRINT_LockIsTooComplex       	    = "Not enough mana";
 
 /*
 	const string PRINT_1_LP 						= "+ 1 Learning Point";
