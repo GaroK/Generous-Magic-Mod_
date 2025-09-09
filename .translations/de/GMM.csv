@@ -68,3 +68,6 @@
 "Data/Scripts/Content/Story/Text.d:779","Circle 4","Kreis 4","","False","Circle_4","",""
 "Data/Scripts/Content/Story/Text.d:781","Circle 6","Kreis 6","","False","Circle_6","",""
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:24","Mana regeneration per second:","Manaregeneration pro Sekunde:","","False","GMM_Desc_Regen_Wand","",""
+"Data/Scripts/Content/Story/Text.d:417","Open Locks","Schlösser öffnen","","False","NAME_SPL_Picklock","",""
+"Data/Scripts/Content/Story/Text.d:418","Mana per combination","Mana pro Kombination","","False","NAME_ManaPerCombination","",""
+"Data/Scripts/Content/Story/Text.d:419","Not enough mana","Nicht genug Mana","","False","PRINT_LockIsTooComplex","",""
