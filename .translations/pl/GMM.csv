@@ -68,3 +68,6 @@
 "Data/Scripts/Content/Story/Text.d:771","+ 2 Learning Points","Punkty Nauki + 2","","False","PRINT_2_LP","",""
 "Data/Scripts/Content/Story/Text.d:770","+ 1 Learning Point","Punkty Nauki + 1","","False","PRINT_1_LP","",""
 "Data/Scripts/Content/Story/Text.d:772","+ 3 Learning Points","Punkty Nauki + 3","","False","PRINT_3_LP","",""
+"Data/Scripts/Content/Story/Text.d:417","Open Locks","Otwieranie Zamków","","False","NAME_SPL_Picklock","",""
+"Data/Scripts/Content/Story/Text.d:418","Mana per combination","Mana/kombinacje","","False","NAME_ManaPerCombination","",""
+"Data/Scripts/Content/Story/Text.d:419","Not enough mana","Za mało many","","False","PRINT_LockIsTooComplex","",""
