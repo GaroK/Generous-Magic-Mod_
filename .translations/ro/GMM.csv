@@ -68,3 +68,6 @@
 "Data/Scripts/Content/Items/IT_GMM_Regen_Wand.d:24","Mana regeneration per second:","Regenerare mana pe secunda:","","False","GMM_Desc_Regen_Wand","",""
 "Data/Scripts/Content/Story/Text.d:770","+ 1 Learning Point","Puncte de învățare + 1","","False","PRINT_1_LP","",""
 "Data/Scripts/Content/Story/Text.d:775","Exchange Runes","Schimbă rune","","False","Exchange_Rune_Name","",""
+"Data/Scripts/Content/Story/Text.d:417","Open Locks","Deschide încuietorile","","False","NAME_SPL_Picklock","",""
+"Data/Scripts/Content/Story/Text.d:418","Mana per combination","Mana per combinație","","False","NAME_ManaPerCombination","",""
+"Data/Scripts/Content/Story/Text.d:419","Not enough mana","Mana insuficientă","","False","PRINT_LockIsTooComplex","",""
