@@ -65,3 +65,6 @@
 "Data/Scripts/Content/Story/Dialog_Mobsis/BookstandAlchemy.d:181","1 Healing Root, 1 Meadow Knotweed","","","False","GMM_Bookstand_Alchemy_PermHP_Ingredients","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/BookstandAlchemy.d:182","1 Fire Root, 1 Meadow Knotweed","","","False","GMM_Bookstand_Alchemy_PermMana_Ingredients","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/BookstandAlchemy.d:183","Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel and meadow knotweed as an ingredients in common.","","","False","GMM_Bookstand_Alchemy_PermPotion_Info","",""
+"Data/Scripts/Content/Story/Text.d:417","Open Locks","Abrir cerraduras","","False","NAME_SPL_Picklock","",""
+"Data/Scripts/Content/Story/Text.d:418","Mana per combination","Maná por combinación","","False","NAME_ManaPerCombination","",""
+"Data/Scripts/Content/Story/Text.d:419","Not enough mana","No hay suficiente maná","","False","PRINT_LockIsTooComplex","",""
