@@ -20,17 +20,17 @@ func int C_CheckManaCost(var C_Npc npc,var int cost)
 		EquipWeap = Npc_GetEquippedMeleeWeapon(npc);
 		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V1))
 		{
-			return (cost * 65) / 100;
+			return (cost * 85) / 100;
 		};
 		
 		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V2))
 		{
-			return (cost * 60) / 100;
+			return (cost * 75) / 100;
 		};
 		
 		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V3))
 		{
-			return (cost * 55) / 100;
+			return (cost * 60) / 100;
 		};
 	};
 	return cost;

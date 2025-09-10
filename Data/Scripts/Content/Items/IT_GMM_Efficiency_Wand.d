@@ -1,9 +1,9 @@
 
 
 const string GMM_Name_Efficiency_Wand		        = "Wand of Efficiency";
-const string GMM_Desc_Efficiency_Wand_V1 = "Spells cost 35% mana less to cast.";
-const string GMM_Desc_Efficiency_Wand_V2 = "Spells cost 40% mana less to cast.";
-const string GMM_Desc_Efficiency_Wand_V3 = "Spells cost 45% mana less to cast.";
+const string GMM_Desc_Efficiency_Wand_V1 = "Spells cost 15% mana less to cast.";
+const string GMM_Desc_Efficiency_Wand_V2 = "Spells cost 25% mana less to cast.";
+const string GMM_Desc_Efficiency_Wand_V3 = "Spells cost 40% mana less to cast.";
 
 
 const string GMM_Bless_Wand							= "Improve Staff (1000 Gold)";
