@@ -371,4 +371,9 @@ func void DIA_Ignaz_Teach_BACK()
 	Info_ClearChoices(DIA_Ignaz_Teach);
 };
 
+//override plugin to disable trade logic
+func int DIA_Ignaz_PicklockScrolls_Condition()
+{
+	return FALSE; 
+};
 

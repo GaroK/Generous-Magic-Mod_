@@ -65,12 +65,31 @@ func int DIA_Isgaroth_Segen_Condition()
 	return TRUE;
 };
 
+var int Isgaroth_Blessing_Day;
+var int Isgaroth_Blessing_Bonus;
+
+const int Isgaroth_Bonus = 2;
+
 func void DIA_Isgaroth_Segen_Info()
 {
-	AI_Output(other, self, "DIA_Isgaroth_Segen_15_00"); //Bless me!
-	AI_Output(self, other, "DIA_Isgaroth_Segen_01_01"); //I bless you in the name of Innos. May the Lord's fire burn in your heart and give you the strength to act according to his justice.
-
-	Isgaroth_Segen = TRUE;
+    AI_Output(other, self, "DIA_Isgaroth_Segen_15_00"); //Bless me!
+  if (Wld_GetDay() != Isgaroth_Blessing_Day || (Wld_GetDay() == 0 && !Isgaroth_Blessing_Bonus)){
+    AI_Output(self, other, "DIA_Isgaroth_Segen_01_01"); //I bless you in the name of Innos. May the Lord's fire burn in your heart and give you the strength to act according to his justice.
+          other.protection [PROT_POINT] += Isgaroth_Bonus;
+		  other.protection [PROT_EDGE] += Isgaroth_Bonus;
+		  other.protection [PROT_BLUNT] += Isgaroth_Bonus;
+		  other.protection [PROT_FLY] += Isgaroth_Bonus;
+		  other.protection [PROT_MAGIC] += Isgaroth_Bonus;
+		  other.protection [PROT_FIRE] += Isgaroth_Bonus;
+    Isgaroth_Blessing_Bonus = TRUE;
+    Isgaroth_Blessing_Day = Wld_GetDay();
+    Isgaroth_Segen = TRUE;
+  }
+  
+  else
+  {
+    //BLESSING ALREADY RECEIVED FOR TODAY!
+  };
 };
 
 //********************************************************************************

@@ -173,6 +173,9 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf, var C_Npc oth, var int spell)
 
 	B_LogEntry(TOPIC_TalentRunes, Log_Text_Addon_TalentRune_Thunderstorm); };
 
+	if (spell == SPL_PickLock) { PLAYER_TALENT_RUNES[SPL_PickLock] = TRUE; CreateInvItems(ScrollTrader, ItSc_PickLock, 1);
+	B_LogEntry(TOPIC_TalentRunes, TOPIC_TalentRunes_PickLock); };
+
 	// Scrolls und Runen-Joker fehlen
 
 	PrintScreen(PRINT_LearnRunes, -1, -1, FONT_Screen, 2);

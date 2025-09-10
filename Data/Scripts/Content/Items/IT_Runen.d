@@ -1491,3 +1491,9 @@ instance ItRu_Concussionbolt(C_Item)
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
+
+// GMM
+instance ItRu_Picklock(C_Item)
+{
+};
+

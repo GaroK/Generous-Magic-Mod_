@@ -1482,5 +1482,10 @@ instance ItSc_TrfDragonSnapper(C_Item) // Joly:Auf Dracheninsel in Truhe der Sch
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
-
 /*******************************************************************************************/
+
+// GMM
+instance ItSc_Picklock(C_Item)
+{
+};
+

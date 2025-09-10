@@ -126,6 +126,7 @@ func int PC_Circle_02_Condition()
 	|| (PLAYER_TALENT_RUNES[SPL_WINDFIST] == TRUE)
 	|| (PLAYER_TALENT_RUNES[SPL_Sleep] == TRUE)
 	|| (PLAYER_TALENT_RUNES[SPL_Whirlwind] == TRUE)
+	|| (PLAYER_TALENT_RUNES[SPL_PickLock] == TRUE)
 	|| (PLAYER_TALENT_RUNES[SPL_Icelance] == TRUE)))
 	{
 		return TRUE;
@@ -165,6 +166,11 @@ func void PC_Circle_02_Info()
 	if (PLAYER_TALENT_RUNES[SPL_Whirlwind] == TRUE)
 	{
 		Info_AddChoice(PC_Circle_02, NAME_SPL_Whirlwind, PC_ItRu_Whirlwind_Info);
+	};
+	
+	if (PLAYER_TALENT_RUNES[SPL_PickLock] == TRUE)
+	{
+		Info_AddChoice(PC_Circle_02, NAME_SPL_PickLock, PC_ItRu_Picklock_Info);
 	};
 
 	if (PLAYER_TALENT_RUNES[SPL_IceLance] == TRUE)
@@ -1282,6 +1288,29 @@ func void PC_ItRu_Waterfist_Info()
 
 		CreateInvItems(hero, ItRu_Waterfist, 1);
 		Print(PRINT_RunESuccess);
+	}
+	else
+	{
+		Print(PRINT_ProdItemsMissing);
+		CreateInvItems(self, ItMi_RuneBlank, 1);
+	};
+
+	B_ENDPRODUCTIONDIALOG();
+};
+
+
+// GMM
+
+func void PC_ItRu_PickLock_Info()
+{
+	if ((Npc_HasItems(hero, ItSc_PickLock) >= 1)
+	&& (Npc_HasItems(hero, ItKe_LockPick) >= 1))
+	{
+		Npc_RemoveInvItems(hero, ItSc_PickLock, 1);
+		Npc_RemoveInvItems(hero, ItKe_LockPick, 1);
+
+		CreateInvItems(hero, ItRu_PickLock, 1);
+		Print(PRINT_RuneSuccess);
 	}
 	else
 	{

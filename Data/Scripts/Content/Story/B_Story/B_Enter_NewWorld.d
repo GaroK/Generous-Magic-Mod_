@@ -2,6 +2,9 @@
 //  			B_ENTER_NEWWORLD
 // ***************************************************
 
+var int itemsspawned;
+var int GMM_PicklockScrollsSpawned;
+
 // B_ENTER_NEWWORLD_Kapitel_1
 //****************************************************
 func void B_ENTER_NEWWORLD_Kapitel_1()
@@ -10,7 +13,6 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		// ------         GMM      	    	------
 //	func void b_enter_newworld_kapitel_1
 {
-	var int itemsspawned;
 	if (!itemsspawned)
 		{
 			itemsspawned = true;
@@ -61,6 +63,14 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
 		Wld_InsertItem(ItSc_InstantFireBall,"FP_NW_ITEM_TROLL_10");						  // Before the Entrance to Test of Fire Target Cave, by the Innos Shrine
 			};
+
+	if (GMM_PicklockScrollsSpawned == FALSE)
+	{
+		Wld_InsertItem(ItSc_Picklock,"FP_SPAWN_X_GUERTEL");			// Xardas' Tower, Plants bench on Ground Floor
+		Wld_InsertItem(ItSc_Picklock,"FP_ITEM_XARDAS_03");			// Table Inside Brago's Cave
+		Wld_InsertItem(ItSc_Picklock,"FP_ROAM_BIGFARM_LAKE_CAVE_04");		// Greg's Goblin Treasure Cave
+		GMM_PicklockScrollsSpawned = TRUE;
+	};
 	
 		
 	// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
@@ -245,7 +255,7 @@ func void B_ENTER_NEWWORLD_Kapitel_3()
 			B_StartOtherRoutine(Lares, "START"); // damit er auch wieder in der Stadt steht
 		};
 
-		Wld_InsertNpc(DMT_FirstDementor, "NW_PASS_GATE_02"); // Im Pass
+		Wld_InsertNpc(DMT_1212_FirstDementor, "NW_PASS_GATE_02"); // Im Pass
 		B_KillNpc(PAL_297_Ritter); // Passwache
 		B_KillNpc(PAL_298_Ritter); // Passwache
 
