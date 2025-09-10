@@ -78,7 +78,7 @@
 	const string MOBNAME_GRAVETEAM_03					= "Hodges - 'Everything will be fine'";
 	const string MOBNAME_GRAVETEAM_04					= "Hosh - 'What a shit'";
 	const string MOBNAME_GRAVETEAM_05					= "Chase - 'Whaddaya make of that?'";
-	const string MOBNAME_GRAVETEAM_06					= "Bjï¿½rn - 'We're going for it!'";
+	const string MOBNAME_GRAVETEAM_06					= "Björn - 'We're going for it!'";
 	const string MOBNAME_GRAVETEAM_07					= "Michael - 'Just resting my eyes...'";
 	const string MOBNAME_GRAVETEAM_08					= "Kairo - 'Just a sec!'";
 	const string MOBNAME_GRAVETEAM_09					= "Uncle Cruncle - 'Finally he found the scorpion man'";
