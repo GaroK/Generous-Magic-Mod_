@@ -68,6 +68,7 @@ func void B_GiveTradeInv_Addon_Cronos_ADW(var C_Npc slf)
 		CreateInvItems(slf, ItSc_Thunderstorm, 2);
 		CreateInvItems(slf, ItSc_WATERFIST, 1);
 		CreateInvItems(slf, ItSc_SumWolf, 2);
+		CreateInvItems(slf, ItSc_Picklock, 5);
 
 		Cronos_ADW_ItemsGiven_Chapter_2 = TRUE;
 	};

@@ -369,6 +369,12 @@ func void DIA_Addon_Nefarius_ADW_Runen_2()
 		Info_AddChoice(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString(NAME_SPL_Sleep, B_GetLearnCostTalent(other, NPC_TALENT_RUNES, SPL_Sleep)), DIA_Addon_Nefarius_ADW_Runen_Circle_2_SPL_Sleep);
 	};
 
+// ------------- GMM ------------------------
+ 	if (PLAYER_TALENT_RUNES [SPL_Picklock] == FALSE)
+	{
+		Info_AddChoice(DIA_Addon_Nefarius_ADW_Runen, B_BuildLearnString(NAME_SPL_Picklock, B_GetLearnCostTalent(other, NPC_TALENT_RUNES, SPL_Picklock)), DIA_Addon_Nefarius_ADW_Runen_Circle_2_SPL_Picklock);
+	};
+
 // ------------- Addon ----------------------
 
 	if (PLAYER_TALENT_RUNES [SPL_Whirlwind] == FALSE)
@@ -602,6 +608,11 @@ func void DIA_Addon_Nefarius_ADW_Runen_Circle_2_SPL_SummonWolf()
 func void DIA_Addon_Nefarius_ADW_Runen_Circle_2_SPL_WINDFIST()
 {
 	B_TeachPlayerTalentRunes(self, other, SPL_WINDFIST);
+};
+
+func void DIA_Addon_Nefarius_ADW_Runen_Circle_2_SPL_Picklock()
+{
+	B_TeachPlayerTalentRunes(self, other, SPL_Picklock);
 };
 
 func void DIA_Addon_Nefarius_ADW_Runen_Circle_2_SPL_Sleep()

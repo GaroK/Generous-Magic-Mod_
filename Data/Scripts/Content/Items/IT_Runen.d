@@ -5,6 +5,9 @@
 // Joly: Macht die Runen nicht zu teuer, es sind Produktionsitems -> EXPLOID!!!!!!!!!!!
 //********************************************************************************************
 
+const int Circle_Ru_Picklock = 2;   //circle requirement for rune use
+
+
 const int Value_Ru_PalLight = 500;
 const int Value_Ru_PalLightHeal = 500;
 const int Value_Ru_PalHolyBolt = 500;
@@ -1495,5 +1498,6 @@ instance ItRu_Concussionbolt(C_Item)
 // GMM
 instance ItRu_Picklock(C_Item)
 {
+
 };
 
