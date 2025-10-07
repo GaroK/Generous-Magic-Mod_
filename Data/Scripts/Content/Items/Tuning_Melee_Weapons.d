@@ -24,6 +24,10 @@ const int Waffenbonus_11_GMM_V2    		= 50;
 const int Condition_Stab04_GMM			= 30;
 const int Condition_Stab05_GMM			= 30;
 const int Value_Stab_GMM				= 1800;
+const int Damage_Stab_GMM_01			= 60;	
+const int Damage_Stab_GMM_02			= 140;
+const int Damage_Stab_GMM_03			= 200;		
+
 // *****************************************************
 // Dolch - ItMw_1h_Vlk_Dagger
 const int Damage_VLKDolch = 5;

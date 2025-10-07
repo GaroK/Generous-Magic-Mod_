@@ -67,7 +67,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V0 (C_Item)
 
     value         =   Value_Stab04;
 
-    damageTotal   =   Damage_Stab04;
+    damageTotal   =   Damage_Stab_GMM_01;
     damagetype    =   DAM_BLUNT;
     range         =   RANGE_Stab04;       
     
@@ -102,7 +102,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V1 (C_Item)
 
     value         =   Value_Stab04;
 
-    damageTotal   =   Damage_Stab04;
+    damageTotal   =   Damage_Stab_GMM_01;
     damagetype    =   DAM_BLUNT;
     range         =   RANGE_Stab04;       
     
@@ -156,7 +156,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V2 (C_Item)
 
     value         =   Value_Stab04;
 
-    damageTotal   =   Damage_Stab04;
+    damageTotal   =   Damage_Stab_GMM_02;
     damagetype    =   DAM_BLUNT;
     range         =   RANGE_Stab04;       
     
@@ -210,7 +210,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V3 (C_Item)
 
     value         =   Value_Stab04;
 
-    damageTotal   =   Damage_Stab04;
+    damageTotal   =   Damage_Stab_GMM_03;
     damagetype    =   DAM_BLUNT;
     range         =   RANGE_Stab04;       
     
