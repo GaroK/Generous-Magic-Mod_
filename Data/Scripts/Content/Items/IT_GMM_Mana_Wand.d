@@ -15,7 +15,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-    damageTotal         =   Damage_Stab02;
+    damageTotal         =   Damage_Stab_GMM_01;
     damagetype              =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
@@ -51,7 +51,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V1 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-    damageTotal         =   Damage_Stab02;
+    damageTotal         =   Damage_Stab_GMM_01;
     damagetype              =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
@@ -111,7 +111,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V2 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-    damageTotal         =   Damage_Stab02;
+    damageTotal         =   Damage_Stab_GMM_02;
     damagetype              =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
@@ -171,7 +171,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V3 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-    damageTotal         =   Damage_Stab02;
+    damageTotal         =   Damage_Stab_GMM_03;
     damagetype              =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
