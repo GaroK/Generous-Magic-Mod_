@@ -109,8 +109,8 @@ INSTANCE ItMW_GMM_Stab_04_Summon_V0 (C_Item)
 //    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]                 = NAME_ADDON_BONUS_2H;          COUNT[2]    = Waffenbonus_04;
-    TEXT[3]                 = GMM_Desc_Summon_Wand;
-    TEXT[4]                 = "";
+    TEXT[3]                 = "";
+    TEXT[4]                 = GMM_Desc_Summon_Wand;
     TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
 };
 
@@ -142,8 +142,8 @@ INSTANCE ItMW_GMM_Stab_04_Summon_V1 (C_Item)
     TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]                 = NAME_ADDON_BONUS_2H;          COUNT[2]    = Waffenbonus_04;
-    TEXT[3]                 = GMM_Desc_Summon_Wand;
-    TEXT[4]                 = "";
+    TEXT[3]                 = "";
+    TEXT[4]                 = GMM_Desc_Summon_Wand;
     TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
 };
 
@@ -175,8 +175,8 @@ INSTANCE ItMW_GMM_Stab_04_Summon_V2 (C_Item)
     TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]                 = NAME_ADDON_BONUS_2H;          COUNT[2]    = Waffenbonus_04;
-    TEXT[3]                 = GMM_Desc_Summon_Wand;
-    TEXT[4]                 = GMM_Desc_Summon_Wand_V2;
+    TEXT[3]                 = GMM_Desc_Summon_Wand_V2;
+    TEXT[4]                 = GMM_Desc_Summon_Wand;
     TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
 };
 
@@ -209,8 +209,8 @@ INSTANCE ItMW_GMM_Stab_04_Summon_V3 (C_Item)
     TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]                 = NAME_ADDON_BONUS_2H;          COUNT[2]    = Waffenbonus_04;
-    TEXT[3]                 = GMM_Desc_Summon_Wand;
-    TEXT[4]                 = GMM_Desc_Summon_Wand_V3;
+    TEXT[3]                 = GMM_Desc_Summon_Wand_V3;
+    TEXT[4]                 = GMM_Desc_Summon_Wand;
     TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
 };
 
