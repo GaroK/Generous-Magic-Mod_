@@ -288,6 +288,7 @@ func int PC_Circle_04_Condition()
 	|| (PLAYER_TALENT_RUNES[SPL_SummonGolem] == TRUE)
 	|| (PLAYER_TALENT_RUNES[SPL_IceWave] == TRUE)
 	|| (PLAYER_TALENT_RUNES[SPL_SummonGolem] == TRUE)
+	|| (PLAYER_TALENT_RUNES[SPL_ArmyOfDarkness] == TRUE)
 	|| (PLAYER_TALENT_RUNES[SPL_Waterfist] == TRUE)))
 	{
 		return TRUE;
