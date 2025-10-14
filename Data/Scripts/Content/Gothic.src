@@ -68,8 +68,8 @@ STORY\B_Content\B_PlayerFindItem.d
 ITEMS\Tuning_*.d
 ITEMS\Einhand_EquipBonus.d
 ITEMS\Zweihand_EquipBonus.d
-ITEMS\IT_*.d
 ITEMS\Missionitems_*.d
+ITEMS\IT_*.d
 
 AI\MAGIC\B_MagicHurtNpc.d
 
