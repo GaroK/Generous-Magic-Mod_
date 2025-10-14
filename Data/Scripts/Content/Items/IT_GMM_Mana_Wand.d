@@ -15,7 +15,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-    damageTotal         =   Damage_Stab_GMM_01;
+//    damageTotal         =   Damage_Stab_GMM_01;
     damagetype              =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
@@ -29,7 +29,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
 
     description             =   name;
 
-    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
+//    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
     
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]             =
