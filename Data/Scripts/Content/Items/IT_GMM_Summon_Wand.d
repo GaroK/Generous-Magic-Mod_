@@ -15,6 +15,11 @@ FUNC VOID GMM_Equip_2H_04_V1()
 	
 		GMM_SUMMON_TIME = 180;
 		heroHasEquippedSpecialStaff_V1 = true;
+		
+		if ((Npc_HasItems(self, ItAm_Addon_WispDetector) >= 1))
+		{
+		Equip_WispDetector();
+		};
 	};
 };
 FUNC VOID GMM_UnEquip_2H_04_V1()
@@ -23,6 +28,7 @@ FUNC VOID GMM_UnEquip_2H_04_V1()
 	{ 
 		GMM_SUMMON_TIME = 60;
 		heroHasEquippedSpecialStaff_V1 = false;
+		UnEquip_WispDetector();
 	};
 };
 
@@ -33,6 +39,11 @@ FUNC VOID GMM_Equip_2H_04_V2()
 	
 		GMM_SUMMON_TIME = 180;
 		heroHasEquippedSpecialStaff_V2 = true;
+		
+		if ((Npc_HasItems(self, ItAm_Addon_WispDetector) >= 1))
+		{
+		Equip_WispDetector();
+		};
 	};
 };
 FUNC VOID GMM_UnEquip_2H_04_V2()
@@ -41,6 +52,7 @@ FUNC VOID GMM_UnEquip_2H_04_V2()
 	{ 
 		GMM_SUMMON_TIME = 60;
 		heroHasEquippedSpecialStaff_V2 = false;
+		UnEquip_WispDetector();
 	};
 };
 
@@ -51,6 +63,11 @@ FUNC VOID GMM_Equip_2H_04_V3()
 	
 		GMM_SUMMON_TIME = 180;
 		heroHasEquippedSpecialStaff_V3 = true;
+		
+		if ((Npc_HasItems(self, ItAm_Addon_WispDetector) >= 1))
+		{
+		Equip_WispDetector();
+		};
 	};
 };
 FUNC VOID GMM_UnEquip_2H_04_V3()
@@ -59,6 +76,7 @@ FUNC VOID GMM_UnEquip_2H_04_V3()
 	{ 
 		GMM_SUMMON_TIME = 60;
 		heroHasEquippedSpecialStaff_V3 = false;
+		UnEquip_WispDetector();
 	};
 };
 
