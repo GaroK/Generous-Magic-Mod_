@@ -15,28 +15,28 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-    damageTotal         =   Damage_Stab_GMM_01;
-    damagetype              =   DAM_BLUNT;
+//    damageTotal       =   Damage_Stab_GMM_01;
+    damagetype          =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
     on_equip            =   Equip_Inactive_Staff;
- //   on_unequip          =   UnEquip_Zauberstab;
+ //   on_unequip        =   UnEquip_Zauberstab;
     
     cond_atr[2]         =   ATR_MANA_MAX;
-    cond_value[2]           =   Condition_Stab04_GMM;
-    visual                  =   "ItMW_MageStaff_Good_2H_01.3DS"; 
+    cond_value[2]       =   Condition_Stab04_GMM;
+    visual              =   "ItMW_MageStaff_Good_2H_01.3DS"; 
     effect              =   "SPELLFX_MAGESTAFF2";
 
-    description             =   name;
+    description         =   name;
 
-    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
+//    TEXT[0]           = NAME_Damage;                  COUNT[0]    = damageTotal;
     
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]             =
-    TEXT[3]             = "Ulthar enchanted this wand.";
-    TEXT[4]                 = NAME_Bonus_Mana;              COUNT[4]    = 50;//FIXME_FILLER
+    TEXT[3]             = "";
+    TEXT[4]             = NAME_Bonus_Mana;              COUNT[4]    = 50;//FIXME_FILLER
 
-    TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
+    TEXT[5]             = NAME_Value;                   COUNT[5]    = value;
 };
 
 
@@ -52,27 +52,27 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V1 (C_Item)
     value               =   Value_Stab_GMM;
 
     damageTotal         =   Damage_Stab_GMM_01;
-    damagetype              =   DAM_BLUNT;
+    damagetype          =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
     on_equip            =   Equip_Zauberstab_V1;
     on_unequip          =   UnEquip_Zauberstab_V1;
     
     cond_atr[2]         =   ATR_MANA_MAX;
-    cond_value[2]           =   Condition_Stab04_GMM;
-    visual                  =   "ItMW_MageStaff_Good_2H_01.3DS"; 
+    cond_value[2]       =   Condition_Stab04_GMM;
+    visual              =   "ItMW_MageStaff_Good_2H_01.3DS"; 
     effect              =   "SPELLFX_MAGESTAFF2";
 
-    description             =   name;
+    description         =   name;
 
-    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
+    TEXT[0]             = NAME_Damage;                  COUNT[0]    = damageTotal;
     
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]             =
     TEXT[3]             = "Ulthar enchanted this wand.";
-    TEXT[4]                 = NAME_Bonus_Mana;              COUNT[4]    = 50;//FIXME_FILLER
+    TEXT[4]             = NAME_Bonus_Mana;              COUNT[4]    = 50;//FIXME_FILLER
 
-    TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
+    TEXT[5]             = NAME_Value;                   COUNT[5]    = value;
 };
 FUNC VOID Equip_Zauberstab_V1()
 {
@@ -112,27 +112,27 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V2 (C_Item)
     value               =   Value_Stab_GMM;
 
     damageTotal         =   Damage_Stab_GMM_02;
-    damagetype              =   DAM_BLUNT;
+    damagetype          =   DAM_BLUNT;
     range               =       RANGE_Stab02;       
     
     on_equip            =   Equip_Zauberstab_V2;
     on_unequip          =   UnEquip_Zauberstab_V2;
     
     cond_atr[2]         =   ATR_MANA_MAX;
-    cond_value[2]           =   Condition_Stab04_GMM;
-    visual                  =   "ItMW_MageStaff_Good_2H_02.3DS"; 
+    cond_value[2]       =   Condition_Stab04_GMM;
+    visual              =   "ItMW_MageStaff_Good_2H_02.3DS"; 
     effect              =   "SPELLFX_MAGESTAFF2";
 
-    description             =   name;
+    description         =   name;
 
-    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
+    TEXT[0]             = NAME_Damage;                  COUNT[0]    = damageTotal;
     
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
 //  TEXT[2]             =
     TEXT[3]             = "Ulthar enchanted this wand.";
-    TEXT[4]                 = NAME_Bonus_Mana;              COUNT[4]    = 100;//FIXME_FILLER
+    TEXT[4]             = NAME_Bonus_Mana;              COUNT[4]    = 100;//FIXME_FILLER
 
-    TEXT[5]                 = NAME_Value;                   COUNT[5]    = value;
+    TEXT[5]             = NAME_Value;                   COUNT[5]    = value;
 };
 FUNC VOID Equip_Zauberstab_V2()
 {
