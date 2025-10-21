@@ -240,7 +240,7 @@ func void DIA_Milten_DI_TeachMagic_Info()
 // ------ 1 Mana ------
 func void DIA_Milten_DI_TeachMagic_MANA_1()
 {
-	if (B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, T_HIGH))
+	if (B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, T_MEGA))
 	{
 		AI_Output(self, other, "DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //May the hand of Innos guide you.
 	};
@@ -259,7 +259,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_1()
 // ------ 5 Mana ------
 func void DIA_Milten_DI_TeachMagic_MANA_5()
 {
-	if (B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, T_HIGH))
+	if (B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, T_MEGA))
 	{
 		AI_Output(self, other, "DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //May the light of Innos illuminate you.
 	};
