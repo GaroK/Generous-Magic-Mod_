@@ -380,3 +380,4 @@ func void DIA_Ignaz_Teach_BACK()
 {
 	Info_ClearChoices(DIA_Ignaz_Teach);
 };
+

@@ -682,3 +682,4 @@ const int Damage_Blessed_2H_3 = 160;
 const int Condition_Blessed_2H_3 = 120;
 const int Range_Blessed_2H_3 = 130;
 const int Value_Blessed_2H_3 = 4000;
+
