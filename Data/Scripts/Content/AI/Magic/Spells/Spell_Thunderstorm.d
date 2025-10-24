@@ -43,3 +43,4 @@ func void Spell_Cast_Thunderstorm()
 
 	self.aivar[AIV_SelectSpell] += 1;
 };
+
