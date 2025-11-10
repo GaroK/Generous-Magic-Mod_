@@ -30,7 +30,7 @@ func int C_CheckManaCost(var C_Npc npc,var int cost)
 		
 		if(Hlp_IsItem(EquipWeap,ItMW_GMM_Stab_03_Eff_V3))
 		{
-			return (cost * 60) / 100;
+			return (cost * 65) / 100;
 		};
 	};
 	return cost;
