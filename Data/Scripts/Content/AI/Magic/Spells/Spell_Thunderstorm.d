@@ -2,7 +2,7 @@
 // SPL_Thunderstorm /K3
 // ****************
 
-const int SPL_Cost_Thunderstorm = 200;
+const int SPL_Cost_Thunderstorm = 175;
 const int SPL_Damage_Thunderstorm = 200;
 
 instance Spell_Thunderstorm(C_Spell_Proto)
@@ -37,8 +37,8 @@ func void Spell_Cast_Thunderstorm()
 	}
 	else
 	{
-		self.attribute[ATR_MANA] = 0;
-		//self.attribute[ATR_MANA] = self.attribute[ATR_MANA] - C_CheckManaCost(self,SPL_Cost_Thunderstorm);
+		//self.attribute[ATR_MANA] = 0;
+		self.attribute[ATR_MANA] = self.attribute[ATR_MANA] - C_CheckManaCost(self,SPL_Cost_Thunderstorm);
 	};
 
 	self.aivar[AIV_SelectSpell] += 1;
