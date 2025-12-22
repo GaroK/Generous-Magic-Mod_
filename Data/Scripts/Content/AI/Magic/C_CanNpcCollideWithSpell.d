@@ -338,16 +338,25 @@ if (spellType == SPL_EnergyBall)
 			return COLL_DONOTHING;
 		};
 		
+		if (C_BodyStateContains(self,BS_SWIM)) 	
+		|| (C_BodyStateContains(self,BS_DIVE)
+		|| (self.aivar[AIV_StateWet] == TRUE))
+		
+		{
+			return COLL_APPLYDOUBLEDAMAGE | COLL_DONTKILL;
+		};
+		
 	if (self.guild == GIL_STONEGOLEM)
 	|| (self.guild == GIL_SWAMPGOLEM)
 	|| (self.guild == GIL_STONEGUARDIAN)
 	|| (self.aivar[AIV_MM_REAL_ID] == ID_DRAGON_ROCK) 
 	|| (self.aivar[AIV_StateWet] == TRUE)
 	{
-		return COLL_APPLYDOUBLEDAMAGE;
+		return COLL_APPLYDOUBLEDAMAGE | COLL_DONTKILL; 
 	};
 		
 		return COLL_APPLYDAMAGE | COLL_DONTKILL;
+		
 	};
 
 	// ------ Sonderfall: Dmt ------
@@ -470,10 +479,8 @@ if (spellType == SPL_EnergyBall)
 	};
 
 //----- Blitz -----	
-	
-	if    (spellType == SPL_ChargeZap)
-		||(spellType == SPL_Zap)
-		||(spellType == SPL_LightningFlash)
+
+	if (spellType == SPL_LightningFlash)
 	{
 		if (C_NpcIsDown(self))
 		{
@@ -498,6 +505,7 @@ if (spellType == SPL_EnergyBall)
 		
 		return COLL_DOEVERYTHING;	
 	};
+	
 // ------ Angst -----
 
 	if (spellType == SPL_Fear)
