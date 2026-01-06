@@ -1501,3 +1501,30 @@ instance ItRu_Picklock(C_Item)
 
 };
 
+/*******************************************************************************************/
+instance ItRu_FrostBite(C_Item)
+{
+	name						= NAME_Rune;
+
+	mainflag					= ITEM_KAT_RUNE;
+	flags						= 0;
+
+	wear						= WEAR_EFFECT;
+	effect						= "SPELLFX_WEAKGLIMMER_BLUE";
+
+	visual						= "ItRu_Water04.3DS";
+	material					= MAT_STONE;
+
+	spell						= SPL_FrostBite;
+	mag_circle					= 2;
+
+	value						= Value_Ru_Icelance;
+
+	description					= NAME_SPL_FrostBite;
+	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
+	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_FrostBite;
+	text[2]						= NAME_Damage;									count[2] = SPL_DAMAGE_FrostBite;
+	text[3]						= "";											count[3] = 0;
+	text[4]						= "";											count[4] = 0;
+	text[5]						= NAME_Value;									count[5] = value;
+};

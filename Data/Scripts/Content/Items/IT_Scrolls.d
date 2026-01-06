@@ -1489,3 +1489,31 @@ instance ItSc_Picklock(C_Item)
 {
 };
 
+/*******************************************************************************************/
+instance ItSc_FrostBite(C_Item)
+{
+	name						= NAME_Spruchrolle;
+
+	mainflag					= ITEM_KAT_RUNE;
+	flags						= ITEM_MULTI;
+
+	wear						= WEAR_EFFECT;
+	effect						= "SPELLFX_WEAKGLIMMER";
+
+	visual						= "ItSc_Water04.3DS";
+	material					= MAT_LEATHER;
+
+	cond_atr[2]					= ATR_MANA_MAX;
+	cond_value[2]				= SPL_Cost_Scroll;
+	spell						= SPL_FrostBite;
+
+	value						= Value_Sc_Icelance;
+
+	description					= NAME_SPL_FrostBite;
+	text[0]						= Name_MageScroll;								count[0] = 0;
+	text[1]						= NAME_Mana_needed;								count[1] = SPL_Cost_Scroll;
+	text[2]						= NAME_Damage;									count[2] = SPL_DAMAGE_FrostBite;
+	text[3]						= "";											count[3] = 0;
+	text[4]						= "";											count[4] = 0;
+	text[5]						= NAME_Value;									count[5] = value;
+};

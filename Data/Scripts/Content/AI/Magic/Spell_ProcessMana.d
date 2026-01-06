@@ -86,6 +86,7 @@ func int Spell_ProcessMana(var int manaInvested)
 	if (activeSpell == SPL_ConcussionBolt) { return Spell_Logic_ConcussionBolt(manaInvested); };
 	if (activeSpell == SPL_Deathbolt) { return Spell_Logic_Deathbolt(manaInvested); };
 	if (activeSpell == SPL_Deathball) { return Spell_Logic_Deathball(manaInvested); };
+	if (activeSpell == SPL_FrostBite) { return Spell_Logic_FrostBite(manaInvested); };
 	// water
 	if (activeSpell == SPL_Thunderstorm) { return Spell_Logic_Thunderstorm(manaInvested); };
 	if (activeSpell == SPL_Waterfist) { return Spell_Logic_Waterfist(manaInvested); };
