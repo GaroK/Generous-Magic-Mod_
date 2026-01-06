@@ -589,7 +589,7 @@ const int SPL_MasterOfDisaster = 60;
 const int SPL_Deathbolt = 61;
 const int SPL_Deathball = 62;
 const int SPL_ConcussionBolt = 63;
-const int SPL_Reserved_64 = 64; // SPL_E
+const int SPL_FrostBite = 64; // SPL_E
 const int SPL_Reserved_65 = 65; // SPL_F
 const int SPL_Reserved_66 = 66; // SPL_G
 const int SPL_Reserved_67 = 67; // SPL_H
@@ -737,7 +737,7 @@ const string spellFxInstanceNames[MAX_SPELL] =
 	"Deathbolt", // 61 SPL_Deathbolt
 	"Deathball", // 62 SPL_Deathball
 	"Concussionbolt", // 63 SPL_Concussionbolt
-	"Light", // 64 SPL_Reserved_64
+	"IceLance", // 64 SPL_FrostBite
 	"Light", // 65 SPL_Reserved_65
 	"Light", // 66 SPL_Reserved_66
 	"Light", // 67 SPL_Reserved_67
@@ -881,7 +881,7 @@ const string spellFxAniLetters[MAX_SPELL] =
 	"FBT", // 61 SPL_Deathbolt
 	"FBT", // 62 SPL_Deathball
 	"FBT", // 63 SPL_Concussionbolt
-	"XXX", // 64 SPL_Reserved_64
+	"FBT", // 64 SPL_FrostBite
 	"XXX", // 65 SPL_Reserved_65
 	"XXX", // 66 SPL_Reserved_66
 	"XXX", // 67 SPL_Reserved_67

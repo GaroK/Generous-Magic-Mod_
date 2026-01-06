@@ -322,7 +322,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	"Deathbolt",																		// 61 SPL_Deathbolt
 	"Deathball",																		// 62 SPL_Deathball
 	"Concussionbolt",																	// 63 SPL_ConcussionBolt
-	"TXT_SPL_RESERVED_64",																		// 64 SPL_Reserved_64
+	"Frost Bite",																		// 64 SPL_FrostBite
 	"TXT_SPL_RESERVED_65",																		// 65 SPL_Reserved_65
 	"TXT_SPL_RESERVED_66",																		// 66 SPL_Reserved_66
 	"TXT_SPL_RESERVED_67",																		// 67 SPL_Reserved_67
@@ -465,7 +465,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	const string NAME_SPL_Deathbolt						= "NAME_SPL_DEATHBOLT";
 	const string NAME_SPL_Deathball						= "NAME_SPL_DEATHBALL";
 	const string NAME_SPL_ConcussionBolt				= "NAME_SPL_CONCUSSIONBOLT";
-	const string NAME_SPL_Reserved_64					= "NAME_SPL_RESERVED_64";
+	const string NAME_SPL_FrostBite						= "NAME_SPL_FrostBite";
 	const string NAME_SPL_Reserved_65					= "NAME_SPL_RESERVED_65";
 	const string NAME_SPL_Reserved_66					= "NAME_SPL_RESERVED_66";
 	const string NAME_SPL_Reserved_67					= "NAME_SPL_RESERVED_67";

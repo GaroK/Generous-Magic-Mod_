@@ -44,6 +44,7 @@ func void B_ClearRuneInv(var C_Npc slf)
 		Npc_RemoveInvItems(slf, ItRu_Deathbolt, Npc_HasItems(slf, ItRu_Deathbolt));
 		Npc_RemoveInvItems(slf, ItRu_Deathball, Npc_HasItems(slf, ItRu_Deathball));
 		Npc_RemoveInvItems(slf, ItRu_Concussionbolt, Npc_HasItems(slf, ItRu_Concussionbolt));
+		Npc_RemoveInvItems(slf, ItRu_FrostBite, Npc_HasItems(slf, ItRu_FrostBite));
 
 		// ADDON
 		Npc_RemoveInvItems(slf, Fakescroll, Npc_HasItems(slf, Fakescroll));
