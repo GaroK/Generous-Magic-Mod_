@@ -492,6 +492,35 @@ func int DIA_Pyrokar_OATH_Condition()
 	};
 };
 
+func void AIQ_VFX_InnosEye()
+{
+    // here print self.name
+    Hlp_PrintConsole(Str_Format("self.name: %s", self.name));
+    Wld_PlayEffect("spellFX_Innoseye", Hero, Hero, 0, 0, 0, FALSE);
+};
+
+func void AIQ_VFX_Lighstar_Red()
+{
+    Wld_PlayEffect("spellFX_LIGHTSTAR_RED", Hero, Hero, 0, 0, 0, FALSE);
+};
+
+func void AIQ_VFX_EarthQuake()
+{
+    Wld_PlayEffect("FX_EarthQuake", Hero, Hero, 0, 0, 0, FALSE);
+};
+
+func void AIQ_SFX_InnosEye()
+{
+    Snd_Play("SFX_INNOSEYE");
+};
+
+func void MFX_HEAL_CAST_GI()
+{
+    Snd_Play("MFX_HEAL_CAST_GI");
+};
+
+
+	
 func void DIA_Pyrokar_OATH_Info()
 {
 	AI_Output(other, self, "DIA_Pyrokar_OATH_15_00"); //I am ready to step into the Circle of Fire.
@@ -506,6 +535,15 @@ func void DIA_Pyrokar_OATH_Info()
 
 	CreateInvItems(hero, ITAR_KDF_L, 1);
 	AI_EquipArmor(hero, ITAR_KDF_L);
+	AI_CallScript("MFX_HEAL_CAST_GI", self, other);
+	AI_CallScript("AIQ_VFX_InnosEye", self, other);
+	AI_CallScript("AIQ_SFX_InnosEye", self, other);
+    AI_PlayAni(other, "T_MAGRUN_2_HEASHOOT");
+	AI_CallScript("AIQ_VFX_Lighstar_Red", self, other);
+	AI_CallScript("AIQ_VFX_EarthQuake", self, other);
+    AI_Wait(Hero, 1);
+    AI_PlayAni(Hero, "T_HEASHOOT_2_STAND");
+
 
 	other.guild = GIL_KDF;
 	Npc_ExchangeRoutine(Lothar, "START");

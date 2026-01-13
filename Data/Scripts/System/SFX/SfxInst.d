@@ -201,7 +201,8 @@ INSTANCE Piss_End     			    	(C_SFX_DEF) {file= "piss_end.wav";			vol = 10;			}
 /* Greentent.*/	INSTANCE MFX_Greententacle_Grow	    	(C_SFX_DEF) {file= "MFX_Greententacle_Grow.wav";	vol = 60;		};      
 				INSTANCE MFX_Greententacle_Burst       	(C_SFX_DEF) {file= "MFX_Greententacle_Burst.wav";	vol = 127;		};
                                                                                                                                     
-/* Heal */		INSTANCE MFX_Heal_Cast			        (C_SFX_DEF) {file= "MFX_Heal_Cast.wav";				vol = 127;			};      
+/* Heal */		INSTANCE MFX_Heal_Cast			        (C_SFX_DEF) {file= "MFX_Heal_Cast.wav";				vol = 127;			};
+/* HealFromG1 */INSTANCE MFX_Heal_Cast_GI		        (C_SFX_DEF) {file= "MFX_Heal_Cast_GI.wav";			vol = 127;			};  
                                                                                                                                     
 /* Icecube */	INSTANCE MFX_Icecube_Cast		        (C_SFX_DEF) {file= "MFX_Icecube_Cast.wav";			vol = 127;			};      
 				INSTANCE MFX_Icecube_Invest				(C_SFX_DEF) {file= "MFX_Icecube_Invest.wav";		vol = 127; 	loop=1;	};      
