@@ -59,7 +59,6 @@ for dir in release/langs/*; do
                 -i $ENC \
                 -g g2a \
                 -e .ci/externals.d \
-                -p gothic,menu \
                 --no-type-checking \
                 --no-control-flow-checks
     fi
