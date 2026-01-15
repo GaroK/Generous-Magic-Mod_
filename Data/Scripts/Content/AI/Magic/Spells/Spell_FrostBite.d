@@ -3,7 +3,7 @@
 // *******************
 
 const int SPL_Cost_FrostBite = 15;
-const int SPL_Damage_FrostBite = 180;
+const int SPL_Damage_FrostBite = 220;
 
 instance Spell_FrostBite(C_Spell_Proto)
 {
