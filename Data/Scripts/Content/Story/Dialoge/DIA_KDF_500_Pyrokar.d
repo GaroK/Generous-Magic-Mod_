@@ -494,8 +494,6 @@ func int DIA_Pyrokar_OATH_Condition()
 
 func void AIQ_VFX_InnosEye()
 {
-    // here print self.name
-    Hlp_PrintConsole(Str_Format("self.name: %s", self.name));
     Wld_PlayEffect("spellFX_Innoseye", Hero, Hero, 0, 0, 0, FALSE);
 };
 
