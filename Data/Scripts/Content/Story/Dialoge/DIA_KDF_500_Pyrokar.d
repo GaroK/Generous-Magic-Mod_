@@ -512,7 +512,7 @@ func void AIQ_SFX_InnosEye()
     Snd_Play("SFX_INNOSEYE");
 };
 
-func void MFX_HEAL_CAST_GI()
+func void Heal_Sound()
 {
     Snd_Play("MFX_HEAL_CAST_GI");
 };
@@ -533,7 +533,7 @@ func void DIA_Pyrokar_OATH_Info()
 
 	CreateInvItems(hero, ITAR_KDF_L, 1);
 	AI_EquipArmor(hero, ITAR_KDF_L);
-	AI_CallScript("MFX_HEAL_CAST_GI", self, other);
+	AI_CallScript("Heal_Sound", self, other);
 	AI_CallScript("AIQ_VFX_InnosEye", self, other);
 	AI_CallScript("AIQ_SFX_InnosEye", self, other);
     AI_PlayAni(other, "T_MAGRUN_2_HEASHOOT");
