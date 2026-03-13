@@ -27,9 +27,8 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 // ### Addon ###
 // #################
 
-// ### KDW ###
-
 // ----- GMM -----
+// Wet Crits
 	if (spellType == SPL_Waterfist)
 	|| (spellType == SPL_Geyser)
 	|| (spellType == SPL_Thunderstorm)
@@ -41,6 +40,24 @@ func int C_CanNpcCollideWithSpell(var int spellType)
 //		Print("Enemy is wet");
 		self.aivar[AIV_StateWet] = TRUE;
 	};
+	
+// ----- GMM -----
+// Roasted Animals	
+	if (spellType == SPL_FireBolt)
+	|| (spellType == SPL_InstantFireball)
+	|| (spellType == SPL_Firestorm)
+	|| (spellType == SPL_ChargeFireball)
+	|| (spellType == SPL_Pyrokinesis)
+	|| (spellType == SPL_Firerain)
+	|| (spellType == SPL_Deathbolt)
+	|| (spellType == SPL_Deathball)
+	{
+//		Print("Enemy is roasted");
+		self.aivar[AIV_StateRoasted] = TRUE;
+	};
+
+// ### KDW ###
+
 
 
 // ----- Whirlwind -----

@@ -336,7 +336,8 @@
 	
 // ------ GMM -------
 	const int AIV_StateWet								= 89;
-	const int AIV_LastHitByWindFist							= 90;
+	const int AIV_LastHitByWindFist						= 90;
+	const int AIV_StateRoasted 							= 91;
 
 // ***************************************************
 // Globalvariablen fÃƒÂ¼r Petzen/Absolution/News - System

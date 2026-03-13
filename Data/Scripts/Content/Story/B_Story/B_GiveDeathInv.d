@@ -7,6 +7,19 @@
 
 func void B_GiveDeathInv(var C_Npc slf)
 {
+// GMM
+
+	if(slf.aivar [AIV_StateRoasted] == TRUE)
+	{
+		var int meatAmount;
+		meatAmount = Npc_HasItems (slf, ItFoMuttonRaw);
+		
+		if(meatAmount > 0)
+		{
+		Npc_RemoveInvItems (slf, ItFoMuttonRaw, meatAmount);
+		CreateInvItems (slf, ItFoMutton, meatAmount);
+		};
+	};
 	// EXIT if...
 
 	// -------- NUR beim ersten Durchlauf weitermachen (AIV_DeathInvGiven ist dann FALSE, wird hier (unten) auf TRUE gesetzt) --------
