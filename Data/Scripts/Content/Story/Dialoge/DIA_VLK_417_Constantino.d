@@ -1050,11 +1050,11 @@ func void DIA_Constantino_Teach_BACK()
 
 func void DIA_Constantino_TEACH_Health01()
 {
-/*	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_01))
+	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_01))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health01_10_00"); //The ingredients for an essence of healing are healing plants and meadow knotweed.
+		//AI_Output(self, other, "DIA_Constantino_TEACH_Health01_10_00"); //The ingredients for an essence of healing are healing plants and meadow knotweed.
 	};
-*/
+
 
 	Info_ClearChoices(DIA_Constantino_Teach);
 };
