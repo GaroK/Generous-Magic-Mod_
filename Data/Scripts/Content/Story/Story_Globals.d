@@ -9,6 +9,9 @@ const int T_HIGH = 120;
 const int T_MED = 90;
 const int T_LOW = 60;
 
+const int Mana_LOW = 200;
+const int Mana_MED = 300;
+
 
 var int GMM_Summon_Time;
 
