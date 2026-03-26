@@ -1786,7 +1786,7 @@ func void DIA_Vatras_Teach_Info()
 
 func void DIA_Vatras_Teach_BACK()
 {
-	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)
+	if (other.attribute[ATR_MANA_MAX] >= Mana_MED)
 	{
 		AI_Output(self, other, "DIA_Vatras_Teach_05_00"); //Your magical power has grown beyond my ability to teach you.
 	};
@@ -1796,7 +1796,7 @@ func void DIA_Vatras_Teach_BACK()
 
 func void DIA_Vatras_Teach_1()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, T_HIGH);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, Mana_MED);
 
 	Info_ClearChoices(DIA_Vatras_Teach);
 
@@ -1807,7 +1807,7 @@ func void DIA_Vatras_Teach_1()
 
 func void DIA_Vatras_Teach_5()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, T_HIGH);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, Mana_MED);
 
 	Info_ClearChoices(DIA_Vatras_Teach);
 

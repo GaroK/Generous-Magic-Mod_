@@ -820,7 +820,7 @@ func void DIA_MiltenNW_Mana_Info()
 
 func void DIA_MiltenNW_Mana_BACK()
 {
-	if (other.attribute[ATR_MANA_MAX] >= T_MED)
+	if (other.attribute[ATR_MANA_MAX] >= Mana_Low)
 	{
 		AI_Output(self, other, "DIA_MiltenNW_Mana_03_00"); //Your magic power is great. Too great for me to be able to help you increase it.
 	};
@@ -830,7 +830,7 @@ func void DIA_MiltenNW_Mana_BACK()
 
 func void DIA_MiltenNW_Mana_1()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, T_MED);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, Mana_Low);
 
 	Info_ClearChoices(DIA_MiltenNW_Mana);
 
@@ -841,7 +841,7 @@ func void DIA_MiltenNW_Mana_1()
 
 func void DIA_MiltenNW_Mana_5()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, T_MED);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, Mana_Low);
 
 	Info_ClearChoices(DIA_MiltenNW_Mana);
 

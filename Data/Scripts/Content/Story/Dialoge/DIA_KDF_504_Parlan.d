@@ -863,7 +863,7 @@ func void DIA_Parlan_TEACH_MANA_Info()
 
 func void DIA_Parlan_TEACH_MANA_BACK()
 {
-	if (other.attribute[ATR_MANA_MAX] >= T_MED)
+	if (other.attribute[ATR_MANA_MAX] >= Mana_MED)
 	{
 		AI_Output(self, other, "DIA_Parlan_TEACH_MANA_05_00"); //Your magic power has grown. I cannot help you to increase it more.
 		AI_Output(self, other, "DIA_Parlan_TEACH_MANA_05_01"); //If you want to learn more, ask Pyrokar.
@@ -875,7 +875,7 @@ func void DIA_Parlan_TEACH_MANA_BACK()
 
 func void DIA_Parlan_TEACH_MANA_1()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, T_MED);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, Mana_MED);
 
 	Info_ClearChoices(DIA_Parlan_TEACH_MANA);
 	Info_AddChoice(DIA_Parlan_TEACH_MANA, DIALOG_BACK, DIA_Parlan_TEACH_MANA_BACK);
@@ -885,7 +885,7 @@ func void DIA_Parlan_TEACH_MANA_1()
 
 func void DIA_Parlan_TEACH_MANA_5()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, T_MED);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, Mana_MED);
 
 	Info_ClearChoices(DIA_Parlan_TEACH_MANA);
 	Info_AddChoice(DIA_Parlan_TEACH_MANA, DIALOG_BACK, DIA_Parlan_TEACH_MANA_BACK);

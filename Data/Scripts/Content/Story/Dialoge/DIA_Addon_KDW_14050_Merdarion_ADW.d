@@ -371,7 +371,7 @@ func void DIA_Addon_Merdarion_ADW_TEACH_MANA_Info()
 
 func void DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK()
 {
-	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)
+	if (other.attribute[ATR_MANA_MAX] >= Mana_Med)
 	{
 		AI_Output(self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //Your request goes beyond my capabilities.
 		AI_Output(self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_01"); //I cannot teach you anything more.
@@ -383,7 +383,7 @@ func void DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK()
 
 func void DIA_Addon_Merdarion_ADW_TEACH_MANA_1()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, T_HIGH);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 1, Mana_Med);
 
 	Info_ClearChoices(DIA_Addon_Merdarion_ADW_TEACH_MANA);
 	Info_AddChoice(DIA_Addon_Merdarion_ADW_TEACH_MANA, DIALOG_BACK, DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK);
@@ -393,7 +393,7 @@ func void DIA_Addon_Merdarion_ADW_TEACH_MANA_1()
 
 func void DIA_Addon_Merdarion_ADW_TEACH_MANA_5()
 {
-	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, T_HIGH);
+	B_TeachAttributePoints(self, other, ATR_MANA_MAX, 5, Mana_Med);
 
 	Info_ClearChoices(DIA_Addon_Merdarion_ADW_TEACH_MANA);
 	Info_AddChoice(DIA_Addon_Merdarion_ADW_TEACH_MANA, DIALOG_BACK, DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK);
