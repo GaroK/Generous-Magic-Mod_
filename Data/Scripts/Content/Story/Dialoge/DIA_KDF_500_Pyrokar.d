@@ -1050,8 +1050,8 @@ var int Pyrokar_Blessing_Day;
 var int Pyrokar_Blessing_Bonus;
 var int Pyrokar_Blessing_Bonus_Chapter_5;
 
-const int Pyrokar_Bonus = 5;
-const int Pyrokar_Bonus_Chapter_5 = 8;
+const int Pyrokar_Bonus = 0;
+const int Pyrokar_Bonus_Chapter_5 = 0;
 
 func void DIA_Pyrokar_PERM_Info()
 {
