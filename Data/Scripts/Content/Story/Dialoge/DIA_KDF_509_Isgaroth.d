@@ -68,7 +68,7 @@ func int DIA_Isgaroth_Segen_Condition()
 var int Isgaroth_Blessing_Day;
 var int Isgaroth_Blessing_Bonus;
 
-const int Isgaroth_Bonus = 2;
+const int Isgaroth_Bonus = 0;
 
 func void DIA_Isgaroth_Segen_Info()
 {
