@@ -520,7 +520,7 @@ instance ItPl_Forestberry(C_Item)
 
 func void Use_Forestberry()
 {
-	Npc_ChangeAttribute(self, ATR_HITPOINTS, HP_Forestberry);
+	Npc_ChangeAttribute	(self,	ATR_MANA,       Mana_Blueplant);
 	Npc_ChangeAttribute	(self,	ATR_HITPOINTS,	HP_Planeberry);
 };
 
@@ -552,7 +552,7 @@ instance ItPl_Planeberry(C_Item)
 
 func void Use_Planeberry()
 {
-	Npc_ChangeAttribute	(self,	ATR_MANA,	    Mana_Blueplant);
+	Npc_ChangeAttribute	(self,	ATR_MANA,    Mana_Blueplant);
 	Npc_ChangeAttribute(self, ATR_HITPOINTS, HP_Planeberry);
 };
 
