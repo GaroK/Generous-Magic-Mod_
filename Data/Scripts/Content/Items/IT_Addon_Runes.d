@@ -104,8 +104,8 @@ instance ItRu_Geyser(C_Item)
 	value						= Value_Ru_Geyser;
 
 	description					= NAME_SPL_Geyser;
-//	TEXT	[0]			=	NAME_Mag_Circle;	
-	TEXT	[0]			=	GMM_Non_Lethal_Circle;		
+//	TEXT	[0]					= NAME_Mag_Circle;	
+	TEXT	[0]					= GMM_Non_Lethal_Circle;		
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_Geyser;
 	text[2]						= NAME_Damage;									count[2] = SPL_DAMAGE_Geyser;
 	text[3]						= "";											count[3] = 0;
@@ -133,8 +133,8 @@ instance ItRu_Waterfist(C_Item)
 	value						= Value_Ru_Waterfist;
 
 	description					= NAME_SPL_Waterfist;
-//	TEXT	[0]			=	NAME_Mag_Circle;	
-	TEXT	[0]			=	GMM_Non_Lethal_Circle;	
+//	TEXT	[0]					= NAME_Mag_Circle;	
+	TEXT	[0]					= GMM_Non_Lethal_Circle;	
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_Waterfist;
 	text[2]						= NAME_Damage;									count[2] = SPL_DAMAGE_Waterfist;
 	text[3]						= "";											count[3] = 0;
