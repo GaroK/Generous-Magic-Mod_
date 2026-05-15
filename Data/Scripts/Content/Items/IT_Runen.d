@@ -606,8 +606,7 @@ instance ItRu_FireBolt(C_Item)
 	value						= Value_Ru_Firebolt;
 
 	description					= NAME_SPL_Firebolt;
-//	TEXT	[0]			=	NAME_Mag_Circle;
-	TEXT	[0]			=	GMM_Non_Lethal_Circle;									count[0] = mag_circle;
+	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
 	text[1]						= NAME_Manakosten;								count[1] = SPL_COST_FIREBOLT;
 	text[2]						= NAME_Dam_Magic;								count[2] = SPL_DAMAGE_FIREBOLT;
 	text[3]						= "";											count[3] = 0;
@@ -635,7 +634,7 @@ instance ItRu_Zap(C_Item)
 	value						= Value_Ru_Zap;
 
 	description					= NAME_SPL_Zap;
-	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
+	text[0]						= GMM_Non_Lethal_Circle;						count[0] = mag_circle;
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_Zap;
 	text[2]						= NAME_Dam_Magic;								count[2] = SPL_DAMAGE_ZAP;
 	text[3]						= "";											count[3] = 0;
@@ -1030,9 +1029,9 @@ instance ItRu_ThunderBall(C_Item)
 	value						= Value_Ru_ThunderBall;
 
 	description					= NAME_SPL_ChargeZap;
-//	TEXT	[0]			=	NAME_Mag_Circle;	
-	TEXT	[0]			=	GMM_Non_Lethal_Circle;		
-	COUNT	[0]			=	mag_circle;
+//	text[0]						= NAME_Mag_Circle;	
+	text[0]						= GMM_Non_Lethal_Circle;		
+	count[0]					= mag_circle;
 	text[1]						= NAME_MinManakosten;							count[1] = STEP_ChargeZap;
 	text[2]						= NAME_ManakostenMax;							count[2] = SPL_COST_ChargeZap;
 	text[3]						= NAME_Addon_Damage_Min;						count[3] = SPL_Damage_ChargeZap;
