@@ -92,22 +92,22 @@ INSTANCE ItMW_GMM_Stab_04_Summon_V0 (C_Item)
 
     value               =   Value_Stab_GMM;
 
-//    damageTotal         =   Damage_Stab_GMM_01;
-    damagetype              =   DAM_BLUNT;
+//    damageTotal       =   Damage_Stab_GMM_01;
+    damagetype          =   DAM_BLUNT;
     range               =       RANGE_Stab04;       
     
     on_equip            =   Equip_Inactive_Staff;
- //   on_unequip          =   GMM_UnEquip_2H_04;
+ //   on_unequip        =   GMM_UnEquip_2H_04;
     
     cond_atr[2]         =   ATR_MANA_MAX;
-    cond_value[2]           =   Condition_Stab04_GMM;
-    visual                  =   "ItMW_MageStaff_Ball_2H_01.3DS"; 
+    cond_value[2]       =   Condition_Stab04_GMM;
+    visual              =   "ItMW_MageStaff_Ball_2H_01.3DS"; 
     effect              =   "SPELLFX_MAGESTAFF4";
 
-    description             =   name;
+    description         =   name;
 
-//    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
-    TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
+    TEXT[0]                 = NAME_Damage;                  COUNT[0]    = 60;
+    TEXT[1]                 = NAME_Mana_needed;             COUNT[1]    = cond_value[2];
 //  TEXT[2]                 = NAME_ADDON_BONUS_2H;          COUNT[2]    = Waffenbonus_04;
     TEXT[3]                 = "";
     TEXT[4]                 = GMM_Desc_Summon_Wand;

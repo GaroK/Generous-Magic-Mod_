@@ -9,7 +9,7 @@ func void B_GiveTradeInv_Addon_Cronos_ADW(var C_Npc slf)
 	if ((Kapitel >= 2)
 	&& (Cronos_ADW_ItemsGiven_Chapter_2 == FALSE))
 	{
-		
+		CreateInvItems (slf, ItMw_1H_Nov_Mace, 1);
 		//CreateInvItems   (slf, ItMW_Addon_Stab03, 		1);
 		//CreateInvItems   (slf, ItMW_Addon_Stab05, 		1);
 		CreateInvItems   (slf, ItMW_GMM_Stab_01_Mana_V0, 		1);
@@ -90,7 +90,7 @@ func void B_GiveTradeInv_Addon_Cronos_ADW(var C_Npc slf)
 		CreateInvItems   (slf, ItPo_Mana_01,	35);
 
 		CreateInvItems(slf, ItPo_Health_Addon_04, 2);
-		CreateInvItems   (slf, ItPo_Mana_Addon_04,		10);
+		CreateInvItems(slf, ItPo_Mana_Addon_04,		10);
 
 		CreateInvItems(slf, ItSc_MediumHeal, 5);
 		CreateInvItems(slf, ItSc_Firestorm, 4);
@@ -137,8 +137,8 @@ func void B_GiveTradeInv_Addon_Cronos_ADW(var C_Npc slf)
 
 		CreateInvItems(slf, ItPo_Health_02, 15);
 		CreateInvItems(slf, ItPo_Health_03, 10);
-		CreateInvItems   (slf, ItPo_Mana_01,	35);
-		CreateInvItems   (slf, ItPo_Mana_02,	35);
+		CreateInvItems(slf, ItPo_Mana_01,	35);
+		CreateInvItems(slf, ItPo_Mana_02,	35);
 
 		CreateInvItems(slf, ItSc_LightningFlash, 3);
 		CreateInvItems(slf, ItSc_SumGol, 3);
@@ -173,8 +173,8 @@ func void B_GiveTradeInv_Addon_Cronos_ADW(var C_Npc slf)
 
 		CreateInvItems(slf, ItPo_Health_02, 20);
 		CreateInvItems(slf, ItPo_Health_03, 15);
-		CreateInvItems   (slf, ItPo_Mana_01,	55);
-		CreateInvItems   (slf, ItPo_Mana_02,	45);
+		CreateInvItems(slf, ItPo_Mana_01,	55);
+		CreateInvItems(slf, ItPo_Mana_02,	45);
 
 		CreateInvItems(slf, ItSc_Pyrokinesis, 5);
 		CreateInvItems(slf, ItSc_IceWave, 4);
