@@ -67,28 +67,28 @@ INSTANCE ItMW_GMM_Stab_02_Regen_V0 (C_Item)
 
     value         =   Value_Stab04;
 
-//    damageTotal   =   Damage_Stab_GMM_01;
+//  damageTotal   =   Damage_Stab_GMM_01;
     damagetype    =   DAM_BLUNT;
     range         =   RANGE_Stab04;       
     
     on_equip      =   Equip_Inactive_Staff;
 //  on_unequip    =   UnEquip_Regen_Wand;
     
-   cond_atr[2]   =   ATR_MANA_MAX;
+    cond_atr  [2] =   ATR_MANA_MAX;
     cond_value[2] =   Condition_Stab04;
     visual        =   "ItMW_MageStaff_Blades_2H_01.3DS";
     effect        =   "SPELLFX_MAGESTAFF4";
 
     description   =   name;
 
-//    TEXT [0]      = NAME_Damage;                    COUNT[0]    = damageTotal;
+    TEXT [0]      = NAME_Damage;                    COUNT[0]    = 60;
     TEXT [1]      = NAME_MANA_needed;               COUNT[1]    = cond_value[2];
     TEXT [4]      = GMM_Desc_Regen_Wand;
     COUNT[4]      = MANA_PER_SEC_2;
 
 
-//  TEXT [4]       =   NAME_ADDON_BONUS_2H;          COUNT[4]    = Waffenbonus_04;
-    TEXT [5]       =   NAME_Value;                   COUNT[5]    = value;
+//  TEXT [4]      = NAME_ADDON_BONUS_2H;          COUNT[4]    = Waffenbonus_04;
+    TEXT [5]      = NAME_Value;                   COUNT[5]    = value;
 };
 
 

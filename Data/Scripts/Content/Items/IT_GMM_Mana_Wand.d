@@ -17,7 +17,7 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
 
 //    damageTotal       =   Damage_Stab_GMM_01;
     damagetype          =   DAM_BLUNT;
-    range               =       RANGE_Stab02;       
+    range               =   RANGE_Stab02;       
     
     on_equip            =   Equip_Inactive_Staff;
  //   on_unequip        =   UnEquip_Zauberstab;
@@ -29,14 +29,14 @@ INSTANCE ItMW_GMM_Stab_01_Mana_V0 (C_Item)
 
     description         =   name;
 
-//    TEXT[0]           = NAME_Damage;                  COUNT[0]    = damageTotal;
+    TEXT[0]             = NAME_Damage;             COUNT[0]    = 60;
     
-    TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
+    TEXT[1]             = NAME_Mana_needed;        COUNT[1]    = cond_value[2];
 //  TEXT[2]             =
     TEXT[3]             = "";
-    TEXT[4]             = NAME_Bonus_Mana;              COUNT[4]    = 50;//FIXME_FILLER
+    TEXT[4]             = NAME_Bonus_Mana;         COUNT[4]    = 50;//FIXME_FILLER
 
-    TEXT[5]             = NAME_Value;                   COUNT[5]    = value;
+    TEXT[5]             = NAME_Value;              COUNT[5]    = value;
 };
 
 
