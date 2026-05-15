@@ -10,6 +10,8 @@ func void B_GiveTradeInv_Gorax(var C_Npc slf)
 	&& (Gorax_ItemsGiven_Chapter_1 == FALSE))
 	{
 		CreateInvItems (slf, ItMi_Gold, 100);
+		CreateInvItems (slf, ItMi_RuneBlank, 1);
+		CreateInvItems (slf, ItMi_Rockcrystal, 1);
 
 		CreateInvItems (slf, ItKe_Innos_MIS, 1); // Joly: damit man wieder aus dem Kloster kommt, wenn man reingeklettert ist.
 
