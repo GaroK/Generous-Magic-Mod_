@@ -2,6 +2,15 @@
 
 var C_Trigger mana_regen_controller;
 
+// here we check, if the trigger exists, if it does, we do nothing
+// if it doesn't, we create it
+func void mana_regen() {
+    var c_trigger t = AI_GetNextTriggerByFunc(regen_mana);
+    if (!Hlp_IsNull(t)) {
+        mana_regen_controller = AI_StartTriggerScript("Regen_mana", 1000);
+    };
+};
+
 
 // =====================================
 //             REGEN CODE
@@ -39,19 +48,17 @@ func int Regen_mana()
     if regenstaffone
     {
         Npc_ChangeAttribute(hero, atr_mana, MANA_PER_SEC_2);
-        return LOOP_CONTINUE;
     }
     else if regenstafftwo
     {
         Npc_ChangeAttribute(hero, atr_mana, MANA_PER_SEC_4);
-        return LOOP_CONTINUE;
     }
     else if regenstaffthree
     {
         Npc_ChangeAttribute(hero, atr_mana, MANA_PER_SEC_6);
-        return LOOP_CONTINUE;
     };
-    return LOOP_END;
+
+    return LOOP_CONTINUE;
 };
 
 
@@ -132,7 +139,7 @@ func void Equip_Regen_Wand_V1()
     {
         self.attribute[ATR_MANA_MAX] += 10;
         regenstaffone = true;
-        mana_regen_controller = AI_StartTriggerScript("Regen_mana", 1000);
+        mana_regen();
     };
 };
 
@@ -140,8 +147,8 @@ func void UnEquip_Regen_Wand_V1()
 { 
     if (self.id == hero.id)
     {
-    self.attribute[ATR_MANA_MAX] -= 10;
-    regenstaffone = false;
+        self.attribute[ATR_MANA_MAX] -= 10;
+        regenstaffone = false;
     
     };
 };
@@ -186,7 +193,7 @@ func void Equip_Regen_Wand_V2()
     {
         self.attribute[ATR_MANA_MAX] += 10;
         regenstafftwo = true;
-        mana_regen_controller = AI_StartTriggerScript("Regen_mana", 1000);
+        mana_regen();
     };
 };
 
@@ -240,7 +247,7 @@ func void Equip_Regen_Wand_V3()
     {
         self.attribute[ATR_MANA_MAX] += 10;
         regenstaffthree = true;
-        mana_regen_controller = AI_StartTriggerScript("Regen_mana", 1000);
+        mana_regen();
     };
 };
 
