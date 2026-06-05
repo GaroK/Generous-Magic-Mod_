@@ -603,7 +603,7 @@ func void B_InitMonsterAttitudes()
 	B_SetMonsterAttitude(GIL_WOLF, ATT_NEUTRAL, GIL_SummonedZombie);
 
 	// ------ Summoned Wolf zu allen anderen ------
-	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_Nautral, GIL_SEPERATOR_HUM);
+	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SEPERATOR_HUM);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_HOSTILE, GIL_DMT);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_MEATBUG);
 	B_SetMonsterAttitude(GIL_SUMMONED_WOLF, ATT_NEUTRAL, GIL_SHEEP);
