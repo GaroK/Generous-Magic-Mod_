@@ -11,39 +11,6 @@ const int DT_FALL = 7;
 /* const int DT_POISON = 8; */ // CUSTOM DAMAGE TYPE
 
 
-// FX Prototypes (You can add your FX prototypes here) /////
-
-/* const int LightningFXP = 0; */ // FX PROTOTYPE
-/* const int SomeFXP = 1; */
-/* const int AnotherFXP = 2; */
-
-
-/* func void vf(){}; */ // void exit condition
-
-/* func int isWeak(var int fxID) // exit condition
-{
-	// fxID - fx instance
-	// self - damage receiver
-	// other - damage sender
-	
-	if(self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX] / 5)
-	{
-		return true;
-	};
-	
-	return false;
-}; */
-
-func void UCS_Init()
-{
-	// FX PROTOTYPES MUST BE REGISTERED
-	
-	/* UCS_CreateFXProto(LightningFXP, 10, DT_MAGIC, SPL_LightningFlash, "SPELLFX_LIGHTNINGFLASH_TARGET_CLOUD", 0, 1500, 10, isWeak); */
-	/* UCS_CreateFXProto(SomeFXP, 2, DT_BLUNT, -1, "", 1, 100, 75, vf); */
-	/* UCS_CreateFXProto(AnotherFXP, 300, DT_FLY, -1, "", 0, 8000, 3, vf); */
-};
-
-
 // SWITCHERS /////
 
 func int SwitchByDT(var int damageType, var int barrier, var int blunt, var int edge, var int fire, var int fly, var int magic, var int point, var int fall, var int poison)
@@ -93,34 +60,12 @@ var int firerain, var int firestorm, var int instantfireball, var int pyrokinesi
 	return -1;
 };
 
-func int isFireSpell(var int spellID)
+func int SwitchBySpellLevel(var int spellLevel, var int first, var int second, var int third, var int fourth)
 {
-	if(spellID == SPL_Firebolt){ return true; };
-	if(spellID == SPL_InstantFireball){ return true; };
-	if(spellID == SPL_ChargeFireball){ return true; };
-	if(spellID == SPL_Firestorm){ return true; };
-	if(spellID == SPL_Deathbolt){ return true; };
-	if(spellID == SPL_Deathball){ return true; };
-	if(spellID == SPL_Pyrokinesis){ return true; };
-	if(spellID == SPL_Firerain){ return true; };
+	if(spellLevel == 1) { return first; };
+	if(spellLevel == 2) { return second; };
+	if(spellLevel == 3) { return third; };
+	if(spellLevel == 4) { return fourth; };
 	
-	return false;
-};
-func int SwitchByFireSpell
-(
-	var int spellID,
-	var int firebolt, var int instantFireball, var int chargeFireball, var int firestorm,
-	var int deathball, var int deathbolt, var int pyrokinesis, var int firerain
-)
-{
-	if(spellID == SPL_Firebolt){ return firebolt; };
-	if(spellID == SPL_InstantFireball){ return instantFireball; };
-	if(spellID == SPL_ChargeFireball){ return chargeFireball; };
-	if(spellID == SPL_Firestorm){ return firestorm; };
-	if(spellID == SPL_Deathbolt){ return deathball; };
-	if(spellID == SPL_Deathball){ return deathbolt; };
-	if(spellID == SPL_Pyrokinesis){ return pyrokinesis; };
-	if(spellID == SPL_Firerain){ return firerain; };
-	
-	return false;
+	return -1;
 };
