@@ -6,7 +6,7 @@ func void OnPreDamage(var C_NPC damageSender, var C_NPC damageReceiver, var int 
 };
 func void OnPostDamage(var C_NPC damageSender, var C_NPC damageReceiver, var int damageType, var int spellID, var int spellLevel)
 {
-	processAfterburnFX(damageSender, damageReceiver, damageType, spellID, spellLevel);
+	processFXLib(damageSender, damageReceiver, damageType, spellID, spellLevel);
 };
 
 
@@ -19,7 +19,7 @@ func int CalcMinimalDamage(var C_NPC damageSender, var C_NPC damageReceiver, var
 	var int resultDamage; resultDamage = i;
 	
 	
-	resultDamage = SwitchByDT(damageType, i, i, i, 0, i, i, i, i, i);
+	resultDamage = SwitchByDT(damageType, i, i, i, i, i, i, i, i, i);
 	
 	return resultDamage;
 };
@@ -45,11 +45,6 @@ func int CalcTotalDamage(var C_NPC damageSender, var C_NPC damageReceiver, var i
 	
 	var int resultDamage; resultDamage = i;
 	
-	
-	/* if(damageReceiver.aivar[AIV_MM_REAL_ID] == ID_STONEGOLEM)
-	{
-		resultDamage = SwitchByDT(damageType, i, Hlp_MultInt(i, 1.50), i, i, i, i, i, i, 0);
-	}; */
 	
 	return resultDamage;
 };
@@ -91,14 +86,6 @@ func int CalcProtection(var C_NPC damageSender, var C_NPC damageReceiver, var in
 			resultProtection = damageReceiver.aivar[ATR_HITPOINTS_MAX] / 2;
 		};
 	}; */
-	
-	if(damageType == DT_FIRE)
-	{
-		if(UCS_IsRunning(afterburnFX, damageSender, damageReceiver))
-		{
-			resultProtection = 0;
-		};
-	};
 	
 	return resultProtection;
 };
