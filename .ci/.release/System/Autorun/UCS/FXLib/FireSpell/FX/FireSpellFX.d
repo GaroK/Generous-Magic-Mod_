@@ -16,7 +16,7 @@ func int GetFireSpellFXDamage(var int spellID, var int spellLevel)
 const int FireSpellFX_DT = DT_MAGIC;
 const int FireSpellFX_SpellID = -1;
 const int FireSpellFX_SpellLevel = -1;
-const string FireSpellFX_VFX = "";
+const string FireSpellFX_VFX = "VOB_MAGICBURN";
 const int FireSpellFX_DontKill = 0;
 
 func int GetFireSpellFXArea(var int spellID, var int spellLevel) // inclusion area radius
