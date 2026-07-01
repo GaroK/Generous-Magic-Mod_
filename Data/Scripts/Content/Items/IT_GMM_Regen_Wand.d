@@ -6,7 +6,7 @@ var C_Trigger mana_regen_controller;
 // if it doesn't, we create it
 func void mana_regen() {
     var c_trigger t = AI_GetNextTriggerByFunc(regen_mana);
-    if (!Hlp_IsNull(t)) {
+    if (Hlp_IsNull(t)) {
         mana_regen_controller = AI_StartTriggerScript("Regen_mana", 1000);
     };
 };
